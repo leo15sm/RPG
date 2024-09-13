@@ -44,12 +44,11 @@ body {
 }
 
 .nav a{
-    font-weight: bold;
     color: var(--RPG-white);
 }
 
 .nav a:hover{
-    color: var(--RPG-blue);
+    color: var(--RPG-violet);
 }
 
 .navmenu{
@@ -59,7 +58,7 @@ body {
     top: 5rem;
     left: 0;
     height: 0;
-    transition: 0.5s;
+    transition: 0.5s ease;
     text-align: right;
     visibility: hidden;
     background: var(--RPG-black);
@@ -75,7 +74,7 @@ body {
 
 .menu a:hover{
     color: var(--RPG-black);
-    background: var(--RPG-gradient-blue);
+    background: var(--RPG-gradient-violet);
 }
 
 .linha{
@@ -85,7 +84,6 @@ body {
     background: var(--RPG-white);
     opacity: 0.25;
     margin: 1rem auto;
-    transition: 0s;
 }
 
 .icons{
@@ -108,7 +106,7 @@ body {
     border: none;
     display: flex;
     align-items: center;
-    color: var(--RPG-blue);
+    color: var(--RPG-violet);
     padding-block: 1rem;
     cursor: pointer;
     padding-right: 2rem;
@@ -157,8 +155,8 @@ body {
 
 /*##############################################################################################*/
 .footer{
-    background-color: var(--E3J-gold);
-    color: var(--E3J-text);
+    background-color: var(--RPG-black);
+    color: var(--RPG-violet);
     height: 4rem;
     display: flex;
     flex-direction: row;

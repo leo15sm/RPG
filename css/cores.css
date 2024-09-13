@@ -1,9 +1,12 @@
 :root {
     --RPG-white: rgba(255, 255, 255, 1);
     --RPG-black: rgba(0, 0, 0, 1);
-    --RPG-blue: rgb(138, 43, 226, 1);
+    --RPG-gray: rgb(134, 133, 133);
+    --RPG-blue: rgb(0, 123, 255, 1);
+    --RPG-blue-dark: rgb(0, 86, 179, 1);
+    --RPG-violet: rgb(138, 43, 226, 1);
     --RPG-black-opacity: rgba(0, 0, 0, .7);
-    --RPG-gradient-blue: linear-gradient(to right, rgb(0, 0, 0) 40%, rgb(138, 43, 226));
+    --RPG-gradient-violet: linear-gradient(to right, rgb(0, 0, 0) 40%, rgb(138, 43, 226));
 
     --width-max: 1020px;
     --width-min: 1020px;
