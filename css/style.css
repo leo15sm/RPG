@@ -1,0 +1,11 @@
+@import url('./cores.css');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0 auto;
+    max-width: var(--width-max);
+    min-width: var(--width-min);
+}
