@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+@import url('./cores.css');
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 0 auto;
+    max-width: var(--width-max);
+    background-color: var(--background-color);
+}
+
+main{
+    color: var(--text-color);
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 1.25rem; /* 20px */
+    padding-top: 7rem;
+}
+
+.ficha-container {
+    max-width: 37.5rem; /* 600px */
+    margin: auto;
+    padding: 1.25rem; /* 20px */
+    background-color: var(--container-bg);
+    border: 0.125rem solid var(--border-color); /* 2px */
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0 0.9375rem var(--box-shadow-color); /* 15px */
+}
+
+h1 {
+    text-align: center;
+    color: var(--highlight-color);
+    font-size: 1.8rem; /* 1.8em */
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.rpg-table {
+    /* width: 100%; */
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.rpg-table th, .rpg-table td {
+    padding: 0.625rem; /* 10px */
+    border: 0.0625rem solid var(--border-color); /* 1px */
+}
+
+.rpg-table input[type="text"],
+.rpg-table input[type="number"],
+.rpg-table select {
+    width: 90%;
+    padding: 0.3125rem; /* 5px */
+    color: var(--text-color);
+    text-align: center;
+    background-color: var(--input-bg);
+    border: 0.0625rem solid var(--border-color); /* 1px */
+    border-radius: 0.3125rem; /* 5px */
+}
+
+.rpg-table tr:nth-child(even) {
+    background-color: var(--row-alt-bg);
+}
+
+.rpg-table input[type="text"]:focus,
+.rpg-table input[type="number"]:focus,
+.rpg-table select:focus {
+    outline: none;
+    border-color: var(--highlight-color);
+}
+
+.rpg-table .modifier-column {
+    width: 5rem; /* Ajuste o valor conforme necessário */
+    text-align: center;
+}
+
+.rpg-table .value-column {
+    width: 7rem; /* Ajuste o valor conforme necessário */
+    text-align: center;
+}
