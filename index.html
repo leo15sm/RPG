@@ -23,31 +23,58 @@
 <body>
     <nav id="out-nav"></nav>
     <main>
+        <h1>Contos da Obscuridade</h1>
         <section class="ficha-container">
-            <h1>Contos da Obscuridade</h1>
             
-            <!-- Tabela de bild -->
+            <!-- Tabela de classe -->
+            <table class="rpg-table">
+                <thead>
+                    <tr>
+                        <th>Classe</th>
+                        <th>Grau</th>
+                    </tr>
+                    <tr>
+                        <td class="raca-column">
+                            <select name="raca" id="classe-select-1">
+                                <!-- As opções serão adicionadas aqui pelo JavaScript -->
+                            </select>
+                        </td>
+                        <td class="grau-column"><input type="text" name="grau-c1"></td>
+                    </tr>
+                    <tr>    
+                        <td class="raca-column">
+                            <select name="raca" id="classe-select-2">
+                                <!-- As opções serão adicionadas aqui pelo JavaScript -->
+                            </select>
+                        </td>
+                        <td class="grau-column"><input type="text" name="grau-c3"></td>
+                    </tr>
+                    <tr>
+                        <td class="raca-column">
+                            <select name="raca" id="classe-select-3">
+                                <!-- As opções serão adicionadas aqui pelo JavaScript -->
+                            </select>
+                        </td>
+                        <td class="grau-column"><input type="text" name="grau-c3"></td>
+                    </tr>
+                            
+                    <tr>
+                        <td class="raca-column">
+                            <select name="raca" id="classe-select-4">
+                                <!-- As opções serão adicionadas aqui pelo JavaScript -->
+                            </select>
+                        </td>
+                        <td class="grau-column"><input type="text" name="grau-c4"></td>
+                    </tr>
+                </thead>
+            </table>
+            
+            <h1></h1>
+            <!-- Tabela de raça -->
             <table class="rpg-table">
                 <tr>
-                    <td>Classe 1</td>
-                    <td><input type="text" name="classe1"></td>
-                </tr>
-                <tr>    
-                    <td>Classe 2</td>
-                    <td><input type="text" name="classe2"></td>
-                </tr>
-                <tr>
-                    <td>Classe 3</td>
-                    <td><input type="text" name="classe3"></td>
-                </tr>
-                        
-                <tr>
-                    <td>Classe 4</td>
-                    <td><input type="text" name="classe4"></td>
-                </tr>
-                <tr>
                     <td>Raça</td>
-                    <td>
+                    <td class="raca-column">
                         <select name="raca" id="raca-select">
                             <!-- As opções serão adicionadas aqui pelo JavaScript -->
                         </select>
