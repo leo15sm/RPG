@@ -18,119 +18,98 @@
 
     <!-- SCRIPTS JS -->
     <script defer src="../js/script.js"></script>
-    <script type="module" defer src="./js/ficha.js"></script>
+    <script type="module" defer src="../js/ficha.js"></script>
 </head>
 <body>
     <nav id="out-nav"></nav>
-    <main>
+    <header>
         <h1>Contos da Obscuridade</h1>
-        <section class="ficha-container">
-            
-            <!-- Tabela de classe -->
-            <table class="rpg-table">
-                <thead>
+    </header>
+    <main class="ficha-container">
+        <section class="ficha-row">
+            <section class="ficha-colum">
+                 <!-- Tabela de raça -->
+                <table class="rpg-table">
                     <tr>
-                        <th>Classe</th>
-                        <th>Grau</th>
-                    </tr>
-                    <tr>
-                        <td class="raca-column">
-                            <select name="raca" id="classe-select-1">
+                        <td>Raça</td>
+                        <td>
+                            <select name="raca" id="raca-select" class="dados-column">
                                 <!-- As opções serão adicionadas aqui pelo JavaScript -->
                             </select>
                         </td>
-                        <td class="grau-column"><input type="text" name="grau-c1"></td>
-                    </tr>
-                    <tr>    
-                        <td class="raca-column">
-                            <select name="raca" id="classe-select-2">
-                                <!-- As opções serão adicionadas aqui pelo JavaScript -->
-                            </select>
-                        </td>
-                        <td class="grau-column"><input type="text" name="grau-c3"></td>
                     </tr>
                     <tr>
-                        <td class="raca-column">
-                            <select name="raca" id="classe-select-3">
-                                <!-- As opções serão adicionadas aqui pelo JavaScript -->
-                            </select>
-                        </td>
-                        <td class="grau-column"><input type="text" name="grau-c3"></td>
+                        <td>nivel</td>
+                        <td><input type="text" id="nivel" name="nivel"></td>
                     </tr>
-                            
                     <tr>
-                        <td class="raca-column">
-                            <select name="raca" id="classe-select-4">
-                                <!-- As opções serão adicionadas aqui pelo JavaScript -->
-                            </select>
-                        </td>
-                        <td class="grau-column"><input type="text" name="grau-c4"></td>
+                        <td>escala</td>
+                        <td><input type="text" id="escala" name="escala"></td>
                     </tr>
-                </thead>
-            </table>
-            
-            <h1></h1>
-            <!-- Tabela de raça -->
-            <table class="rpg-table">
-                <tr>
-                    <td>Raça</td>
-                    <td class="raca-column">
-                        <select name="raca" id="raca-select">
-                            <!-- As opções serão adicionadas aqui pelo JavaScript -->
-                        </select>
-                    </td>
-                </tr>
-            </table>
+                </table>
+                
+                <br>
 
-            <h1>Ficha de Combate</h1>
-           
+                <!-- Tabela de classe -->
+                <table class="rpg-table">
+                    <thead>
+                        <tr>
+                            <th>Classe</th>
+                            <th>Grau</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="classe" id="classe-select-1" class="dados-column">
+                                    <!-- As opções serão adicionadas aqui pelo JavaScript -->
+                                </select>
+                            </td>
+                            <td class="grau-column"><input type="text" name="grau-c1"></td>
+                        </tr>
+                        <tr>    
+                            <td>
+                                <select name="classe" id="classe-select-2" class="dados-column">
+                                    <!-- As opções serão adicionadas aqui pelo JavaScript -->
+                                </select>
+                            </td>
+                            <td class="grau-column"><input type="text" name="grau-c2"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="classe" id="classe-select-3" class="dados-column">
+                                    <!-- As opções serão adicionadas aqui pelo JavaScript -->
+                                </select>
+                            </td>
+                            <td class="grau-column"><input type="text" name="grau-c3"></td>
+                        </tr>
+                                
+                        <tr>
+                            <td>
+                                <select name="classe" id="classe-select-4" class="dados-column">
+                                    <!-- As opções serão adicionadas aqui pelo JavaScript -->
+                                </select>
+                            </td>
+                            <td class="grau-column"><input type="text" name="grau-c4"></td>
+                        </tr>
+                    </thead>
+                </table>
+            </section>
+                
             <!-- Tabela de Atributos -->
-            <table class="rpg-table">
-                <thead>
-                    <tr>
-                        <th>Atributo</th>
-                        <th class="value-column">Valores</th>
-                        <th class="modifier-column">Mod</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Sabedoria</td>
-                        <td class="value-column"><input type="number" name="sabedoria" readonly></td>
-                        <td class="modifier-column"><input type="number" name="mod_sabedoria" readonly></td>
-                    </tr>
-                    <tr>
-                        <td>Intelecto</td>
-                        <td class="value-column"><input type="number" name="intelecto" readonly></td>
-                        <td class="modifier-column"><input type="number" name="mod_intelecto" readonly></td>
-                    </tr>
-                    <tr>
-                        <td>Carisma</td>
-                        <td class="value-column"><input type="number" name="carisma" readonly></td>
-                        <td class="modifier-column"><input type="number" name="mod_carisma" readonly></td>
-                    </tr>
-                    <tr>
-                        <td>Destreza</td>
-                        <td class="value-column"><input type="number" name="destreza" readonly></td>
-                        <td class="modifier-column"><input type="number" name="mod_destreza" readonly></td>
-                    </tr>
-                    <tr>
-                        <td>Força</td>
-                        <td class="value-column"><input type="number" name="forca" readonly></td>
-                        <td class="modifier-column"><input type="number" name="mod_forca" readonly></td>
-                    </tr>
-                    <tr>
-                        <td>Essência</td>
-                        <td class="value-column"><input type="number" name="essencia" readonly></td>
-                        <td class="modifier-column"><input type="number" name="mod_essencia" readonly></td>
-                    </tr>
-                    <tr>
-                        <td>Controle</td>
-                        <td class="value-column"><input type="number" name="controle" readonly></td>
-                        <td class="modifier-column"><input type="number" name="mod_controle" readonly></td>
-                    </tr>
-                </tbody>
+            <table id="atributos" class="rpg-table">
+                 <!-- As linhas e colunas serão adicionadas pelo JavaScript -->
+                <thead></thead>
+                <tbody></tbody>
             </table>
+        </section>
+        
+        <br>
+        <section class="ficha-colum">
+             <!-- Tabela de Atributos de Combate -->           
+            <table id="atr-combate" class="rpg-table">
+                <!-- As linhas e colunas serão adicionadas pelo JavaScript -->
+               <thead></thead>
+               <tbody></tbody>
+           </table>
         </section>
     </main>
 </body>

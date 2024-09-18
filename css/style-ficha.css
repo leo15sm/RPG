@@ -12,22 +12,31 @@ body {
     background-color: var(--background-color);
 }
 
-main{
-    color: var(--text-color);
+header{
+    padding-top: 6rem;
     font-family: 'Cinzel', serif;
-    margin: 0;
-    padding: 1.25rem; /* 20px */
-    padding-top: 5rem;
 }
 
-.ficha-container {
-    max-width: 37.5rem; /* 600px */
-    margin: auto;
+.ficha-container{
+    color: var(--text-color);
+    font-family: 'Cinzel', serif;
+    margin: 0 auto;
     padding: 1.25rem; /* 20px */
+    width: 80%;
     background-color: var(--container-bg);
     border: 0.125rem solid var(--border-color); /* 2px */
     border-radius: 0.625rem; /* 10px */
     box-shadow: 0 0 0.9375rem var(--box-shadow-color); /* 15px */
+
+}
+
+.ficha-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.ficha-colum {
+    margin: 0 auto;
 }
 
 h1 {
@@ -52,7 +61,7 @@ h1 {
 .rpg-table input[type="text"],
 .rpg-table input[type="number"],
 .rpg-table select {
-    width: 90%;
+    width: 5rem;
     padding: 0.3125rem; /* 5px */
     color: var(--text-color);
     text-align: center;
@@ -72,17 +81,14 @@ h1 {
     border-color: var(--highlight-color);
 }
 
-.rpg-table .modifier-column {
-    width: 4rem;
+.rpg-table .dados-column {
+    width: 8rem; 
 }
 
-.rpg-table .value-column {
-    width: 5rem; 
+.grau-column input[type="text"]{
+    width: 3rem;
 }
 
-.rpg-table .raca-column {
-    width: 7rem; 
-}
-.grau-column{
+.colum-mod{
     width: 3rem;
 }

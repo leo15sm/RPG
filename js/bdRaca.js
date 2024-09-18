@@ -1,5 +1,15 @@
 export const raca = [
 {
+    nome: "",
+    sabedoria: '0',
+    intelecto: '0',
+    carisma: '0',
+    destreza: '0',
+    forca: '0',
+    essencia: '0',
+    controle: '0'
+},
+    {
     nome: "Humano",
     sabedoria: '2',
     intelecto: '2',

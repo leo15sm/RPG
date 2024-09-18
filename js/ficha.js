@@ -1,6 +1,10 @@
 import { raca } from './bdRaca.js';
+import { atributos } from './bdFicha.js';
 
+// Chamar a função quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', function() {
+    criarTabela(atributos[0], 'atributos');
+    criarTabela(atributos[1], 'atr-combate');
     controler(raca, 'raca-select');
 });
 
@@ -33,19 +37,54 @@ function controler(dadosImport, SectionId){
 }
 
 function updateFields(raca) {
-    document.querySelector('input[name="sabedoria"]').value = raca.sabedoria*10;
-    document.querySelector('input[name="intelecto"]').value = raca.intelecto*10;
-    document.querySelector('input[name="carisma"]').value = raca.carisma*10;
-    document.querySelector('input[name="destreza"]').value = raca.destreza*10;
-    document.querySelector('input[name="forca"]').value = raca.forca*10;
-    document.querySelector('input[name="essencia"]').value = raca.essencia*10;
-    document.querySelector('input[name="controle"]').value = raca.controle*10;
-
-    document.querySelector('input[name="mod_sabedoria"]').value = raca.sabedoria;
-    document.querySelector('input[name="mod_intelecto"]').value = raca.intelecto;
-    document.querySelector('input[name="mod_carisma"]').value = raca.carisma;
-    document.querySelector('input[name="mod_destreza"]').value = raca.destreza;
-    document.querySelector('input[name="mod_forca"]').value = raca.forca;
-    document.querySelector('input[name="mod_essencia"]').value = raca.essencia;
-    document.querySelector('input[name="mod_controle"]').value = raca.controle;
+    // Atualiza os campos da tabela de atributos
+    atributos[0].linhas.forEach(linha => {
+        document.querySelector(`input[name="valores_${linha}"]`).value = raca[linha] * 10;
+        document.querySelector(`input[name="mod_${linha}"]`).value = raca[linha];
+    });
+    
+    // Obtém os valores dos campos de entrada
+    const nivel = parseFloat(document.getElementById('nivel').value) || 0;
+    const escala = parseFloat(document.querySelector('escala').value) || 0;
 }
+
+function criarTabela(dados, idTabela) {
+    const tabela = document.getElementById(idTabela);
+
+    // Limpar o conteúdo da tabela
+    tabela.innerHTML = '';
+
+    // Adicionar cabeçalho
+    const thead = tabela.createTHead();
+    const headerRow = thead.insertRow();
+    
+    // Adiciona cabeçalhos dinamicamente baseado nas colunas
+    dados.colunas.forEach(coluna => {
+        const th = document.createElement('th');
+        th.textContent = coluna.charAt(0).toUpperCase() + coluna.slice(1);
+        // th.classList.add(`th-${coluna}`); // Adiciona a classe 'th-coluna'
+        headerRow.appendChild(th);
+    });
+
+    // Adicionar corpo da tabela
+    const tbody = tabela.createTBody();
+    dados.linhas.forEach(linha => {
+        const tr = tbody.insertRow();
+        const nomeAtributo = linha.charAt(0).toUpperCase() + linha.slice(1);
+
+        // Adicionar células para cada coluna especificada
+        dados.colunas.forEach(coluna => {
+            const td = tr.insertCell();
+            if (coluna === 'atributos') {
+                td.textContent = nomeAtributo; // Nome do atributo para a coluna 'atributos'
+            } else {
+                const input = document.createElement('input');
+                input.type = 'number';
+                input.name = `${coluna}_${linha}`;
+                input.readOnly = true;
+                td.appendChild(input);
+            }
+        });
+    });
+}
+

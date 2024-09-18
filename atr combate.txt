@@ -1,0 +1,21 @@
+HP = nível * escala * essencia*10
+
+ataque = escala + (forca/2)
+
+defesa = escala + (( forca + essencia )/2)
+
+especial ataque = escala + (( intelecto+ destreza )/2)
+
+especial defesa= escala + (( carisma + essencia)/2)
+
+reflexo = escala + (( sabedoria + destreza )/2)
+
+velocidade = escala + (( sabedoria + forca )/2)
+
+instinto = escala + (( carisma + destreza )/2)
+
+Mobilidade = escala + (( destreza + forca )/2)
+
+Pontaria = 5 + ( destreza + intelecto)
+
+precisao = 5 + ( destreza + controle )/2
