@@ -92,3 +92,17 @@ h1 {
 .colum-mod{
     width: 3rem;
 }
+
+.especial {
+    text-transform: capitalize; /* Capitaliza a primeira letra de cada palavra */
+    white-space: pre; /* Preserve espaços em branco */
+}
+
+.especial::after {
+    content: ' '; /* Adiciona um espaço após a palavra "especial" */
+}
+
+/* Se quiser, você pode usar um pseudo-elemento para separar as palavras */
+.especial {
+    display: inline-block; /* Garante que o pseudo-elemento funcione corretamente */
+}
