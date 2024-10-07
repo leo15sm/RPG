@@ -10,11 +10,12 @@ export class Atributos{
 }
 
 export class Personagem{
-    constructor(player, nome, filho, classe, xp, nivel, skill, upgrade, atributos){
+    constructor(player, nome, filho, classe, oficio, xp, nivel, skill, upgrade, atributos){
         this.player = player;
         this.nome = nome;
         this.filho = filho;
         this.classe = classe;
+        this.oficio = oficio;
         this.xp = xp;
         this.nivel = nivel;
         this.skill = skill;
