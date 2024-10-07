@@ -1,30 +1,22 @@
-import { Raca, Classe, Atributos } from './classAtributos.js';
+import { Atributos, Personagem } from './classAtributos.js';
 
 export const atributos = [
     {
         colunas: ["atributos", "valores", "mod"],
-        linhas: ["sabedoria", "intelecto", "carisma", "destreza", "forca", "essencia", "controle"],
-    },
-    {
-        colunas: ["atributos", "valores"],
-        linhas: ["HP","ataque", "defesa", "especialAtaque", "especialDefesa", "reflexo",
-             "velocidade", "instinto", "mobilidade", "pontaria", "precisao"],
+        linhas: ["sabedoria", "intelecto", "carisma", "destreza", "forca", "vitalidade"],
     },
 ];
 
-export const racas = [
-    new Raca("", new Atributos(0, 0, 0, 0, 0, 0, 0)),
-    new Raca("Humano", new Atributos(2, 2, 2, 2, 2, 2, 2)),
-    new Raca("Canção", new Atributos(5, 3, 10, 4, 2, 4, 2)),
-    new Raca("Furia", new Atributos(4, 3, 3, 4, 10, 6, 1)),
-    new Raca("Herudita", new Atributos(5, 10, 4, 3, 2, 3, 4))
+export const players = [
+    new Personagem("", "", "", "", 0, 0, 0, 0, new Atributos(0, 0, 0, 0, 0, 0)),
+    new Personagem("Breno", "", "", "", 0, 0, 0, 0, new Atributos(0, 0, 0, 0, 0, 0)),
+    new Personagem("João", "", "", "", 0, 0, 0, 0, new Atributos(0, 0, 0, 0, 0, 0)),
+    new Personagem("Lucas Black", "Naguine", "Medusa", "Druida", 130, 0, 4, 1, new Atributos(20, 14, 16, 12, 10, 14)),
+    new Personagem("Lucas White", "", "", "", 0, 0, 0, 0, new Atributos(0, 0, 0, 0, 0, 0)),
+    new Personagem("Lyann Black", "", "", "", 0, 0, 0, 0, new Atributos(0, 0, 0, 0, 0, 0)),
+    new Personagem("Lyann White", "", "", "", 0, 0, 0, 0, new Atributos(0, 0, 0, 0, 0, 0)),
+    new Personagem("Willian", "", "", "", 0, 0, 0, 0, new Atributos(0, 0, 0, 0, 0, 0)),
 ];
 
-export const classes = [
-    new Classe("",["", ""], new Atributos(0, 0, 0, 0, 0, 0, 0)),
-    new Classe("Mago",["Conjurador"], new Atributos(1, 4, 1, 0, 0, 0, 1)),
-    new Classe("Druida",["Conjurador", "Mana"], new Atributos(4, 0, 0, 0, 0, 2, 2)),
-    new Classe("Ninja",["Geral", "Assassino"], new Atributos(0, 3, 3, 3, 1, 0, 0)),
-];
-
-//sabedoria-intelecto-carisma-destreza-forca-essencia-controle
+//player, nome, filho, classe, xp, nivel, skill, upgrade, atributos
+//sab, int, car, des, forc, vit

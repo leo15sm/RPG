@@ -23,93 +23,66 @@
 <body>
     <nav id="out-nav"></nav>
     <header>
-        <h1>Contos da Obscuridade</h1>
+        <h1>Arcanus</h1>
     </header>
     <main class="ficha-container">
-        <section class="ficha-row">
-            <section class="ficha-colum">
-                 <!-- Tabela de raça -->
-                <table class="rpg-table">
-                    <tr>
-                        <td>Raça</td>
-                        <td>
-                            <select name="raca" id="selectRaca" class="dados-column">
-                                <!-- As opções serão adicionadas aqui pelo JavaScript -->
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>nivel</td>
-                        <td><input type="text" id="nivel" name="nivel"></td>
-                    </tr>
-                    <tr>
-                        <td>escala</td>
-                        <td><input type="text" id="escala" name="escala"></td>
-                    </tr>
-                </table>
-                
-                <br>
+        <section class="ficha-colum">
+            <!-- Tabela de raça -->
+            <table class="rpg-table">
+                <tr>
+                    <td>jogador</td>
+                    <td>
+                        <select name="jogador" id="selectJogador" class="dados-column">
+                            <!-- As opções serão adicionadas aqui pelo JavaScript -->
+                        </select>
+                    </td>
+                </tr>
 
-                <!-- Tabela de classe -->
-                <table class="rpg-table">
-                    <thead>
-                        <tr>
-                            <th>Classe</th>
-                            <th>Grau</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <select name="classe" id="selectClasse1" class="dados-column">
-                                    <!-- As opções serão adicionadas aqui pelo JavaScript -->
-                                </select>
-                            </td>
-                            <td class="grau-column"><input type="text" name="grau-c1"></td>
-                        </tr>
-                        <tr>    
-                            <td>
-                                <select name="classe" id="selectClasse2" class="dados-column">
-                                    <!-- As opções serão adicionadas aqui pelo JavaScript -->
-                                </select>
-                            </td>
-                            <td class="grau-column"><input type="text" name="grau-c2"></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <select name="classe" id="selectClasse3" class="dados-column">
-                                    <!-- As opções serão adicionadas aqui pelo JavaScript -->
-                                </select>
-                            </td>
-                            <td class="grau-column"><input type="text" name="grau-c3"></td>
-                        </tr>
-                                
-                        <tr>
-                            <td>
-                                <select name="classe" id="selectClasse4" class="dados-column">
-                                    <!-- As opções serão adicionadas aqui pelo JavaScript -->
-                                </select>
-                            </td>
-                            <td class="grau-column"><input type="text" name="grau-c4"></td>
-                        </tr>
-                    </thead>
-                </table>
-            </section>
+                <tr>
+                    <td>nome</td>
+                    <td><input type="text" id="nome" name="nome"></td>
+                </tr>
+
+                <tr>
+                    <td>afiliação</td>
+                    <td><input type="text" id="filho" name="filho"></td>
+                </tr>
+
+                <tr>
+                    <td>classe</td>
+                    <td><input type="text" id="classe" name="classe"></td>
+                </tr>
+
+                <tr>
+                    <td>xp</td>
+                    <td><input type="text" id="xp" name="xp"></td>
+                </tr>
+
+                <tr>
+                    <td>nivel</td>
+                    <td><input type="text" id="nivel" name="nivel"></td>
+                </tr>
+
+                <tr>
+                    <td>skill</td>
+                    <td><input type="text" id="skill" name="skill"></td>
+                </tr>
+
+                <tr>
+                    <td>upgrade</td>
+                    <td><input type="text" id="upgrade" name="upgrade"></td>
+                </tr>
+            </table>
                 
+            <br>
+
+
             <!-- Tabela de Atributos -->
             <table id="atributos" class="rpg-table">
                  <!-- As linhas e colunas serão adicionadas pelo JavaScript -->
                 <thead></thead>
                 <tbody></tbody>
             </table>
-        </section>
-        
-        <br>
-        <section class="ficha-colum">
-             <!-- Tabela de Atributos de Combate -->           
-            <table id="atrCombate" class="rpg-table">
-                <!-- As linhas e colunas serão adicionadas pelo JavaScript -->
-               <thead></thead>
-               <tbody></tbody>
-           </table>
         </section>
     </main>
 </body>

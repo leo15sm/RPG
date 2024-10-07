@@ -32,7 +32,7 @@ header{
 
 .ficha-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .ficha-colum {
