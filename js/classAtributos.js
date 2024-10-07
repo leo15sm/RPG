@@ -8,7 +8,7 @@ export class Atributos{
         this.vitalidade = vit;
     }
 }
-
+//add gold, elemento e pericias
 export class Personagem{
     constructor(player, nome, filho, classe, oficio, xp, nivel, skill, upgrade, atributos){
         this.player = player;
