@@ -9,7 +9,7 @@ export const atributos = [
 
 export const players = [
     new Personagem("", "", "", "", "", 0, 0, 0, 0, new Atributos(0, 0, 0, 0, 0, 0)),
-    new Personagem("Breno", "", "Delfos", "Arqueiro", "Domador", 0, 0, 0, 0, new Atributos(16, 14, 14, 20, 10, 12)),
+    new Personagem("Breno", "Solon", "Delfos", "Feiticeiro", "Domador", 0, 0, 0, 0, new Atributos(16, 14, 14, 20, 10, 12)),
     new Personagem("Ernani", "Necron", "Thanatos", "Mago", "Arcanista", 12, 0, 0.2, 0, new Atributos(14, 16, 14, 12, 8, 10)),
     new Personagem("João", "", "", "", "", 0, 0, 0, 0, new Atributos(0, 0, 0, 0, 0, 0)),
     new Personagem("Lucas Black", "Naguine", "Medusa", "Druida", "Domador", 130, 0, 4, 1, new Atributos(20, 14, 16, 12, 10, 14)),
