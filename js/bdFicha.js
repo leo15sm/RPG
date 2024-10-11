@@ -19,14 +19,14 @@ export const players = [
         "Breno", "Solon", 
         new Bild("Delfos", "Feiticeiro", "Domador", "Oráculo", "Cor: Laranja"),
         new Atributos(10, 12, 20, 14, 16, 14),
-        new Progresso(0, 60, 7.8, 0, 1, 5.05),
+        new Progresso(0, 60, 9.4, 0, 1, 5.05),
        ),
     /*###########################################*/
     new Personagem(
         "Ernani", "Necron", 
         new Bild("Thanatos", "Mago", "Arcanista", "Morte", "Fogo | Vento"),
         new Atributos(8, 10, 12, 20, 14, 14),
-        new Progresso(0, 68, 7.8, 0, 2, 1.24),
+        new Progresso(0, 68, 8, 0, 2, 1.24),
        ),
     /*###########################################*/
     new Personagem(
@@ -40,7 +40,7 @@ export const players = [
         "Lucas Black", "Naguine", 
         new Bild("Medusa", "Druida", "Domador", "Górgona", "Veneno"),
         new Atributos(10, 14, 12, 14, 20, 16),
-        new Progresso(0, 130, 9, 1, 3, 15.28),
+        new Progresso(0, 130, 9.4, 1, 3, 15.28),
        ),
     /*###########################################*/
     new Personagem(
@@ -54,14 +54,14 @@ export const players = [
         "Lyann Black", "Lucius", 
         new Bild("Delfos", "Arqueiro", "Caçador", "Oráculo", "Cor: Vermelho"),
         new Atributos(10, 12, 20, 14, 16, 14),
-        new Progresso(0, 80, 7.8, 0, 0, 5.05),
+        new Progresso(0, 80, 9.6, 0, 1, 5.05),
        ),
     /*###########################################*/
     new Personagem(
         "Lyann White", "Neko", 
         new Bild("Nike", "Mago", "Acadêmico", "Vitória", "Água | Terra"),
         new Atributos(8, 10, 14, 20, 16, 12),
-        new Progresso(0, 112, 9, 2, 5, 3.05),
+        new Progresso(0, 112, 9.1, 2, 5, 3.05),
        ),
     /*###########################################*/
     new Personagem(
