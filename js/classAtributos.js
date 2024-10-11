@@ -1,26 +1,43 @@
 export class Atributos{
-    constructor(sab, int, car, des, forc, vit){
-        this.sabedoria = sab;
-        this.intelecto = int;
-        this.carisma = car;
-        this.destreza = des;
+    constructor(forc, vit, des, int, sab, car){
         this.forca = forc;
         this.vitalidade = vit;
+        this.destreza = des;
+        this.intelecto = int;
+        this.sabedoria = sab;
+        this.carisma = car;
     }
 }
-//add gold, elemento e pericias
-export class Personagem{
-    constructor(player, nome, filho, classe, oficio, xp, nivel, skill, upgrade, atributos){
-        this.player = player;
-        this.nome = nome;
-        this.filho = filho;
+
+export class Bild{
+    constructor(ascendente, classe, oficio, dominio, elemento){
+        this.ascendente = ascendente;
         this.classe = classe;
         this.oficio = oficio;
-        this.xp = xp;
+        this.dominio = dominio;
+        this.elemento = elemento;
+    }
+}
+
+
+export class Progresso{
+    constructor(nivel, xp, skill, upgrade, missao, gold){
         this.nivel = nivel;
+        this.xp = xp;
         this.skill = skill;
         this.upgrade = upgrade;
+        this.missao = missao;
+        this.gold = gold;
+    }
+}
+
+export class Personagem{
+    constructor( player, nome, bild, atributos, progresso){
+        this.player = player;
+        this.nome = nome;
+        this.bild = bild;
         this.atributos = atributos; 
+        this.progresso = progresso;
     }
 
       // Método para calcular o modificador de um único atributo

@@ -22,7 +22,7 @@ header{
     font-family: 'Cinzel', serif;
     margin: 0 auto;
     padding: 1.25rem; /* 20px */
-    width: 80%;
+    width: 70%;
     background-color: var(--container-bg);
     border: 0.125rem solid var(--border-color); /* 2px */
     border-radius: 0.625rem; /* 10px */
@@ -61,13 +61,20 @@ h1 {
 .rpg-table input[type="text"],
 .rpg-table input[type="number"],
 .rpg-table select {
-    width: 5rem;
     padding: 0.3125rem; /* 5px */
     color: var(--text-color);
-    text-align: center;
+    text-align: right;
     background-color: var(--input-bg);
     border: 0.0625rem solid var(--border-color); /* 1px */
     border-radius: 0.3125rem; /* 5px */
+}
+
+.rpg-table input[type="text"]{
+    width: 6rem;
+}
+
+.rpg-table input[type="number"]{
+    width: 3.5rem;
 }
 
 .rpg-table tr:nth-child(even) {
@@ -82,15 +89,7 @@ h1 {
 }
 
 .rpg-table .dados-column {
-    width: 8rem; 
-}
-
-.grau-column input[type="text"]{
-    width: 3rem;
-}
-
-.colum-mod{
-    width: 3rem;
+    width: 7rem; 
 }
 
 .especial {

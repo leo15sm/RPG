@@ -25,13 +25,17 @@ export function selectJogadores(List, SectionId) {
         if (personagem) {
             // Preenche os campos básicos com os dados do personagem
             document.getElementById("nome").value = personagem.nome;
-            document.getElementById("filho").value = personagem.filho;
-            document.getElementById("classe").value = personagem.classe;
-            document.getElementById("oficio").value = personagem.oficio;
-            document.getElementById("xp").value = personagem.xp;
-            document.getElementById("nivel").value = personagem.nivel;
-            document.getElementById("skill").value = personagem.skill;
-            document.getElementById("upgrade").value = personagem.upgrade;
+            document.getElementById("filho").value = personagem.bild.ascendente;
+            document.getElementById("classe").value = personagem.bild.classe;
+            document.getElementById("oficio").value = personagem.bild.oficio;
+            document.getElementById("xp").value = personagem.progresso.xp;
+            document.getElementById("nivel").value = personagem.progresso.nivel;
+            document.getElementById("skill").value = personagem.progresso.skill;
+            document.getElementById("upgrade").value = personagem.progresso.upgrade;
+            document.getElementById("missao").value = personagem.progresso.missao;
+            document.getElementById("gold").value = personagem.progresso.gold;
+            document.getElementById("elementos").value = personagem.bild.elemento;
+            document.getElementById("dominio").value = personagem.bild.dominio;
 
             // Preenche os atributos e seus modificadores
             const atributos = personagem.atributos;
@@ -108,7 +112,6 @@ export function criarTabela(dados, idTabela) {
     dados.colunas.forEach(coluna => {
         const th = document.createElement('th');
         th.textContent = coluna.charAt(0).toUpperCase() + coluna.slice(1);
-        // th.classList.add(`th-${coluna}`); // Adiciona a classe 'th-coluna'
         headerRow.appendChild(th);
     });
 
