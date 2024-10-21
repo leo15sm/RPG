@@ -2,7 +2,7 @@ import {Magias} from './classAtributos.js';
 
 export const escolas = [
     {
-        lista: ["arcana", "vento", "agua", "terra", "fogo"],
+        lista: ["arcana", "vento", "agua", "terra", "fogo", "luz", "trevas", "raio", "veneno", "divinação"],
     }
 ];
 
@@ -77,7 +77,7 @@ export const listMagias = [
     new Magias(
         "agua", "1", "Glifo do Aprimoramento", "súbita",
         "Escrita Mágica e Aqua Skim",
-        "Escrita mágica que melhora em 50% o efeito de suporte de uma magia, pode ser usado antes de conjurar uma magia."
+        "Escrita mágica que melhora em 50% o efeito de suporte de uma magia."
     ),
     new Magias(
         "agua", "1", "Criar Água", "rápida",
@@ -178,7 +178,7 @@ export const listMagias = [
     new Magias(
         "vento", "1", "Glifo da Expansão", "súbita",
         "Escrita mágica e Venti Skim.",
-        "Escrita mágica que melhora em 50% o efeito de alcance de uma magia, pode ser usado antes de conjurar uma magia."
+        "Escrita mágica que melhora em 50% o efeito de alcance de uma magia."
     ),
     new Magias(
         "vento", "1", "Criar Brisas", "rápida",
@@ -275,7 +275,7 @@ export const listMagias = [
     new Magias(
         "terra", "1", "Glifo da Defesa", "súbita",
         "Escrita mágica e Geo Skim.",
-        "Escrita mágica que melhora em 50% o efeito de defesa de uma magia, pode ser usado antes de conjurar uma magia."
+        "Escrita mágica que melhora em 50% o efeito de defesa de uma magia."
     ),
     new Magias(
         "terra", "1", "Geo Modelagem", "rápida",
@@ -372,7 +372,7 @@ export const listMagias = [
     new Magias(
         "fogo", "1", "Glifo do Ataque", "súbito",
         "Escrita mágica e Flama Skim.",
-        "Escrita mágica que melhora em 50% o efeito ofensivo de uma magia, pode ser usado antes de conjurar uma magia."
+        "Escrita mágica que melhora em 50% o efeito ofensivo de uma magia."
     ),
     new Magias(
         "fogo", "1", "Fogos de Artifício", "rápido",
@@ -453,6 +453,463 @@ export const listMagias = [
         "fogo", "5", "Lazer de Ciclope", "súbito",
         "Fogo da Raposa e Runa do Ciclope.",
         "Disparo de lazer dos olhos, como um turno extra de olho mágico, prioridade de ação, causando o mesmo dano de uma esfera de fogo, tendo suas 2 vantagens para ataque."
+    ),
+    /*#####################################################################################*/
+    new Magias(
+        "vento", "3", "Punho de Vento", "lento",
+        "toque etéreo e implemento arcano",
+        "Um golpe corpo a corpo imbuído com áurea do vento, causando o efeito de contato e ganhando prioridade na ação"
+    ),
+    new Magias(
+        "agua", "3", "Punho de Agua", "lento",
+        "toque húmido e implemento arcano",
+        "Um golpe corpo a corpo imbuído com áurea da agua, causando o efeito de contato e ganhando prioridade na ação"
+    ),
+    new Magias(
+        "terra", "3", "Punho de Terra", "lento",
+        "toque petrificante e implemento arcano",
+        "Um golpe corpo a corpo imbuído com áurea da terra, causando o efeito de contato e ganhando prioridade na ação"
+    ),
+    new Magias(
+        "fogo", "3", "Punho de Fogo", "lento",
+        "toque flamejante e implemento arcano",
+        "Um golpe corpo a corpo imbuído com áurea do fogo, causando o efeito de contato e ganhando prioridade na ação"
+    ),
+    /*#####################################################################################*/
+    new Magias(
+        "raio", "0", "Eletro Skim", "súbita",
+        "Nenhum",
+        "Manifestação da essência do raio na forma de uma áurea que recobre o corpo do usuário, ganhando prioridade em todas as ações, além de reduzir as ações rápidas para súbitas."
+    ),
+    
+    new Magias(
+        "raio", "1", "Toque Elétrico", "súbita",
+        "Eletro Skim",
+        "Gerar o efeito de contato do raio, sendo este a paralisia."
+    ),
+    
+    new Magias(
+        "raio", "1", "Glifo da Aceleração", "súbita",
+        "Escrita mágica e Eletro Skim",
+        "Escrita mágica que acelera a ação de uma magia."
+    ),
+    
+    new Magias(
+        "raio", "1", "Glifo da Velocidade", "súbita",
+        "Escrita mágica e Eletro Skim",
+        "Escrita mágica que fornece prioridade de ação para uma magia."
+    ),
+    
+    new Magias(
+        "raio", "1", "Criar Corrente Elétrica", "rápida",
+        "Manifestar Magia e Eletro Skim",
+        "Criação de uma pequena corrente elétrica."
+    ),
+    
+    new Magias(
+        "raio", "2", "Arma Arcana do Raio", "súbita",
+        "Eletro Skim e Toque Eletrico",
+        "Reverte uma arma com a áurea mágica, fornecendo à mesma o efeito de contato da magia de toque do raio, por 10 rodadas."
+    ),
+    
+    new Magias(
+        "raio", "2", "Arcano do Raio", "súbita",
+        "Glifo da Aceleração ou Velocidade",
+        "Runa mágica cravada em um local, gerando uma vantagem aprimorada em habilidades de movimentação e habilidades com prioridade de ação."
+    ),
+    
+    new Magias(
+        "raio", "2", "Eletrificar Objeto", "rápida",
+        "Criar Corrente Elétrica",
+        "Eletrifica um objeto, permitindo usar da estática para colá-lo em algum lugar."
+    ),
+    
+    new Magias(
+        "raio", "2", "Esfera de Raio", "lenta",
+        "Eletro Skim e Magia de Ataque",
+        "Canalização de toda áurea mágica em uma esfera, ganhando duas vantagens para o ataque e causando paralisia."
+    ),
+    
+    new Magias(
+        "raio", "2", "Escudo de Raio", "lenta",
+        "Eletro Skim e Magia de Defesa",
+        "Criação de um escudo octogonal composto de áurea do raio, ativo por 5 rodadas ou até que um dano não destrua sua resistência (10 x mana gasto). As interações elementais se aplicam aqui, tendo armadura a golpes de energia e vulnerável a golpes de terra."
+    ),
+    
+    new Magias(
+        "raio", "3", "Campo Estático", "lenta",
+        "Eletrificar Objeto",
+        "Permite eletrificar o chão em uma zona de 12.000 m², prendendo tudo que estiver em contato com o solo por 1d6 turnos."
+    ),
+    
+    new Magias(
+        "raio", "3", "Armadura de Raio Menor", "rápida",
+        "Eletro Skim e Armadura Arcana",
+        "Armadura de raio com as prioridades do Eletro Skim, aumentando o redutor em 10 por 10 rodadas e dobrando o redutor contra danos energéticos. Enquanto estiver ativa, a mana skim não poderá ser trocada."
+    ),
+    
+    new Magias(
+        "raio", "3", "Passo de Raio", "rápida",
+        "Eletro Skim e Impulso Arcano",
+        "Canalização da áurea mágica apenas para as pernas, gerando um impulso de velocidade, ganhando uma vantagem aprimorada para esquiva e ataques de investida."
+    ),
+    
+    new Magias(
+        "raio", "3", "Punho de Raio", "lenta",
+        "Toque Elétrico e Implemento Arcano",
+        "Um golpe corpo a corpo imbuído com áurea do raio, causando o efeito de contato e ganhando prioridade na ação."
+    ),
+    
+    new Magias(
+        "raio", "3", "Golpe de Raio", "lenta",
+        "Esfera de Raio e Arma Arcana do Raio",
+        "Cria uma projeção de raio do golpe de uma arma, causando os efeitos da esfera de raio e o dano da arma."
+    ),
+    
+    new Magias(
+        "raio", "3", "Globo Eletrificado", "lenta",
+        "Esfera de Raio e Criar Corrente Elétrica",
+        "Cria-se uma esfera de raios com tentáculos de energia, causando o mesmo dano em todos que forem acertados."
+    ),
+    
+    new Magias(
+        "raio", "4", "Armada de Raio", "lenta",
+        "Arma Arcana e Esfera de Raio",
+        "Criação de 1d4 armas feitas de áurea do raio, que causam o dano do tipo de arma, mais os efeitos da esfera de raio, permanecendo em campo por 5 rodadas."
+    ),
+    
+    new Magias(
+        "raio", "4", "Thunder Walk", "lenta",
+        "Passo de Raio e Campo Estático",
+        "Permite formar a zona eletrificada durante 5 rodadas, podendo usar a estática para realizar um passe de raio por turno sem custos adicionais. Em combate, se o oponente não puder se mover, o passe de raio terá 1 Vantagem Absoluta."
+    ),
+    
+    new Magias(
+        "raio", "5", "Corrente do Trovão", "rápida",
+        "Campo Estático",
+        "Ao acertar um golpe do elemento raio em um alvo, pode usar essa magia para propagar 50% do dano que este tomar para até 5 alvos dentro de 2m de raio, causando paralisia."
+    ),
+    
+    new Magias(
+        "raio", "5", "Ascenção do Grifo", "lenta",
+        "Globo Eletrificado e Runa de Grifo",
+        "Cria-se plumas e garras feitas da essência do raio, que causam o efeito de toque, permitindo voo e prioridades de combate aéreo."
+    ),
+    /*#####################################################################################*/
+    // Ciclo 0
+    new Magias(
+        "divinação", "0", "Purificar Alimentos", "súbita",
+        "Nenhum",
+        "Remoção de impurezas em alimentos e líquidos, em quantidades pequenas."
+    ),
+
+    new Magias(
+        "divinação", "0", "Magia de Iluminação", "súbita",
+        "Nenhum",
+        "Controle básico da essência prateada, para produzir uma iluminação mística sobre um local."
+    ),
+
+    // Ciclo 1
+    new Magias(
+        "divinação", "1", "Magia de Cura", "rápida",
+        "Purificar Alimentos",
+        "Estimula a recuperação de tecidos, curando 10% de HP por uso."
+    ),
+
+    new Magias(
+        "divinação", "1", "Curar Ferimentos", "rápida",
+        "Purificar Alimentos",
+        "Remove efeitos negativos de ferimentos leves e graves por todo o corpo."
+    ),
+
+    new Magias(
+        "divinação", "1", "Magia de Detecção", "rápida",
+        "Magia de Iluminação",
+        "Pode ser usado como uma lente perceptiva para detectar algo da seguinte lista: Magia, Venenos ou Mortos vivos."
+    ),
+
+    new Magias(
+        "divinação", "1", "Magia de Orientação", "rápida",
+        "Magia de Iluminação",
+        "Garante proficiência III em testes de sobrevivência, para saber a direção de um caminho que já passou ou para se orientar em relação às cardinalidades."
+    ),
+
+    // Ciclo 2
+    new Magias(
+        "divinação", "2", "Regeneração", "lenta",
+        "Magias de Cura e Curar Ferimentos",
+        "Cria um pequeno véu prateado circundando o corpo, que restaura feridas leves e recupera 10% do HP por 5 turnos."
+    ),
+
+    new Magias(
+        "divinação", "2", "Abençoar Água", "rápida",
+        "Purificar Alimentos",
+        "Abençoa um recipiente pequeno com água para criar água benta."
+    ),
+
+    new Magias(
+        "divinação", "2", "Purificar Efeitos", "rápida",
+        "Curar Ferimentos",
+        "Remove efeitos negativos que ajam sobre a mente do alvo."
+    ),
+
+    new Magias(
+        "divinação", "2", "Percepção Extra", "súbita",
+        "Magias de Detecção",
+        "Permite jogar um teste extra de percepção."
+    ),
+
+    new Magias(
+        "divinação", "2", "Clarividência Menor", "lenta",
+        "Magia de Orientação",
+        "Permite vislumbrar no véu do destino uma indicação subjetiva para uma pergunta."
+    ),
+
+    new Magias(
+        "divinação", "2", "Ler Magias", "súbita",
+        "Magias de Detecção",
+        "Permite decifrar escritas mágicas em objetos, cenários ou em pessoas, garantindo a identificação de habilidades mágicas ou runas."
+    ),
+
+    // Ciclo 3
+    new Magias(
+        "divinação", "3", "Ver o Futuro", "lento",
+        "Clarividência Menor",
+        "Permite vislumbrar um evento que pode ocorrer em breve."
+    ),
+    new Magias(
+        "divinação", "3", "Criar Alimento", "lenta",
+        "Magias de Regeneração",
+        "Cria 1d4 frutos que servem para alimentação."
+    ),
+    new Magias(
+        "divinação", "3", "Criar Água", "lenta",
+        "Magias de Regeneração",
+        "Cria água suficiente para preencher um cantil."
+    ),
+    new Magias(
+        "divinação", "3", "Acalmar Animal", "rápida",
+        "Purificar Efeitos",
+        "Permite acalmar um animal que esteja enfurecido, podendo fazê-lo dormir."
+    ),
+    new Magias(
+        "divinação", "3", "Compreender Idiomas", "rápida",
+        "Ler Magias",
+        "Permite entender um idioma que esteja sendo falado ou que esteja escrito, desde que este seja comum."
+    ),
+
+    new Magias(
+        "divinação", "3", "Detecção Avançada", "lenta",
+        "Magia de Detecção",
+        "Permite identificar tudo que as magias de detecção encontram, mais esta lista: armadilhas, animais, bem, mal, ordem e caos."
+    ),
+
+    new Magias(
+        "divinação", "3", "Visão da Morte", "lenta",
+        "Magia de Detecção",
+        "Permite vislumbrar como uma criatura ou animal pode ser morta ou seus pontos fracos."
+    ),
+
+    // Ciclo 4
+    new Magias(
+        "divinação", "4", "Romper Morto Vivo", "lenta",
+        "Abençoar Água",
+        "Libera um projétil sagrado que causa danos críticos em mortos vivos, magias de cura melhoram essa habilidade."
+    ),
+
+    new Magias(
+        "divinação", "4", "Magia da Vitalidade", "rápida",
+        "Purificar Efeitos",
+        "Aumenta o HP em 10 pontos por 10 rodadas, se beneficiar de bônus de cura."
+    ),
+
+    new Magias(
+        "divinação", "4", "Magia de Resistência", "rápida",
+        "Purificar Efeitos",
+        "Aumenta o redutor em 5 pontos por 10 rodadas, se beneficiar de bônus de cura."
+    ),
+
+    new Magias(
+        "divinação", "4", "Purgar Ocultação", "rápida",
+        "Detecção Avançada",
+        "Permite anular efeitos de ocultação de ciclo equivalente."
+    ),
+
+    new Magias(
+        "divinação", "4", "Proteger Visão", "rápida",
+        "Detecção Avançada",
+        "Permite jogar um teste de resistência contra efeitos de contato de olhos mágicos ou de coisas que afetem diretamente a percepção."
+    ),
+
+    new Magias(
+        "divinação", "4", "Luz do dia", "lenta",
+        "Romper mortos vivos",
+        "Permite criar uma iluminação equivalente ao dia, afetando criaturas que tenham alguma interação com este clima."
+    ),
+    new Magias(
+        "divinação", "4", "Clareza Mental", "súbita",
+        "Ver o Futuro",
+        "Aumenta a capacidade de foco, permitindo ter sucesso em um teste mental."
+    ),
+    // Ciclo 5
+    new Magias(
+        "divinação", "5", "Adivinhação", "lento",
+        "Clareza Mental",
+        "Permite consultar um ser superior para obter conselhos sobre o futuro."
+    ),
+    new Magias(
+        "divinação", "5", "Visão do Passado", "lento",
+        "Clareza Mental",
+        "Permite reviver uma memória ou evento significativo que ocorreu no passado."
+    ),
+    new Magias(
+        "divinação", "5", "Aura do Ser", "súbita",
+        "Clareza Mental",
+        "Revela a verdadeira natureza e intenções de uma criatura, mostrando sua aura mágica."
+    ),
+    // Ciclo 6
+    new Magias(
+        "divinação", "6", "Olho do Destino", "lenta",
+        "Adivinhação",
+        "Revela uma visão do futuro, mostrando possíveis desdobramentos de uma situação atual, permitindo ao usuário se preparar."
+    ),
+    new Magias(
+        "divinação", "6", "Oração da Sabedoria", "lento",
+        "Adivinhação",
+        "Garante vantagem em testes de sabedoria por um breve período."
+    ),
+    new Magias(
+        "divinação", "6", "Escuta do Além", "lenta",
+        "Adivinhação",
+        "Permite ouvir conversas ou sons em uma área distante, como se estivesse presente no local."
+    ),
+    new Magias(
+        "divinação", "6", "Espelho da Verdade", "súbita",
+        "Visão do Passado",
+        "Permite ver uma verdade oculta sobre uma situação ou pessoa."
+    ),
+    // Ciclo 7
+    new Magias(
+        "divinação", "7", "Profecia", "lento",
+        "Oração da Sabedoria",
+        "Revela uma visão detalhada de um evento importante que está por vir."
+    ),
+    /*#####################################################################################*/
+    // Ciclo 0
+    new Magias(
+        "luz", "0", "Lumos Skim", "súbita",
+        "Nenhum",
+        "Manifestação da essência da luz na forma de uma áurea que recobre o corpo do usuário, ganhando imunidade a cegueira, removendo a sombra do usuário e melhoria de 10% em percepções."
+    ),
+
+    // Ciclo 1
+    new Magias(
+        "luz", "1", "Toque Luminoso", "súbita",
+        "Lumos Skim",
+        "Gerar o efeito de contato da luz, sendo este a santificação ou o dano radiante e cegueira."
+    ),
+
+    new Magias(
+        "luz", "1", "Glifo da Percepção", "súbita",
+        "Escrita mágica e Lumos Skim",
+        "Escrita mágica que melhora em 50% as prioridades de percepção e pontaria."
+    ),
+
+    new Magias(
+        "luz", "1", "Glifo da Radiância", "súbita",
+        "Escrita mágica e Lumos Skim",
+        "Escrita mágica que fornece prioridade de dano radiante ou efeito sagrado para magias."
+    ),
+
+    new Magias(
+        "luz", "1", "Holograma", "rápida",
+        "Manifestar Magia e Lumos Skim",
+        "Criação de imagens de luz."
+    ),
+
+    // Ciclo 2
+    new Magias(
+        "luz", "2", "Arma Arcana do Luz", "súbita",
+        "Lumos Skim e Toque Luminoso",
+        "Reverte uma arma com a áurea mágica, fornecendo o efeito de contato da magia de toque da luz por 10 rodadas."
+    ),
+
+    new Magias(
+        "luz", "2", "Arcano do Luz", "súbita",
+        "Glifo da Percepção ou Radiância",
+        "Runa mágica cravada em um local, gerando vantagem aprimorada em habilidades de movimentação e percepção."
+    ),
+
+    new Magias(
+        "luz", "2", "Magia de Miragem", "rápida",
+        "Holograma",
+        "Cria-se uma cópia sua para que imita seus movimentos para confundir o inimigo, dura 2 turnos."
+    ),
+
+    new Magias(
+        "luz", "2", "Esfera de Luz", "lenta",
+        "Lumos Skim e Magia de Ataque",
+        "Canalização de toda áurea mágica em uma esfera, ganhando uma vantagem aprimorada para o ataque e causando cegueira."
+    ),
+
+    new Magias(
+        "luz", "2", "Escudo de Luz", "lenta",
+        "Lumos Skim e Magia de Defesa",
+        "Criação de um escudo octogonal composto de áurea da luz, com resistência de 15x mana gasto, ativo por 5 rodadas ou até ser destruído. As interações elementais se aplicam aqui, tendo armadura a golpes elementais básicos e vulnerável a golpes de trevas."
+    ),
+
+    // Ciclo 3
+    new Magias(
+        "luz", "3", "Magia de Reflexão", "lenta",
+        "Magia de Miragem",
+        "Permite espelhar partes do cenário, confundindo o alvo."
+    ),
+    new Magias(
+        "luz", "3", "Armadura de Luz Menor", "rápida",
+        "Lumos Skim e Armadura Arcana",
+        "Armadura de luz com prioridades do Lumos Skim, aumenta 10 no redutor por 10 rodadas e dobra o redutor contra danos de elementos básicos."
+    ),
+    new Magias(
+        "luz", "3", "Passo de Luz", "rápida",
+        "Lumos Skim e Impulso Arcano",
+        "Canalização da áurea mágica apenas para as pernas, com o intuído de gerar um impulso de velocidade, ganhando duas vantagens aprimorada para esquiva e ataques de investida."
+    ),
+    new Magias(
+        "luz", "3", "Punho de Luz", "lenta",
+        "Toque elétrico e implemento arcano",
+        "Um golpe corpo a corpo imbuído com áurea da luz, causando o efeito de contato e ganhando prioridade na ação."
+    ),
+    new Magias(
+        "luz", "3", "Golpe de Luz", "lenta",
+        "Esfera de Luz e Arma Arcana do Luz",
+        "Cria uma projeção de luz de um golpe de uma arma, causando os efeitos da esfera de luz e o dano da arma."
+    ),
+    new Magias(
+        "luz", "3", "Miragem Explosiva", "lenta",
+        "Esfera de Luz e Magia de Reflexão",
+        "Cria-se 1d8 miragens suas ou de construções no campo, onde podem ser usadas como minas, para explodir ao contato."
+    ),
+    // Ciclo 4
+    new Magias(
+        "luz", "4", "Armada de Luz", "lenta",
+        "Arma Arcana e Esfera de luz",
+        "Criação de 1d4 armas feitas de áurea da luz, que causam o dano da arma e os efeitos da esfera de luz, permanecendo em campo por 5 rodadas."
+    ),
+    new Magias(
+        "luz", "4", "Lumos Walk", "lenta",
+        "Passo de Luz e Magia de Reflexão",
+        "Permite andar sobre feixes de luz por 5 rodadas, podendo usar o passe de luz sem custos uma vez na rodada. Em combate, concede vantagem absoluta ao passe de luz se o oponente não puder ver."
+    ),
+    // Ciclo 5
+    new Magias(
+        "luz", "5", "Lazer", "lenta",
+        "Miragem Explosiva",
+        "Dispara um feixe contínuo de luz por 2 rodadas, causando dano crítico de corte e cauterização, com mutilação certa."
+    ),
+    new Magias(
+        "luz", "5", "Aspecto Solar", "lenta",
+        "Magia de Reflexão e Runa do Sol",
+        "Aprimora a áurea de luz para a áurea do sol, causando cegueira a quem olhar diretamente, pode ser mantido indefinidamente durante o dia, nesse estado as magias de luz são consideradas magias de fogo e a magias de fogo consideradas magias de luz"
     ),
     /*#####################################################################################*/
 ];

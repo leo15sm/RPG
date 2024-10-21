@@ -143,6 +143,7 @@ h1 {
     border: 1px solid var(--border-color);
     background-image: url('https://www.transparenttextures.com/patterns/linen.png'); /* Fundo rústico */
     text-align: justify;
+    text-transform: capitalize;
 }
 
 /* Títulos das magias */
