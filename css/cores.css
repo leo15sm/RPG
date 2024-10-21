@@ -14,10 +14,12 @@
 
     --background-color: #1a1a1a;
     --text-color: #f0e6d2;
-    --container-bg: #333;
+    --text-red: #e63946;
+    --text-gold: #f4a261;
     --border-color: #8b4513;
     --highlight-color: #e0b084;
     --input-bg: #1e1e1e;
+    --container-bg: #333;
     --row-alt-bg: #2a2a2a;
     --box-shadow-color: rgba(0, 0, 0, 0.5);
 }

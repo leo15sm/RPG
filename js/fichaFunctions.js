@@ -136,3 +136,70 @@ export function criarTabela(dados, idTabela) {
         });
     });
 }
+
+export function selectMagias(escolas, listMagias, selectId) {
+    const selectElement = document.getElementById(selectId);
+
+    // Verifica se o elemento select foi encontrado
+    if (!selectElement) {
+        console.error(`Elemento com ID ${selectId} não encontrado.`);
+        return;
+    }
+
+    // Limpa as opções anteriores (se houver)
+    selectElement.innerHTML = '';
+
+    // Popula o select com as opções de escola
+    escolas.lista.forEach((escola, index) => {
+        const option = document.createElement('option');
+        option.value = escola;
+        option.text = escola.charAt(0).toUpperCase() + escola.slice(1); // Capitaliza a primeira letra
+        selectElement.appendChild(option);
+
+        // Se for o primeiro elemento, seleciona como padrão
+        if (index === 0) {
+            selectElement.selectedIndex = 0;
+        }
+    });
+
+    // Função para atualizar as magias nas seções de ciclo conforme a escola selecionada
+    function updateMagiasByEscola(escola) {
+        // Itera sobre todos os ciclos (de 0 a 5)
+        for (let ciclo = 0; ciclo <= 5; ciclo++) {
+            // Seleciona a seção correspondente ao ciclo atual
+            const cicloSection = document.querySelector(`.ciclo${ciclo}`);
+
+            // Limpa as magias anteriores da seção
+            cicloSection.innerHTML = '';
+
+            // Filtra as magias pela escola e ciclo atual
+            const magiasFiltradas = listMagias.filter(magia => magia.escola === escola && magia.ciclo == ciclo);
+
+            // Adiciona as magias filtradas à seção correspondente
+            magiasFiltradas.forEach(magia => {
+                const magiaElement = document.createElement('section');
+                magiaElement.classList.add('magia');
+                
+                magiaElement.innerHTML = `
+                    <h3>${magia.nome}</h3>
+                    <p><span>Ação:</span> ${magia.acao}</p>
+                    <p><span>Requisito:</span> ${magia.requisito}</p>
+                    <p><span>Descrição:</span> ${magia.descricao}</p>
+                `;
+
+                // Adiciona a magia na seção do ciclo correto
+                cicloSection.appendChild(magiaElement);
+            });
+        }
+    }
+
+    // Seleciona automaticamente a primeira escola na inicialização
+    const initialEscola = escolas.lista[0];
+    updateMagiasByEscola(initialEscola); // Carrega as magias da primeira escola
+
+    // Adiciona o evento para atualizar as magias ao mudar de escola
+    selectElement.addEventListener('change', () => {
+        const selectedEscola = selectElement.value;
+        updateMagiasByEscola(selectedEscola);
+    });
+}

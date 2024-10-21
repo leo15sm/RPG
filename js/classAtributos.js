@@ -32,7 +32,7 @@ export class Progresso{
 }
 
 export class Personagem{
-    constructor( player, nome, bild, atributos, progresso){
+    constructor(player, nome, bild, atributos, progresso){
         this.player = player;
         this.nome = nome;
         this.bild = bild;
@@ -48,5 +48,16 @@ export class Personagem{
         } else {
             throw new Error(`Atributo "${atributo}" não encontrado.`);
         }
+    }
+}
+
+export class Magias{
+    constructor(escola, ciclo, nome, acao, requisito, descricao){
+        this.escola = escola;
+        this.ciclo = ciclo;
+        this.nome = nome;
+        this.acao = acao;
+        this.requisito = requisito;
+        this.descricao = descricao;
     }
 }
