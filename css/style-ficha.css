@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:wght@400&display=swap');
 @import url('./cores.css');
 
 *{
@@ -122,6 +123,7 @@ h1 {
     border: 2px solid var(--border-color);
     background-color:  var(--background-color);
     box-shadow: 0 0 15px  var(--box-shadow-color);
+    font-family: 'Sanchez', serif;
 }
 
 /* Títulos dos ciclos */
@@ -140,6 +142,7 @@ h1 {
     margin-bottom: 20px;
     border: 1px solid var(--border-color);
     background-image: url('https://www.transparenttextures.com/patterns/linen.png'); /* Fundo rústico */
+    text-align: justify;
 }
 
 /* Títulos das magias */
