@@ -60,7 +60,7 @@ export const players = [
     /*###########################################*/
     new Personagem(
         "Lyann White", "Neko", 
-        new Bild("Nike", "Mago", "Acadêmico", "Vitória", "Água | Terra"),
+        new Bild("Nike", "Mago", "Acadêmico", "Vitória", "Madeira"),
         new Atributos(8, 10, 14, 20, 16, 12),
         new Progresso(0, 246, 13.3, 1, 10, 3.05),
        ),
