@@ -43,7 +43,7 @@
 }
 
 .slider .slider-container figure img{
-    width: 40vw;
+    width: 60vw;
     height: 60vh;
     object-fit: cover;
 }
@@ -64,11 +64,11 @@
 }
 
 .slider .prev-img {
-    left: -5vw;
+    left: -10vw;
 }
 
 .slider .next-img {
-    right: -5vw;
+    right: -10vw;
 }
 
 .slider .prev-btn, 
