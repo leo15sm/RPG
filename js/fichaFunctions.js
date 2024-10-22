@@ -203,3 +203,218 @@ export function selectMagias(escolas, listMagias, selectId) {
         updateMagiasByEscola(selectedEscola);
     });
 }
+
+
+export function initializeSlider(SectionId, dadosImport, isVisible) {
+    const SelectSectionID = document.getElementById(SectionId);
+
+    const prevImg = SelectSectionID.querySelector('.prev-img');
+    const nextImg = SelectSectionID.querySelector('.next-img');
+    const prevBtn = SelectSectionID.querySelector('.prev-btn');
+    const nextBtn = SelectSectionID.querySelector('.next-btn');
+    const radioContainer = SelectSectionID.querySelector('.container-radio'); // Radio buttons
+    const sliderImages = SelectSectionID.querySelector('.slider-images');
+
+    let time = 3000; //milisegundos
+    let currentIndex = 0; //Posição inicial do carrossel
+    let visibleImages = isMobile() ? 1 : isVisible; // Número de imagens visíveis ao mesmo tempo
+    
+    function isMobile() {
+        return window.innerWidth < 1020;
+    }
+
+    function createImageSlide(dados) {
+        // Inicializa a estrutura básica do slide
+        let slideHtml = `
+            <figure>
+                <img src="${dados.imagem}" alt="Imagem">
+                <figcaption class="legend">
+        `;
+    
+        // Adiciona dinamicamente o nome, se existir
+        if (dados.nome) {
+            slideHtml += `<h3>${dados.nome}</h3>`;
+        }
+    
+        // Adiciona dinamicamente o nome, se existir
+        if (dados.titulo) {
+            slideHtml += `<p><span>Titulo:</span> ${dados.titulo}</p>`;
+        }
+
+        // Adiciona dinamicamente a ascendência, se existir
+        if (dados.ascendencia) {
+            slideHtml += `<p><span>Ascendência:</span> ${dados.ascendencia}</p>`;
+        }
+    
+        // Adiciona dinamicamente a linhagem, se existir
+        if (dados.linhagem) {
+            slideHtml += `<p><span>Linhagem:</span> ${dados.linhagem}</p>`;
+        }
+    
+        // Adiciona dinamicamente a linhagem, se existir
+        if (dados.dominio) {
+            slideHtml += `<p><span>Domínio:</span> ${dados.dominio}</p>`;
+        }
+
+        // Adiciona dinamicamente o elemento, se existir
+        if (dados.elemento) {
+            slideHtml += `<p><span>Elemento:</span> ${dados.elemento}</p>`;
+        }
+    
+        // Adiciona dinamicamente a classe, se existir
+        if (dados.classe) {
+            slideHtml += `<p><span>Classe:</span> ${dados.classe}</p>`;
+        }
+    
+        // Adiciona dinamicamente o ofício, se existir
+        if (dados.oficio) {
+            slideHtml += `<p><span>Ofício:</span> ${dados.oficio}</p>`;
+        }
+
+        // Adiciona dinamicamente o ofício, se existir
+        if (dados.personalidade) {
+            slideHtml += `<p><span>Personalidade:</span> ${dados.personalidade}</p>`;
+        }
+
+        // Fecha o template da legenda e o figure
+        slideHtml += `
+                </figcaption>
+            </figure>
+        `;
+    
+        return slideHtml;
+    }
+    
+    function deleteImageSlide() {
+        if (sliderImages) {
+            sliderImages.innerHTML = ''; // Limpa o conteúdo HTML da seção
+        }
+    }
+    
+    function renderSlider(indices) {
+        // Valida o array de índices
+        if (!Array.isArray(indices) || indices.some(index => index < 0 || index >= dadosImport.length)) {
+            console.error('Array de índices inválido.');
+            return;
+        }
+    
+        // Cria o HTML para os slides com base nos índices fornecidos
+        const slidesHtml = indices.map(index => createImageSlide(dadosImport[index])).join('');
+        sliderImages.innerHTML = slidesHtml;
+    }
+    
+    function showImages(index) {
+        //Remove todas as imagens ativas
+        deleteImageSlide();
+        
+        let indexImg = new Array(visibleImages);
+
+        // Mostra quantas imagens forem visíveis ao mesmo tempo
+        for (let i = 0; i < visibleImages; i++) {
+            const newIndex = (index + i) % dadosImport.length; // Ajuste cíclico
+            indexImg[i] = newIndex;
+        }
+
+        renderSlider(indexImg);
+        
+        //Atualiza as imagens de navegação se existirem
+        if (prevImg) {
+            prevImg.src = dadosImport[(index - 1 + dadosImport.length) % dadosImport.length].imagem;
+        }
+        if (nextImg) {
+            nextImg.src = dadosImport[(index + visibleImages) % dadosImport.length].imagem;
+        } 
+        if(radioContainer){
+            updateActiveRadioButton(index); // Atualiza o radio button ativo
+        }    
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + dadosImport.length) % dadosImport.length;       
+        showImages(currentIndex);
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % dadosImport.length;
+        showImages(currentIndex);
+    }
+
+    //Atualiza o número de imagens visíveis com base no tamanho da tela
+    function updateVisibleImages() {
+        visibleImages = isMobile() ? 1 : isVisible;
+        showImages(currentIndex);
+    }
+
+    // Cria os radio buttons dinamicamente
+    function createRadioButtons() {
+        if (radioContainer) {
+            radioContainer.innerHTML = ''; // Limpa os radio buttons existentes
+            for (let i = 0; i < dadosImport.length; i++) {
+                const radioBtn = document.createElement('input');
+                radioBtn.type = 'radio';
+                radioBtn.name = `radio-${SectionId}`;
+                radioBtn.classList.add('radio-btn');
+                radioBtn.addEventListener('click', () => clickRadio(i));
+                
+                // Define o primeiro radio button como checado por padrão
+                if (i === currentIndex) {
+                    radioBtn.checked = true;
+                }
+                
+                radioContainer.appendChild(radioBtn);
+            }
+        }
+    }
+
+    //Passa a imagem para o radio correspondente
+    function clickRadio(radioIndex) {
+        currentIndex = radioIndex;
+        showImages(currentIndex);
+    }
+
+    //Mapeias o click nos radios button
+    function addRadioClickEvents() {
+        if (radioContainer) {
+            const radioBtns = radioContainer.querySelectorAll('.radio-btn');
+            if (radioBtns.length > 0) {
+                radioBtns.forEach((radio, index) => {
+                    radio.addEventListener('click', () => clickRadio(index));
+                });
+            }
+        }
+    }
+    
+    // Atualiza o radio button ativo baseado no índice da imagem atual
+    function updateActiveRadioButton(index) {
+        if (radioContainer) {
+            const radioBtns = radioContainer.querySelectorAll('.radio-btn');
+            radioBtns.forEach((radio, i) => {
+                radio.checked = i === index; // Ativa o radio button correspondente à imagem atual
+            });
+        }
+    }
+
+    //Passa as imagens com o tempo
+    function Start() {
+        if (radioContainer) {
+            setInterval(() => {
+                nextImage();
+            }, time);
+        }
+    }
+
+    /*############################################################################################*/
+    prevBtn.addEventListener('click', prevImage);
+    nextBtn.addEventListener('click', nextImage);
+    
+    // Ajusta as imagens segundo a tela
+    window.addEventListener('resize', updateVisibleImages);
+
+    // Inicialize as imagens no carregamento da página
+    showImages(currentIndex);
+    
+    //Eventos dos Radio button
+    createRadioButtons(); // Cria os radio buttons dinamicamente
+    window.addEventListener("load", Start);
+    addRadioClickEvents();
+}

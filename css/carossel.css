@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:wght@400&display=swap');
+@import url('./cores.css');
+
+.slider{
+    width: 100%;
+    height: 130vh;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    overflow: hidden;
+    font-family: 'Sanchez', serif;
+}
+
+.slider .slider-txt{
+    color: var(--RPG-violet);
+    text-align: center;
+    padding-top: 6rem;
+    line-height: 2.5rem;
+}
+
+.slider .slider-txt h2{
+    text-transform: uppercase;
+}
+
+.slider .slider-txt p{
+    padding-top: .5rem;
+}
+
+.slider .slider-container{
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 0;
+}
+
+.slider .slider-container img{
+    border-radius: 25px;    
+}
+
+.slider .slider-container figure img{
+    width: 40vw;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.slider .slider-images{
+    display: flex;
+    justify-content: center;
+    scroll-snap-type: x mandatory; /* Rolar suavemente de uma imagem para outra */
+}
+
+.slider .prev-img,
+.slider .next-img {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+
+.slider .prev-img {
+    left: -5vw;
+}
+
+.slider .next-img {
+    right: -5vw;
+}
+
+.slider .prev-btn, 
+.slider .next-btn {
+    font-size: 3rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--RPG-violet);
+    z-index: 2;
+}
+
+.slider .legend {
+    position: absolute;
+    bottom: -45%;
+    transform: translateY(-50%);
+    left: 55%;
+    transform: translateX(-50%);
+    padding: 0.3rem 0;
+    width: 50vw;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    text-align: left;
+}
+
+.slider .legend span{
+    font-weight: bold;
+    color: var(--text-red);
+}
+
+/*############################################################################################*/
