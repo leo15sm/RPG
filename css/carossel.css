@@ -43,8 +43,8 @@
 }
 
 .slider .slider-container figure img{
-    width: 60vw;
-    height: 50vh;
+    width: 70vw;
+    height: 80vh;
     object-fit: cover;
 }
 
@@ -64,11 +64,11 @@
 }
 
 .slider .prev-img {
-    left: -10vw;
+    left: -25vw;
 }
 
 .slider .next-img {
-    right: -10vw;
+    right: -25vw;
 }
 
 .slider .prev-btn, 
@@ -83,7 +83,7 @@
 
 .slider .legend {
     position: absolute;
-    bottom: -55%;
+    bottom: -60%;
     transform: translateY(-50%);
     left: 50%;
     transform: translateX(-50%);
