@@ -46,8 +46,8 @@ header{
 }
 
 .slider .slider-container figure img{
-    width: 60vw;
-    height: 60vh;
+    width: 65vw;
+    height: 50vh;
     object-fit: fill;
 }
 
