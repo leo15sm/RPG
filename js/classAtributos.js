@@ -19,7 +19,6 @@ export class Bild{
     }
 }
 
-
 export class Progresso{
     constructor(nivel, xp, skill, upgrade, missao, gold){
         this.nivel = nivel;
@@ -32,12 +31,13 @@ export class Progresso{
 }
 
 export class Personagem{
-    constructor(player, nome, bild, atributos, progresso){
+    constructor(player, nome, bild, atributos, progresso, playerMagias = []){
         this.player = player;
         this.nome = nome;
         this.bild = bild;
         this.atributos = atributos; 
         this.progresso = progresso;
+        this.playerMagias = Array.isArray(playerMagias) ? playerMagias : [];
     }
 
       // Método para calcular o modificador de um único atributo

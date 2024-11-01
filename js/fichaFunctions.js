@@ -1,3 +1,5 @@
+import {listMagias} from './bdMagias.js';
+
 export function selectJogadores(List, SectionId) {
     const selectElement = document.getElementById(SectionId);
 
@@ -16,6 +18,23 @@ export function selectJogadores(List, SectionId) {
             option.selected = true;
         }
     });
+
+    // Adiciona as magias do personagem aos ciclos correspondentes
+    // personagem.playerMagias.forEach(nomeMagia => {
+    //     const magia = listMagias.find(m => m.nome === nomeMagia);
+    //     if (magia) {
+    //         const cicloSection = document.querySelector(`.ciclo${magia.ciclo}`);
+    //         const magiaElement = document.createElement('section');
+    //         magiaElement.classList.add('magia');
+    //         magiaElement.innerHTML = `
+    //             <h3>${magia.nome}</h3>
+    //             <p><span>Ação:</span> ${magia.acao}</p>
+    //             <p><span>Requisito:</span> ${magia.requisito}</p>
+    //             <p><span>Descrição:</span> ${magia.descricao}</p>
+    //         `;
+    //         cicloSection.appendChild(magiaElement);
+    //     }
+    // });
 
     // Função para preencher os campos com os dados do personagem selecionado
     function preencherCampos(jogadorSelecionado) {
@@ -96,6 +115,7 @@ export function selectJogadores(List, SectionId) {
     if (List.length > 0) {
         preencherCampos(selectElement.value); // Agora o primeiro jogador será preenchido por padrão
     }
+
 }
 
 export function criarTabela(dados, idTabela) {
@@ -194,8 +214,7 @@ export function selectMagias(escolas, listMagias, selectId) {
     }
 
     // Seleciona automaticamente a primeira escola na inicialização
-    const initialEscola = escolas.lista[0];
-    updateMagiasByEscola(initialEscola); // Carrega as magias da primeira escola
+    updateMagiasByEscola(selectElement.value);
 
     // Adiciona o evento para atualizar as magias ao mudar de escola
     selectElement.addEventListener('change', () => {
@@ -203,7 +222,6 @@ export function selectMagias(escolas, listMagias, selectId) {
         updateMagiasByEscola(selectedEscola);
     });
 }
-
 
 export function initializeSlider(SectionId, dadosImport, isVisible) {
     const SelectSectionID = document.getElementById(SectionId);
