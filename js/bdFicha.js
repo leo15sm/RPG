@@ -20,14 +20,21 @@ export const players = [
         "Breno", "Solon", 
         new Bild("Delfos", "Feiticeiro", "Sacerdote", "Oráculo", "Cor Laranja"),
         new Atributos(10, 12, 20, 14, 16, 14),
-        new Progresso(0, 167, 25, 1, 5, 4.55),
+        new Progresso(0, 820, 9, 1, 21, 11.00),
+       ),
+    /*###########################################*/
+    new Personagem(
+        "Davizinho", "---", 
+        new Bild("Harpocretes", "Ladino", "---", "---", "---"),
+        new Atributos(0, 0, 0, 0, 0, 0),
+        new Progresso(0, 87, 19.4, 0, 0, 0.50),
        ),
     /*###########################################*/
     new Personagem(
         "Ernani", "Necron", 
-        new Bild("Thanatos", "Mago", "Arcanista", "Morte", "Fogo | Vento"),
+        new Bild("Thanatos", "Mago", "Arcanista", "Morte", "Combustão"),
         new Atributos(8, 10, 12, 20, 14, 14),
-        new Progresso(0, 185, 25, 0, 7, 1.32),
+        new Progresso(0, 246, 8.4, 0, 9, 3.24),
        ),
     /*###########################################*/
     //nivel, xp, skill, upgrade, missao, gold
@@ -35,57 +42,44 @@ export const players = [
         "Joãozinho", "Tayson", 
         new Bild("Tritão", "Druida", "Militar", "Tritão Lagosta", "Vapor"),
         new Atributos(0, 0, 0, 0, 0, 0),
-        new Progresso(0, 66, 15.2, 0, 0, 0.50),
+        new Progresso(0, 87, 19.4, 0, 0, 0.50),
        ),
     /*###########################################*/
     new Personagem(
         "Lucas Black", "Naguine", 
         new Bild("Medusa", "Druida", "Domador", "Górgona", "Veneno"),
         new Atributos(10, 14, 12, 14, 20, 16),
-        new Progresso(0, 233, 25, 0, 7, 22.28),
+        new Progresso(0, 340, 25, 0, 7, 22.28),
        ),
     /*###########################################*/
     new Personagem(
         "Lucas White", "Kagaho", 
         new Bild("Hebe", "Espadachim", "Militar", "Fogo", "Raio"),
         new Atributos(20, 16, 10, 14, 12, 14),
-        new Progresso(0, 143, 25, 1, 4, 10.20),
+        new Progresso(0, 205, 33.5, 2, 6, 10.20),
        ),
     /*###########################################*/
     new Personagem(
         "Lyann Black", "Lucius", 
         new Bild("Delfos", "Arqueiro", "Caçador", "Oráculo", "Cor Vermelha"),
         new Atributos(10, 12, 20, 14, 16, 14),
-        new Progresso(0, 182, 25, 1, 5, 3.25),
+        new Progresso(0, 235, 33.5, 0, 7, 3.25),
        ),
     /*###########################################*/
     new Personagem(
-        "Lyann White", "Neko", 
-        new Bild("Nike", "Mago", "Acadêmico", "Vitória", "Madeira"),
+        "Lyann Nix", "Neko", 
+        new Bild("Nike", "Mago", "Acadêmico | Arcanista", "Vitória", "Madeira"),
         new Atributos(8, 10, 14, 20, 16, 12),
-        new Progresso(0, 246, 25, 1, 10, 3.05),
+        new Progresso(0, 920, 8.6, 1, 26, 7.10),
        ),
     /*###########################################*/
     new Personagem(
-        "Samuel", "---'", 
-        new Bild("Estéropes", "Bárbaro", "Arcanista", "Ciclope", "Fogo | Terra"),
-        new Atributos(16, 20, 11, 14, 11, 12),
-        new Progresso(0, 45, 15.2, 0, 0, 0.10),
+        "Niket", "Kazuma", 
+        new Bild("Ígnea", "Lanceiro", "Armeiro", "Ninfa do Fogo", "Plasma"),
+        new Atributos(14, 12, 16, 20, 10, 14),
+        new Progresso(0, 387, 5.9, 0, 3, 3.00),
        ),
     /*###########################################*/
-    new Personagem(
-        "Uilian", "hi'", 
-        new Bild("Aracne", "Ladino", "Bandido", "Cromátula", "Veneno"),
-        new Atributos(8, 16, 20, 10, 12, 14),
-        new Progresso(0, 96, 25, 0, 3, 0.10),
-       ),
-    /*###########################################*/
-    new Personagem(
-        "Davizinho", "---", 
-        new Bild("Harpocretes", "Ladino", "---", "---", "---"),
-        new Atributos(0, 0, 0, 0, 0, 0),
-        new Progresso(0, 66, 15.2, 0, 0, 0),
-       ),
 ];
 
 //player, nome, bild, atributos, progresso
