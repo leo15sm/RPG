@@ -76,13 +76,13 @@ export const players = [
     new Personagem(
         "Niket", "Kazuma", 
         new Bild("Ígnea", "Lanceiro", "Armeiro", "Ninfa do Fogo", "Plasma"),
-        new Atributos(14, 12, 16, 20, 10, 14),
+        new Atributos(10, 14, 20, 12, 14, 16),
         new Progresso(0, 387, 5.9, 0, 3, 3.00),
        ),
     /*###########################################*/
 ];
 
 //player, nome, bild, atributos, progresso
-//sab, int, car, des, forc, vit
+//forc, vit, des, int, sab, car
 //ascendente, classe, oficio, dominio, elemento
 //nivel, xp, skill, upgrade, missao, gold
