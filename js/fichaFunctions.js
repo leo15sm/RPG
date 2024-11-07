@@ -185,7 +185,7 @@ export function selectMagias(escolas, listMagias, selectId) {
     // Função para atualizar as magias nas seções de ciclo conforme a escola selecionada
     function updateMagiasByEscola(escola) {
         // Itera sobre todos os ciclos (de 0 a 5)
-        for (let ciclo = 0; ciclo <= 5; ciclo++) {
+        for (let ciclo = 0; ciclo <= 7; ciclo++) {
             // Seleciona a seção correspondente ao ciclo atual
             const cicloSection = document.querySelector(`.ciclo${ciclo}`);
 
