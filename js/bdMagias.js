@@ -1109,6 +1109,11 @@ export const listMagias = [
     new Magias(
         "abjuração", 7, "Destino Silencioso", "Lenta", "Barreira de Supressão Total",
         "Imbuído em um alvo, este efeito faz com que o alvo perca todas as memórias e habilidades de uso de magia, tornando-o incapaz de conjurar permanentemente."
+    ),
+    /*#####################################################################################*/
+    new Magias(
+        "arcana", 4, "Runa de Slime", "Súbita", "Runa Arcana",
+        "Uma runa que contem essência de slimes, deve ser usada para criar uma magia que utilize esta prioridade."
     )
     /*#####################################################################################*/
 ];
