@@ -69,7 +69,7 @@ export const players = [
     new Personagem(
         "Lyann Nix", "Neko", 
         new Bild("Nike", "Mago", "Acadêmico lv10", "Vitória", "Madeira"),
-        new Atributos(8, 10, 14, 20, 16, 12),
+        new Atributos(8, 10, 14, 20, 17, 13),
         new Progresso(4, 439, 30.2, 3, 44, 14.20),
        ),
     /*###########################################*/

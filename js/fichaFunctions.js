@@ -218,8 +218,7 @@ export function selectMagias(escolas, listMagias, selectId) {
 
     // Adiciona o evento para atualizar as magias ao mudar de escola
     selectElement.addEventListener('change', () => {
-        const selectedEscola = selectElement.value;
-        updateMagiasByEscola(selectedEscola);
+        updateMagiasByEscola(selectElement.value);
     });
 }
 
