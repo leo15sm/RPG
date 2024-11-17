@@ -20,7 +20,7 @@ export const magiasNatureza  = [
         "Reverte uma arma com a áurea mágica, fornecendo a mesma o efeito de contato da magia de toque da natureza, por 10 rodadas."),
     
     new Magias("natureza", "2", "Runa da Natureza", "súbita", "Glifo da Vitalização ou Armadura", 
-        "Runa mágica cravada em um local, gerando uma vantagem extra em habilidades de suporte e defensivas."),
+        "Runa mágica cravada em um local, gerando uma vantagem extra em habilidades de suporte, defensivas e o consumo de mana é um redutor fixo no mana máximo equivalente ao ciclo."),
     
     new Magias("natureza", "2", "Manifestar Raízes", "rápida", "Criar Flora", 
         "Criação de diversas raízes que aplicarão o efeito de contato da natureza."),
@@ -29,7 +29,7 @@ export const magiasNatureza  = [
         "Canalização de toda áurea mágica em uma esfera, ganhando uma vantagem para o ataque e causando o efeito de agarrão da natureza."),
     
     new Magias("natureza", "2", "Escudo de Natureza", "lenta", "Flora Skim e Magia de Defesa", 
-        "Criação de um escudo octogonal composto de áurea da natureza, ativo por 5 rodadas ou até a resistência se esgotar (20 x mana gasto). Resistente a líquidos e vulnerável ao fogo."),
+        "Criação de um escudo octogonal composto de áurea da natureza, ativo por 5 rodadas ou equanto não for destruido por uma interação elemental."),
     
     new Magias("natureza", "3", "Campo da Flora", "lenta", "Manifestar Raízes", 
         "Criação de diversas formas de vida no campo, com o intuito de ganhar a prioridade de terreno."),

@@ -26,13 +26,13 @@ export const magiasVento  = [
     // Ciclo 2
     new Magias(
         "vento", "2", "Arma Arcana do Vento", "súbita",
-        "Venti Skim e Toque Etéreo.",
+        "Arma Arcana e Toque Etéreo.",
         "Reverte uma arma com a áurea mágica, fornecendo a mesma o efeito de contato da magia de toque do vento, por 10 rodadas."
     ),
     new Magias(
         "vento", "2", "Runa do Vento", "súbita",
         "Glifo da Expansão.",
-        "Runa mágica cravada em um local, gerando uma vantagem extra em habilidades de movimentação e não consome mana ao usar."
+        "Runa mágica cravada em um local, gerando uma vantagem extra em habilidades de movimentação e o consumo de mana é um redutor fixo no mana máximo equivalente ao ciclo."
     ),
     new Magias(
         "vento", "2", "Magia de Levitação", "súbita",
@@ -47,13 +47,13 @@ export const magiasVento  = [
     new Magias(
         "vento", "2", "Escudo de Vento", "lenta",
         "Venti Skim e Magia de Defesa.",
-        "Criação de um escudo octogonal composto de áurea do vento, ficando ativo por 5 rodadas ou enquanto um dano não destruir a sua resistência que é igual a 10 x mana gasto. As interações elementais se aplicam aqui, tendo armadura a golpes de terra e vulnerável a golpes de fogo."
+        "Criação de um escudo octogonal composto de áurea do vento, ficando ativo por 5 rodadas ou equanto não for destruido por uma interação elemental."
     ),
     // Ciclo 3
     new Magias(
-        "vento", "3", "Magia de Voou", "súbita",
-        "Magia de Levitação.",
-        "Permite voar em uma altitude de até 10m por 10 rodadas, conta como uma magia de movimentação e concede as vantagens de combate aéreo."
+        "vento", "3", "Magia de Voou maior", "súbita",
+        "Magia de Levitação e Magia de Voou",
+        "Permite voar em uma altitude de até 20m por 10 rodadas, conta como uma magia de movimentação e concede as vantagens de combate aéreo."
     ),
     new Magias(
         "vento", "3", "Armadura de Vento Menor", "rápida",

@@ -40,7 +40,7 @@ export const magiasRaio  = [
     new Magias(
         "raio", "2", "Runa do Raio", "súbita",
         "Glifo da Aceleração ou Velocidade",
-        "Runa mágica cravada em um local, gerando uma vantagem aprimorada em habilidades de movimentação e habilidades com prioridade de ação."
+        "Runa mágica cravada em um local, gerando uma vantagem aprimorada em habilidades de movimentação, habilidades com prioridade de ação e e o consumo de mana é um redutor fixo no mana máximo equivalente ao ciclo."
     ),
     
     new Magias(
@@ -58,7 +58,7 @@ export const magiasRaio  = [
     new Magias(
         "raio", "2", "Escudo de Raio", "lenta",
         "Eletro Skim e Magia de Defesa",
-        "Criação de um escudo octogonal composto de áurea do raio, ativo por 5 rodadas ou até que um dano não destrua sua resistência (10 x mana gasto). As interações elementais se aplicam aqui, tendo armadura a golpes de energia e vulnerável a golpes de terra."
+        "Criação de um escudo octogonal composto de áurea do raio, ativo por 5 rodadas ou equanto não for destruido por uma interação elemental."
     ),
     
     new Magias(

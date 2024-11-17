@@ -26,13 +26,13 @@ export const magiasFogo  = [
     // Ciclo 2
     new Magias(
         "fogo", "2", "Arma Arcana do Fogo", "súbito",
-        "Flama Skim e Toque Flamejante.",
+        "Arma Arcana e Toque Flamejante.",
         "Reverte uma arma com a áurea mágica, fornecendo a mesma o efeito de contato da magia de toque do fogo, por 10 rodadas."
     ),
     new Magias(
         "fogo", "2", "Runa do Fogo", "súbito",
         "Glifo do Ataque.",
-        "Runa mágica cravada em um local, gerando uma vantagem extra em habilidades ofensivas e não consome mana ao usar."
+        "Runa mágica cravada em um local, gerando uma vantagem extra em habilidades ofensivas e o consumo de mana é um redutor fixo no mana máximo equivalente ao ciclo."
     ),
     new Magias(
         "fogo", "2", "Mísseis Mágicos", "rápido",
@@ -47,7 +47,7 @@ export const magiasFogo  = [
     new Magias(
         "fogo", "2", "Escudo de Fogo", "lento",
         "Flama Skim e Magia de Defesa.",
-        "Criação de um escudo octogonal composto de áurea do fogo, ficando ativo por 5 rodadas ou enquanto um dano não destruir a sua resistência que é igual a 10 x mana gasto. As interações elementais se aplicam aqui, tendo armadura a golpes de vento e vulnerável a golpes de água."
+        "Criação de um escudo octogonal composto de áurea do fogo, ficando ativo por 5 rodadas ou equanto não for destruido por uma interação elemental."
     ),
 
     // Ciclo 3

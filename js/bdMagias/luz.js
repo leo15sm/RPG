@@ -43,7 +43,7 @@ export const magiasLuz  = [
     new Magias(
         "luz", "2", "Runa do Luz", "súbita",
         "Glifo da Percepção ou Radiância",
-        "Runa mágica cravada em um local, gerando vantagem aprimorada em habilidades de movimentação e percepção."
+        "Runa mágica cravada em um local, gerando vantagem aprimorada em habilidades de movimentação, percepção e o consumo de mana é um redutor fixo no mana máximo equivalente ao ciclo."
     ),
 
     new Magias(
@@ -61,7 +61,7 @@ export const magiasLuz  = [
     new Magias(
         "luz", "2", "Escudo de Luz", "lenta",
         "Lumos Skim e Magia de Defesa",
-        "Criação de um escudo octogonal composto de áurea da luz, com resistência de 15x mana gasto, ativo por 5 rodadas ou até ser destruído. As interações elementais se aplicam aqui, tendo armadura a golpes elementais básicos e vulnerável a golpes de trevas."
+        "Criação de um escudo octogonal composto de áurea da luz, ativo por 5 rodadas ou equanto não for destruido por uma interação elemental."
     ),
 
     // Ciclo 3

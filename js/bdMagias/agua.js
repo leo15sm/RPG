@@ -33,13 +33,13 @@ export const magiasAgua  = [
     // Ciclo 2
     new Magias(
         "agua", "2", "Arma Arcana da Água", "súbita",
-        "Aqua Skim e Toque Húmido",
+        "Arma Arcana e Toque Húmido",
         "Reverte uma arma com a áurea mágica, fornecendo a mesma o efeito de contato da magia de toque de água, por 10 rodadas."
     ),
     new Magias(
         "agua", "2", "Runa da Água", "súbita",
         "Glifo do Aprimoramento",
-        "Runa mágica cravada em um local, gerando uma vantagem extra em habilidades de suporte e não consome mana ao usar."
+        "Runa mágica cravada em um local, gerando uma vantagem extra em habilidades de suporte e o consumo de mana é um redutor fixo no mana máximo equivalente ao ciclo."
     ),
     new Magias(
         "agua", "2", "Aqua Modelagem", "Rápida",
@@ -54,7 +54,7 @@ export const magiasAgua  = [
     new Magias(
         "agua", "2", "Escudo de Água", "lenta",
         "Aqua Skim e Magia de Defesa",
-        "Criação de um escudo octogonal composto de áurea da água, ativo por 5 rodadas ou enquanto um dano não destruir sua resistência, que é igual a 10 x mana gasto. Interações elementais se aplicam aqui, tendo armadura contra golpes de fogo e vulnerável a golpes de terra."
+        "Criação de um escudo octogonal composto de áurea da água, ativo por 5 rodadas ou equanto não for destruido por uma interação elemental."
     ),
 
     // Ciclo 3

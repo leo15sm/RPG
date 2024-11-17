@@ -10,10 +10,16 @@ export const magiasFios  = [
 
     // Ciclo 2
     new Magias("fios", 2, "Arma Arcana dos Fios", "Súbito", "Wires Skim e Toque Pegajoso", "Reverte uma arma com a áurea mágica, fornecendo a mesma o efeito de contato da magia de toque de pegajoso, por 10 rodadas."),
-    new Magias("fios", 2, "Arcano Dos Fios", "Súbito", "Glifo do Aprimoramento", "Runa mágica cravada em um local, gerando uma vantagem Aprimorada extra em habilidades de Suporte e não consome mana ao usar."),
+    new Magias("fios", 2, "Runa Dos Fios", 
+        "Súbito",
+        "Glifo do Aprimoramento", "Runa mágica cravada em um local, gerando uma vantagem Aprimorada extra em habilidades de Suporte e o consumo de mana é um redutor fixo no mana máximo equivalente ao ciclo."),
     new Magias("fios", 2, "Criar Teias", "Rápido", "Criar Fios", "Cria-se 1d20 teias de até 20m de comprimento e 0,0015 milímetros de espessura que se espalham para todas direções."),
-    new Magias("fios", 2, "Esfera de Fios", "Lento", "Wires Skim e Magia de Ataque", "Canalização de toda áurea mágica em uma esfera, ganhando duas vantagens para o ataque e causando um dano que prende o alvo em alguma superfície."),
-    new Magias("fios", 2, "Escudo de Fios", "Lento", "Wires Skim e Magia de Defesa", "Criação de um escudo octogonal composto de áurea dos fios, ficando ativo por 5 rodadas ou enquanto um dano não destruir a sua resistência que é igual a 10 x mana gasto."),
+    new Magias("fios", 2, "Esfera de Fios", 
+        "Lento", "Wires Skim e Magia de Ataque", 
+        "Canalização de toda áurea mágica em uma esfera, ganhando duas vantagens para o ataque e causando um dano que prende o alvo em alguma superfície."),
+    new Magias("fios", 2, "Escudo de Fios", 
+        "Lento", "Wires Skim e Magia de Defesa", 
+        "Criação de um escudo octogonal composto de áurea dos fios, ficando ativo por 5 rodadas ou equanto não for destruido por uma interação elemental."),
 
     // Ciclo 3
     new Magias("fios", 3, "Casulo de Aranha", "Rápido", "Criar Teias", "Permite criar uma esfera de fios ao redor de um alvo preso em uma teia, causando danos de sufocamento."),

@@ -26,13 +26,13 @@ export const magiasTerra  = [
     // Ciclo 2
     new Magias(
         "terra", "2", "Arma Arcana da Terra", "súbita",
-        "Geo Skim e Toque Petrificante.",
+        "Arma Arcana e Toque Petrificante.",
         "Reverte uma arma com a áurea mágica, fornecendo a mesma o efeito de contato da magia de toque da terra, por 10 rodadas."
     ),
     new Magias(
         "terra", "2", "Runa da Terra", "súbita",
         "Glifo da Defesa.",
-        "Runa mágica cravada em um local, gerando uma vantagem extra em habilidades defensivas e não consome mana ao usar."
+        "Runa mágica cravada em um local, gerando uma vantagem extra em habilidades defensivas e o consumo de mana é um redutor fixo no mana máximo equivalente ao ciclo."
     ),
     new Magias(
         "terra", "2", "Magia de Enrijecimento", "súbita",
@@ -47,7 +47,7 @@ export const magiasTerra  = [
     new Magias(
         "terra", "2", "Escudo de Terra", "lenta",
         "Geo Skim e Magia de Defesa.",
-        "Criação de um escudo octogonal composto de áurea da terra, ficando ativo por 5 rodadas ou enquanto um dano não destruir a sua resistência que é igual a 15 x mana gasto. As interações elementais se aplicam aqui, tendo armadura a golpes de água e vulnerável a golpes de vento."
+        "Criação de um escudo octogonal composto de áurea da terra, ficando ativo por 10 rodadas ou equanto não for destruido por uma interação elemental."
     ),
     // Ciclo 3
     new Magias(
