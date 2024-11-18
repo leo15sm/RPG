@@ -20,7 +20,7 @@ export const players = [
         "Breno", "Solon", 
         new Bild("Delfos", "Feiticeiro", "Sacerdote", "Oráculo", "Cor Laranja"),
         new Atributos(10, 12, 20, 14, 16, 14),
-        new Progresso(4, 184, 1, 2, 39, 18.00),
+        new Progresso(4, 329, 1, 2, 54, 18.00),
        ),
     /*###########################################*/
     new Personagem(
@@ -56,7 +56,7 @@ export const players = [
         "Lucas White", "Enel", 
         new Bild("Tempesta", "Feiticeiro", "Arcanista", "Ninfa do Raio", "Raio Vermelho"),
         new Atributos(12, 14, 20, 16, 14, 10),
-        new Progresso(1, 164, 16.4, 1, 5, 1.00),
+        new Progresso(1, 274, 16.4, 1, 17, 1.00),
        ),
     /*###########################################*/
     new Personagem(
@@ -70,14 +70,14 @@ export const players = [
         "Lyann Nix", "Neko", 
         new Bild("Nike", "Mago", "Acadêmico lv10", "Vitória", "Madeira"),
         new Atributos(8, 10, 14, 20, 17, 13),
-        new Progresso(4, 439, 30.2, 3, 44, 14.20),
+        new Progresso(4, 584, 30.2, 3, 60, 14.20),
        ),
     /*###########################################*/
     new Personagem(
         "Niket", "Kazuma", 
         new Bild("Ígnea", "Lanceiro", "Armeiro", "Ninfa do Fogo", "Plasma"),
         new Atributos(10, 14, 20, 12, 14, 16),
-        new Progresso(1, 497, 3.1, 0, 7, 6.00),
+        new Progresso(1, 607, 3.1, 0, 19, 6.00),
        ),
     /*###########################################*/
     new Personagem(
