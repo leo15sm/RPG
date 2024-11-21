@@ -34,15 +34,15 @@ export const players = [
         "Ernani", "Necron", 
         new Bild("Thanatos", "Mago", "Arcanista lv5", "Morte", "Combustão"),
         new Atributos(8, 10, 12, 20, 14, 14),
-        new Progresso(0, 794, 23.1, 2, 33, 25.48),
+        new Progresso(0, 884, 23.1, 2, 33, 25.48),
        ),
     /*###########################################*/
     //nivel, xp, skill, upgrade, missao, gold
     new Personagem(
         "Joãozinho", "Tayson", 
-        new Bild("Tritão", "Druida", "Arcanista lv2", "Tritão Lagosta", "Vapor"), //Domador
+        new Bild("Tritão", "Druida", "Arcanista lv2", "Tritão Lagosta", "Vapor"), //Domador lv 1
         new Atributos(16, 12, 14, 14, 20, 10),
-        new Progresso(0, 263, 26.8, 1, 6, 1.50),
+        new Progresso(0, 353, 26.8, 1, 6, 1.50),
        ),
     /*###########################################*/
     new Personagem(
@@ -54,7 +54,7 @@ export const players = [
     /*###########################################*/
     new Personagem(
         "Lucas White", "Enel", 
-        new Bild("Tempesta", "Feiticeiro", "Arcanista lv 3", "Ninfa do Raio", "Raio Vermelho"),
+        new Bild("Tempesta", "Feiticeiro", "Arcanista lv3", "Ninfa do Raio", "Raio Vermelho"),
         new Atributos(12, 14, 20, 16, 14, 10),
         new Progresso(1, 460, 1.6, 1, 23, 1.00),
        ),
