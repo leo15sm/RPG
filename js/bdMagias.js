@@ -1,4 +1,3 @@
-import { Magias } from './classAtributos.js';
 import { magiasArcana } from './bdMagias/arcana.js';
 import { magiasAbjuração } from './bdMagias/abjuração.js';
 import { magiasDivinação } from './bdMagias/divinação.js';

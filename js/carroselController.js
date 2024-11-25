@@ -1,4 +1,8 @@
-import { apoio, zeus, hades, posseidon, hera } from './bdNpc.js';
+import {apoio} from './bdNPC/divinizados.js';
+import {zeus} from './bdNPC/zeus.js';
+import {hades} from './bdNPC/hades.js';
+import {posseidon} from './bdNPC/posseidon.js';
+import {hera} from './bdNPC/hera.js';
 import { initializeSlider } from './fichaFunctions.js';
 
 document.addEventListener("DOMContentLoaded", function() {

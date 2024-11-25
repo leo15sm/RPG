@@ -1,5 +1,19 @@
-import { personalidades } from './bdNpc.js';
 import { ascendentes } from './bdDeuses.js';
+
+export const personalidades = [
+    "Inabalável", "Trapaceiro", "Introvertido", "Carismático", "Servo", "Indeciso", "Procrastinador", "Imparcial", 
+    "Modesto", "Corajoso", "Valente", "Tímido", "Gentil", "Atencioso", "Irritadiço", "Patriota", "Indiferente", 
+    "Sonolento", "Apostador", "Esportista", "Sociopata", "Estranho", "Espalhafatoso", "Idol", "Simplista", "Sério", 
+    "Diligente", "Calmo", "Justiça", "Franqueza", "Amizade", "Companheirismo", "Questionador", "Criativo", 
+    "Protetor", "Atrapalhado", "Aproveitador", "Fofoqueiro", "Anti-social", "Apaixonado", "Calado", "Traíra", 
+    "Narcisista", "Competidor", "Pacifista", "Compreensivo", "Gosto caro", "Briguento", "Preguiçoso", "Força da natureza", 
+    "Precipitado", "Inocente", "Altruísta", "Herói", "Alegre", "Humilde", "Castrado", "Honesto", "Dedicado", "Derrotista", 
+    "Falador", "Paquerador", "Palhaço", "Provocador", "Líder", "Amável", "Honrado", "Precavido", "Audacioso", "Respeitoso", 
+    "Teimoso", "Distraído", "Inquieto", "Antipático", "Crente", "Mentiroso", "Invejoso", "Ganancioso", "Orgulhoso", 
+    "Malicioso", "Fervoroso", "Guloso", "Ingrato", "Hipócrita", "Exibicionista", "Exigente", "Estudioso", "Hospitaleiro", 
+    "Mal educado", "Paladar exótico", "Companheiro", "Complexo de inferioridade", "Infantil", "Amante da natureza", 
+    "Inseguro", "poucas palavras"
+];
 
 document.addEventListener("DOMContentLoaded", function() {
     sortear(personalidades, 'personalidade', 3);
