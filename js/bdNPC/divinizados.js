@@ -215,4 +215,16 @@ export const apoio = [
         oficio: "Modelo Lv 10",
         personalidade: "Paqueradora, Sonhadora, Gentil",
     }, 
+    {
+        imagem: "../images/NPC/Susako.jpeg",
+        nome: "Susako",
+        titulo: "Afinador Castelado do Nick",
+        ascendencia: "Iris",
+        linhagem: "Lumier",
+        dominio: "Luz",
+        elemento: "Cor Amarelo",
+        classe: "Feiticeiro Lv 0",
+        oficio: "Arcanista Lv 2",
+        personalidade: "Inteligente, Modesto, Preguiçoso",
+    },
 ];
