@@ -77,7 +77,7 @@ export const players = [
     new Personagem(
         "Uilian", "Aldritch", 
         new Bild("Eros", "Atirador", "Militar Lv1", "Carisma", "Ether Caos"),
-        new Atributos(14, 14, 16, 12, 10, 20),
+        new Atributos(14, 20, 20, 12, 14, 21),
         new Progresso(1, 709, 10, 5, 5, 1000.00),
        ),
     /*###########################################*/
