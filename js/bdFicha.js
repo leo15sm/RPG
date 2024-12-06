@@ -19,7 +19,7 @@ export const players = [
      /*###########################################*/
      new Personagem(
         "Drock Breno", "Solon", 
-        new Bild("Delfos", "Feiticeiro", "Atleta Lv 5", "Oráculo", "Cor Laranja"),//Acadêmico Bastião, Sacerdote lv10
+        new Bild("Delfos", "Feiticeiro", "Atleta Lv 5", "Oráculo", "Cor Azul"),//Acadêmico Bastião, Sacerdote lv10
         new Atributos(10, 16, 18, 14, 20, 12),
         new Progresso(8, 667, 2.6, 12, 114, 1113.00),
        ),
@@ -76,12 +76,12 @@ export const players = [
     /*###########################################*/
     new Personagem(
         "Uilian", "Aldritch", 
-        new Bild("Eros", "Feiticeiro", "Artista", "Carisma", "Ether Caos"),
+        new Bild("Eros", "Atirador", "Militar Lv1", "Carisma", "Ether Caos"),
         new Atributos(14, 14, 16, 12, 10, 20),
         new Progresso(1, 709, 10, 5, 5, 1000.00),
        ),
     /*###########################################*/
-    //dia 74 -> 219 XP e 43.8 Skill 
+    //dia 120
 
     /*###########################################
     new Personagem(
