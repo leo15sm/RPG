@@ -26,7 +26,7 @@ export const players = [
     /*###########################################*/
     new Personagem(
         "Ernani", "Necron", 
-        new Bild("Thanatos", "Mago", "Arcanista lv8", "Morte", "Combustão"),
+        new Bild("Thanatos", "Mago", "Arcanista lv8", "Morte", "Chama Sombria"),
         new Atributos(8, 10, 12, 20, 14, 14),
         new Progresso(2, 318, 8, 6, 46, 1105.48),
        ),
@@ -34,7 +34,7 @@ export const players = [
     //nivel, xp, skill, upgrade, missao, gold
     new Personagem(
         "João do Caos", "Tayson", 
-        new Bild("Tritão", "Druida", "Arcanista lv7", "Tritão Lagosta", "Vapor"), //Domador lv 1
+        new Bild("Tritão", "Druida", "Arcanista lv7", "Tritão Lagosta", "Vapor e Fluidos"), //Domador lv 1
         new Atributos(16, 12, 14, 14, 20, 10),
         new Progresso(1, 142, 2, 6, 6, 1.50),
        ),
