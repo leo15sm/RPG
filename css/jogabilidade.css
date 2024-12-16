@@ -23,6 +23,10 @@ main {
     box-shadow: 0 0 15px var(--box-shadow-color);
 }
 
+.last{
+    margin-bottom: 2rem;
+}
+
 h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;  
