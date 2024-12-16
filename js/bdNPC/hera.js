@@ -3,7 +3,7 @@ export const hera = [
     {
         imagem: "../images/NPC/hera/Segunda Hera.jpeg",
         nome: "Otrera",
-        titulo: "Segundo de Hera",
+        titulo: "Segunda Princesa",
         ascendencia: "Hera",
         linhagem: "Maximus",
         dominio: "Mulheres e Casamento",

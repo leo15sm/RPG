@@ -1,0 +1,32 @@
+import {apoio} from './bdNPC/divinizados.js';
+import {zeus} from './bdNPC/zeus.js';
+import {hades} from './bdNPC/hades.js';
+import {posseidon} from './bdNPC/posseidon.js';
+import {hera} from './bdNPC/hera.js';
+import {demeter} from './bdNPC/demeter.js';
+import {afrodite} from './bdNPC/afrodite.js';
+import {athena} from './bdNPC/athena.js';
+import {apolo} from './bdNPC/apolo.js';
+import {artemis} from './bdNPC/artemis.js';
+import {herfesto} from './bdNPC/herfesto.js';
+import {ares} from './bdNPC/ares.js';
+import {hermes} from './bdNPC/hermes.js';
+import {dionisio} from './bdNPC/dionisio.js';
+import { initializeSlider } from './fichaFunctions.js';
+
+document.addEventListener("DOMContentLoaded", function() {
+    initializeSlider('apoio', apoio, 1);
+    initializeSlider('zeus', zeus, 1);
+    initializeSlider('hades', hades, 1);
+    initializeSlider('posseidon', posseidon, 1);
+    initializeSlider('hera', hera, 1);
+    initializeSlider('demeter', demeter, 1);
+    initializeSlider('afrodite', afrodite, 1);
+    initializeSlider('athena', athena, 1);
+    initializeSlider('apolo', apolo, 1);
+    initializeSlider('artemis', artemis, 1);
+    initializeSlider('herfesto', herfesto, 1);
+    initializeSlider('ares', ares, 1);
+    initializeSlider('hermes', hermes, 1);
+    initializeSlider('dionisio', dionisio, 1);
+});
