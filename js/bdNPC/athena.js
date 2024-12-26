@@ -121,7 +121,7 @@ export const athena = [
     },  
     {
         imagem: "../images/NPC/athena/Segundo Aracne.jpeg",
-        nome: "Charon",
+        nome: "Sophia",
         titulo: "Segunda de Aracne",
         ascendencia: "Aracne",
         linhagem: "---",

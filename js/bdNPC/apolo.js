@@ -60,7 +60,7 @@ export const apolo = [
         personalidade: "Diligente, Compreensiva, Gentil",
     },   
     {
-        imagem: "../images/NPC/apolo/Principe Asclépio.jpeg",
+        imagem: "../images/NPC/apolo/Principe Asclepio.jpeg",
         nome: "Zopyros",
         titulo: "Principe de Asclépio",
         ascendencia: "Asclépio",
@@ -72,7 +72,7 @@ export const apolo = [
         personalidade: "Herói, Altruista, Atrapalhado",
     },  
     {
-        imagem: "../images/NPC/apolo/Segundo Asclépio.jpeg",
+        imagem: "../images/NPC/apolo/Segundo Asclepio.jpeg",
         nome: "Menelaos",
         titulo: "Segundo de Asclépio",
         ascendencia: "Asclépio",
@@ -84,7 +84,7 @@ export const apolo = [
         personalidade: "Ingrato, Sério, Anti-social",
     },   
     {
-        imagem: "../images/NPC/apolo/Terceiro Asclépio.jpeg",
+        imagem: "../images/NPC/apolo/Terceiro Asclepio.jpeg",
         nome: "Jason",
         titulo: "Terceiro de Asclépio",
         ascendencia: "Asclépio",
