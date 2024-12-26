@@ -48,18 +48,6 @@ export const apoio = [
         personalidade: "Mentiroso, Folgado, Criativo",
     },  
     {
-        imagem: "../images/NPC/Domia.jpeg",
-        nome: "Domia",
-        titulo: "Guardiã do Bosque",
-        ascendencia: "Aracne",
-        linhagem: "---",
-        dominio: "Vitoria",
-        elemento: "Fios",
-        classe: "Mago Lv 5",
-        oficio: "Arcanista Lv10",
-        personalidade: "Diligente, Gentil, Esforçada",
-    }, 
-    {
         imagem: "../images/NPC/Scarlat.jpeg",
         nome: "Scarlat",
         titulo: "Joia de Fogo",
