@@ -59,7 +59,7 @@ export const players = [
         "Polo", "Lucius", 
         new Bild("Delfos", "Arqueiro", "Caçador lv5", "Oráculo", "Cor Vermelha"),
         new Atributos(10, 12, 20, 14, 16, 14),
-        new Progresso(3, 383, 3, 16, 29, 1000.00), 
+        new Progresso(4, 383, 3, 16, 29, 1000.00), 
         //Maestria 10 Arco
        ),
     /*###########################################*/
@@ -83,7 +83,7 @@ export const players = [
     new Personagem(
         "Uilian", "Aldritch", 
         new Bild("Eros", "Atirador", "Militar Lv1", "Carisma", "Ether Caos"),
-        new Atributos(14, 20, 20, 12, 14, 21),
+        new Atributos(16, 20, 20, 14, 16, 21),
         new Progresso(1, 789, 19, 5, 13, 1000.00),
        ),
     /*###########################################*/

@@ -108,7 +108,7 @@ export const afrodite = [
         personalidade: "Sério, Orgulhoso, Ignorante",
     },  
     {
-        imagem: "../images/NPC/afrodite/Segundo Talia.jpeg",
+        imagem: "../images/NPC/afrodite/Segundo Thalia.jpeg",
         nome: "Charon",
         titulo: "Segundo de Thalia",
         ascendencia: "Thalia",
@@ -120,7 +120,7 @@ export const afrodite = [
         personalidade: "Antipático, Orgulhoso, Protetor",
     },   
     {
-        imagem: "../images/NPC/afrodite/Terceiro Talia.jpeg",
+        imagem: "../images/NPC/afrodite/Terceiro Thalia.jpeg",
         nome: "Mirana",
         titulo: "Terceira Thalia",
         ascendencia: "Thalia",

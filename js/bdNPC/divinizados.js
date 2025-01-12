@@ -204,7 +204,7 @@ export const apoio = [
         personalidade: "Inteligente, Modesto, Preguiçoso",
     },
     {
-        imagem: "../images/NPC/Maya.jpeg",
+        imagem: "../images/NPC/Mayah.jpeg",
         nome: "Maya",
         titulo: "Fantasma de Hera",
         ascendencia: "Hera",
