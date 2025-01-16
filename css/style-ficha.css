@@ -42,7 +42,8 @@ header{
 
 h1 {
     text-align: center;
-    color: var(--highlight-color);
+    color: var(--border-color);
+    text-shadow: .1 .1 1rem var(--box-shadow-color);
     font-size: 1.8rem; /* 1.8em */
     margin: 1.25rem; /* 20px */
 }
@@ -94,6 +95,10 @@ h1 {
     width: 7rem; 
 }
 
+.rpg-table select{
+    text-align: left;
+}
+
 .especial {
     text-transform: capitalize; /* Capitaliza a primeira letra de cada palavra */
     white-space: pre; /* Preserve espaços em branco */
@@ -110,6 +115,10 @@ h1 {
 
 /*######################################################*/
 /*Magias*/
+.select-magias{
+    background-color: var(--container-bg);
+    color: var(--text-color);
+}
 /* Estilo dos ciclos */
 .ciclo {
     display: flex;
@@ -121,7 +130,7 @@ h1 {
     padding: 1.5rem;
     border-radius: 10px;
     border: 2px solid var(--border-color);
-    background-color:  var(--background-color);
+    background-color: var(--container-bg);
     box-shadow: 0 0 15px  var(--box-shadow-color);
     font-family: 'Sanchez', serif;
 }

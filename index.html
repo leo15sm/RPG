@@ -54,22 +54,35 @@
                     <td>classe</td>
                     <td><input type="text" id="classe" name="classe" readOnly = true></td>
                 </tr>
-
-                <tr>
-                    <td>oficio</td>
-                    <td><input type="text" id="oficio" name="oficio" readOnly = true></td>
-                </tr>
                 
                 <tr>
                     <td>domínio</td>
-                    <td><input type="text" id="dominio" name="dominio" readOnly = true></td>
+                    <td>
+                        <select id="dominios" class="dados-column" name="dominios"></select>
+                    </td>
                 </tr>
                 
                 <tr>
                     <td>elementos</td>
-                    <td><input type="text" id="elementos" name="elementos" readOnly = true></td>
+                    <td>
+                        <select id="elementos" class="dados-column" name="elementos"></select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Ofícios</td>
+                    <td>
+                        <select id="oficios" class="dados-column" name="oficios"></select>
+                    </td>
                 </tr>
                 
+                <tr>
+                    <td>Maestrias</td>
+                    <td>
+                        <select id="maestrias" class="dados-column" name="maestrias"></select>
+                    </td>
+                </tr>
+
                 <tr>
                     <td>nivel</td>
                     <td><input type="number" id="nivel" name="nivel" readOnly = true></td>
@@ -98,9 +111,19 @@
                 <tr>
                     <td>gold</td>
                     <td><input type="number" id="gold" name="gold" readOnly = true></td>
-                </tr>         
+                </tr>  
             </table>
-                
+           
+           
+            <br>
+
+
+            <!-- Tabela de Atributos -->
+            <table id="combate" class="rpg-table">
+                 <!-- As linhas e colunas serão adicionadas pelo JavaScript -->
+                <thead></thead>
+                <tbody></tbody>
+            </table>  
             <br>
 
 
@@ -110,40 +133,6 @@
                 <thead></thead>
                 <tbody></tbody>
             </table>
-
-            
-            <!-- Lista de Magias -->
-            <section class="ciclo">
-                <h2>Ciclo 0</h2>
-                <section class="ciclo0">
-    
-                </section>
-    
-                <h2>Ciclo 1</h2>
-                <section class="ciclo1">
-                    <!-- O texto será adicionado aqui pelo JavaScript -->
-                </section>
-    
-                <h2>Ciclo 2</h2>
-                <section class="ciclo2">
-                    <!-- O texto será adicionado aqui pelo JavaScript -->
-                </section>
-    
-                <h2>Ciclo 3</h2>
-                <section class="ciclo3">
-                    <!-- O texto será adicionado aqui pelo JavaScript -->
-                </section>
-    
-                <h2>Ciclo 4</h2>
-                <section class="ciclo4">
-                    <!-- O texto será adicionado aqui pelo JavaScript -->
-                </section>
-    
-                <h2>Ciclo 5</h2>
-                <section class="ciclo5">
-                    <!-- O texto será adicionado aqui pelo JavaScript -->
-                </section>
-            </section>
         </section>
     </main>
 </body>

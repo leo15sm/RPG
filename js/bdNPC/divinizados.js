@@ -192,18 +192,6 @@ export const apoio = [
         personalidade: "Paqueradora, Sonhadora, Gentil",
     }, 
     {
-        imagem: "../images/NPC/Susako.jpeg",
-        nome: "Susako",
-        titulo: "Afinador Castelado do Nick",
-        ascendencia: "Iris",
-        linhagem: "Lumier",
-        dominio: "Luz",
-        elemento: "Cor Amarelo",
-        classe: "Feiticeiro Lv 0",
-        oficio: "Arcanista Lv 2",
-        personalidade: "Inteligente, Modesto, Preguiçoso",
-    },
-    {
         imagem: "../images/NPC/Mayah.jpeg",
         nome: "Maya",
         titulo: "Fantasma de Hera",

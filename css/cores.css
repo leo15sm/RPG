@@ -1,25 +1,22 @@
 :root {
-    --RPG-white: rgba(255, 255, 255, 1);
-    --RPG-black: rgba(0, 0, 0, 1);
-    --RPG-gray: rgb(134, 133, 133);
-    --RPG-blue: rgb(0, 123, 255, 1);
-    --RPG-blue-dark: rgb(0, 86, 179, 1);
-    --RPG-violet: rgb(138, 43, 226, 1);
-    --RPG-black-opacity: rgba(0, 0, 0, .7);
-    --RPG-gradient-violet: linear-gradient(to right, rgb(0, 0, 0) 40%, rgb(138, 43, 226));
-    --RPG-gold: rgba(255, 215, 0, 1); /* Cor dourada */
-
     --width-max: 1020px;
     --width-min: 1020px;
-
-    --background-color: #1a1a1a;
-    --text-color: #f0e6d2;
-    --text-red: #e63946;
-    --text-gold: #f4a261;
-    --border-color: #8b4513;
-    --highlight-color: #e0b084;
-    --input-bg: #1e1e1e;
-    --container-bg: #333;
-    --row-alt-bg: #2a2a2a;
+    
     --box-shadow-color: rgba(0, 0, 0, 0.5);
+    --shadow-7: rgba(0, 0, 0, .7);
+    --background: rgba(0, 0, 0, 1);
+    
+    --RPG-gold: rgba(255, 215, 0, 1); /* Cor dourada */
+    --gradient-gold: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 215, 0, 1));
+
+    --text-color: rgb(243, 229, 171);  /* Dourado suave, quase bege, para um toque de luxo */
+    --text-red: rgb(217, 130, 43);  /* Dourado alaranjado, para um tom quente e vibrante */
+    --text-gold: rgb(240, 198, 116);  /* Dourado mais suave, para elementos de destaque */
+    --border-color: rgb(212, 175, 55);  /* Dourado forte, com um toque de riqueza nas bordas */
+    --highlight-color: rgb(231, 201, 127);  /* Um dourado mais suave para destaques e hover */
+    --input-bg: rgb(30, 30, 30);  /* Marrom escuro, com nuances douradas, para um fundo elegante */
+    --container-bg: rgb(75, 61, 29);  /* Marrom escuro com nuances douradas, criando um fundo acolhedor e misterioso */
+    --row-alt-bg: rgb(59, 44, 31);  /* Marrom escuro com um toque de dourado, para variação nas linhas */
+    --nav: rgb(75, 61, 29);  /* Tom de marrom escuro com dourado, para o fundo de navegação */
+    --nav-scroll: rgb(75, 61, 29, 0.5);
 }

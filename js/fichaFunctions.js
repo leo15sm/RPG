@@ -1,5 +1,3 @@
-import {listMagias} from './bdMagias.js';
-
 export function selectJogadores(List, SectionId) {
     const selectElement = document.getElementById(SectionId);
 
@@ -19,82 +17,121 @@ export function selectJogadores(List, SectionId) {
         }
     });
 
-    // Adiciona as magias do personagem aos ciclos correspondentes
-    // personagem.playerMagias.forEach(nomeMagia => {
-    //     const magia = listMagias.find(m => m.nome === nomeMagia);
-    //     if (magia) {
-    //         const cicloSection = document.querySelector(`.ciclo${magia.ciclo}`);
-    //         const magiaElement = document.createElement('section');
-    //         magiaElement.classList.add('magia');
-    //         magiaElement.innerHTML = `
-    //             <h3>${magia.nome}</h3>
-    //             <p><span>Ação:</span> ${magia.acao}</p>
-    //             <p><span>Requisito:</span> ${magia.requisito}</p>
-    //             <p><span>Descrição:</span> ${magia.descricao}</p>
-    //         `;
-    //         cicloSection.appendChild(magiaElement);
-    //     }
-    // });
-
     // Função para preencher os campos com os dados do personagem selecionado
     function preencherCampos(jogadorSelecionado) {
         // Busca o personagem correspondente ao jogador selecionado
         const personagem = List.find(p => p.player === jogadorSelecionado);
-
+        
         if (personagem) {
             // Preenche os campos básicos com os dados do personagem
             document.getElementById("nome").value = personagem.nome;
             document.getElementById("filho").value = personagem.bild.ascendente;
-            document.getElementById("classe").value = personagem.bild.classe;
-            document.getElementById("oficio").value = personagem.bild.oficio;
+            document.getElementById("classe").value = personagem.bild.classe.nome;
             document.getElementById("xp").value = personagem.progresso.xp;
             document.getElementById("nivel").value = personagem.progresso.nivel;
             document.getElementById("skill").value = personagem.progresso.skill;
             document.getElementById("upgrade").value = personagem.progresso.upgrade;
             document.getElementById("missao").value = personagem.progresso.missao;
             document.getElementById("gold").value = personagem.progresso.gold;
-            document.getElementById("elementos").value = personagem.bild.elemento;
-            document.getElementById("dominio").value = personagem.bild.dominio;
+            
+            // Preenche as listas 
+            const dominiosElement = document.getElementById("dominios");
+            const elementosElement = document.getElementById("elementos");
+            const oficiosElement = document.getElementById("oficios");
+            const maestriasElement = document.getElementById("maestrias");
+        
+            // Limpa as opções anteriores
+            dominiosElement.innerHTML = '';
+            elementosElement.innerHTML = '';
+            oficiosElement.innerHTML = '';
+            maestriasElement.innerHTML = '';
 
+            // Adiciona as opções de dominios
+            personagem.bild.dominios.forEach(dominio => {
+                const option = document.createElement('option');
+                option.textContent = dominio;
+                option.value = dominio;
+                dominiosElement.appendChild(option);
+            });
+
+            // Adiciona as opções de elementos
+            personagem.bild.elementos.forEach(elemento => {
+                const option = document.createElement('option');
+                option.textContent = elemento;
+                option.value = elemento;
+                elementosElement.appendChild(option);
+            });
+        
+            // Adiciona as opções de ofícios
+            personagem.bild.oficios.forEach(oficio => {
+                const option = document.createElement('option');
+                option.textContent = oficio;
+                option.value = oficio;
+                oficiosElement.appendChild(option);
+            });
+        
+            // Adiciona as opções de maestrias
+            personagem.bild.maestrias.forEach(maestria => {
+                const option = document.createElement('option');
+                option.textContent = maestria;
+                option.value = maestria;
+                maestriasElement.appendChild(option);
+            });
+                
             // Preenche os atributos e seus modificadores
             const atributos = personagem.atributos;
-
-            // Mapeia os atributos para os inputs com base no nome dos atributos
+        
             const atributosMap = {
                 sabedoria: atributos.sabedoria,
                 intelecto: atributos.intelecto,
                 carisma: atributos.carisma,
                 destreza: atributos.destreza,
                 forca: atributos.forca,
-                vitalidade: atributos.vitalidade
+                vigor: atributos.vigor 
             };
-
+        
             Object.keys(atributosMap).forEach(nomeAtributo => {
                 const inputAtributo = document.querySelector(`input[name="valores_${nomeAtributo}"]`);
-                const inputModificador = document.querySelector(`input[name="mod_${nomeAtributo}"]`); // Campo para o modificador
-
+                const inputModificador = document.querySelector(`input[name="mod_${nomeAtributo}"]`);
+        
                 if (inputAtributo) {
-                    inputAtributo.value = atributosMap[nomeAtributo];  // Preenche o valor do atributo
+                    inputAtributo.value = atributosMap[nomeAtributo];
                 }
-
+        
                 if (inputModificador) {
-                    inputModificador.value = personagem.calcularMod(nomeAtributo); // Preenche o modificador
+                    inputModificador.value = personagem.calcularMod(nomeAtributo);
                 }
             });
+            
+            // Preenche os campos de HP, Mana, Estamina e Redutor com os valores calculados
+            const atributosDeCombate = personagem.calcularAtributosDeCombate();
+            
+            document.querySelector(`input[name="valores_hp"]`).value = atributosDeCombate.hp;
+            document.querySelector(`input[name="valores_mana"]`).value = atributosDeCombate.mana;
+            document.querySelector(`input[name="valores_estamina"]`).value = atributosDeCombate.estamina;
+            document.querySelector(`input[name="valores_redutor"]`).value = atributosDeCombate.redutor;
         } else {
             // Se o personagem não for encontrado, limpa os campos
             document.getElementById("nome").value = '';
             document.getElementById("filho").value = '';
             document.getElementById("classe").value = '';
-            document.getElementById("oficio").value = '';
             document.getElementById("xp").value = '';
             document.getElementById("nivel").value = '';
             document.getElementById("skill").value = '';
             document.getElementById("upgrade").value = '';
-
+            document.getElementById("missao").value = '';
+            document.getElementById("gold").value = '';
+            document.getElementById("elementos").value = '';
+            document.getElementById("dominio").value = '';
+        
+            // Limpa as listas de ofícios e maestrias
+            document.getElementById("oficios").innerHTML = '';
+            document.getElementById("maestrias").innerHTML = '';
+        
             // Limpa os inputs de atributos e modificadores
-            Object.keys(atributosMap).forEach(nomeAtributo => {
-                const inputAtributo = document.querySelector(`input[name="atributos_${nomeAtributo}"]`);
+            const atributosMap = ['sabedoria', 'intelecto', 'carisma', 'destreza', 'forca', 'vigor'];
+            atributosMap.forEach(nomeAtributo => {
+                const inputAtributo = document.querySelector(`input[name="valores_${nomeAtributo}"]`);
                 const inputModificador = document.querySelector(`input[name="mod_${nomeAtributo}"]`);
                 if (inputAtributo) {
                     inputAtributo.value = '';
