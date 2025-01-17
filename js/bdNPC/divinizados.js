@@ -117,7 +117,7 @@ export const apoio = [
         elemento: "Terra, Fogo",
         classe: "Espadachim Lv 2",
         oficio: "Militar Lv 5",
-        personalidade: "Diligente, Forla da Natureza, Inabalável",
+        personalidade: "Diligente, Implacável, Inabalável",
     }, 
     {
         imagem: "../images/NPC/Tarvim.jpeg",
@@ -129,7 +129,7 @@ export const apoio = [
         elemento: "Terra Água",
         classe: "Espadachim Lv 2",
         oficio: "Militar Lv 5",
-        personalidade: "Força da natureza, Companheiro, Corajoso",
+        personalidade: "Implacável, Companheiro, Corajoso",
     }, 
     {
         imagem: "../images/NPC/Teseu.jpeg",
