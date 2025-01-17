@@ -55,8 +55,8 @@ main{
 }
 
 .slider .slider-images figure img{
-    width: 23rem;
-    height: 35rem;
+    width: 20rem;
+    height: 30rem;
     object-fit: fill;
     border-radius: 25px;  
 }
