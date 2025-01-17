@@ -22,7 +22,7 @@ main {
     letter-spacing: .2rem;
     border-radius: 10px;
     border: 2px solid var(--border-color);
-    background-color: var(--box-shadow-color);
+    background-color: var(--background);
     box-shadow: 0 0 15px var(--box-shadow-color);
 }
 
@@ -34,6 +34,7 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     height: 25%;  
+    color: var(--text-color);
 }
 
 .botao {
@@ -54,7 +55,7 @@ h1 {
 .resultado {
     width: 60%;
     font-size: 1.8em;
-    color: var(--text-gold);
+    color: var(--text-color);
 }
 
 .resultado ul {

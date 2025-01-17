@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Carregar o footer
     // carregarConteudo("../Pages/footer.html", "out-footer");
-
-    initializeNav();
+    
 });
 
 // Função para carregar conteúdos
@@ -25,6 +24,8 @@ function initializeNav() {
     const btnMenu = document.querySelector(".btn-menu");
     const menu = document.querySelector(".navmenu");
     const nav = document.querySelector(".nav");
+    
+    inicializeTema();
 
     if (btnMenu && menu && nav) {
         function handleButtonClick(event) {
@@ -78,4 +79,27 @@ function initializeNav() {
     }
 
     window.addEventListener("scroll", scrollnav);
-}    
+}  
+
+function inicializeTema() {
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+    const icon = themeToggle.querySelector('i'); // Seleciona o ícone dentro do botão
+
+    themeToggle.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Alterna entre temas
+        body.classList.toggle('light-theme');
+
+        // Troca o ícone
+        if (body.classList.contains('light-theme')) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun'); // Define o ícone de sol
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon'); // Retorna para o ícone de lua
+        }
+    });
+}
+

@@ -1,6 +1,6 @@
 :root {
-    --width-max: 1020px;
-    --width-min: 1020px;
+    --width-max: 720px;
+    --width-min: 720px;
     
     --box-shadow-color: rgba(0, 0, 0, 0.5);
     --shadow-7: rgba(0, 0, 0, .7);
@@ -9,14 +9,29 @@
     --RPG-gold: rgba(255, 215, 0, 1); /* Cor dourada */
     --gradient-gold: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 215, 0, 1));
 
-    --text-color: rgb(243, 229, 171);  /* Dourado suave, quase bege, para um toque de luxo */
-    --text-red: rgb(217, 130, 43);  /* Dourado alaranjado, para um tom quente e vibrante */
-    --text-gold: rgb(240, 198, 116);  /* Dourado mais suave, para elementos de destaque */
-    --border-color: rgb(212, 175, 55);  /* Dourado forte, com um toque de riqueza nas bordas */
-    --highlight-color: rgb(231, 201, 127);  /* Um dourado mais suave para destaques e hover */
-    --input-bg: rgb(30, 30, 30);  /* Marrom escuro, com nuances douradas, para um fundo elegante */
-    --container-bg: rgb(75, 61, 29);  /* Marrom escuro com nuances douradas, criando um fundo acolhedor e misterioso */
-    --row-alt-bg: rgb(59, 44, 31);  /* Marrom escuro com um toque de dourado, para variação nas linhas */
-    --nav: rgb(75, 61, 29);  /* Tom de marrom escuro com dourado, para o fundo de navegação */
-    --nav-scroll: rgb(75, 61, 29, 0.5);
+    --text-color: rgb(243, 229, 171); /* Dourado suave, quase bege, para um toque de luxo */
+    --text-red: rgb(217, 130, 43); /* Dourado alaranjado, para um tom quente e vibrante */
+    --text-gold: rgb(240, 198, 116); /* Dourado mais suave, para elementos de destaque */
+    --border-color: rgb(202, 155, 50); /* Dourado mais profundo e discreto para bordas */
+    --highlight-color: rgb(231, 193, 108); /* Dourado claro, para áreas de destaque */
+    --input-bg: rgb(40, 30, 20); /* Marrom ainda mais escuro, para maior contraste com o texto */
+    --container-bg: rgb(60, 50, 20); /* Marrom escuro com mais nuances douradas */
+    --row-alt-bg: rgb(50, 40, 20); /* Um tom ligeiramente mais escuro para as linhas alternadas */
+    --nav: rgb(70, 55, 25); /* Um pouco mais claro para destacar a navegação */
+    --nav-scroll: rgba(70, 55, 25, 0.5); /* Versão translúcida do fundo de navegação */
+}
+
+/* Tema claro */
+body.light-theme {
+    --background: rgba(255, 255, 255, 1);
+    --text-color: rgb(40, 40, 40); /* Preto suave */
+    --text-red: rgb(200, 90, 70); /* Tom avermelhado mais claro */
+    --text-gold: rgb(255, 215, 130); /* Dourado claro */
+    --border-color: rgb(150, 120, 40); /* Dourado sutil */
+    --highlight-color: rgb(240, 200, 150); /* Destaque claro */
+    --input-bg: rgb(240, 240, 230); /* Fundo claro para inputs */
+    --container-bg: rgb(255, 250, 240); /* Fundo claro para contêineres */
+    --row-alt-bg: rgb(230, 220, 200); /* Linhas alternadas claras */
+    --nav: rgb(245, 230, 210); /* Fundo claro para navegação */
+    --nav-scroll: rgba(245, 230, 210, 0.5); /* Fundo translúcido para navegação */
 }

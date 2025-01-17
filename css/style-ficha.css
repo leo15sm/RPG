@@ -10,7 +10,6 @@
 body {
     margin: 0 auto;
     max-width: var(--width-max);
-    background-color: var(--background-color);
 }
 
 header{
@@ -54,6 +53,7 @@ h1 {
     text-align: center;
     border-collapse: collapse;
     margin-bottom: 1rem;
+    font-weight: bold;
 }
 
 .rpg-table th, .rpg-table td {
@@ -140,17 +140,18 @@ h1 {
     font-size: 24px;
     color: var(--text-red);
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 0 var(--RPG-Black);
+    text-shadow: 1.25px 1.25px 0 var(--text-color);
 }
 
 /* Estilo das magias */
 .magia {
-    background: rgba(245, 203, 92, 0.1);
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 20px;
+    color: var( --text-color);
     border: 1px solid var(--border-color);
     background-image: url('https://www.transparenttextures.com/patterns/linen.png'); /* Fundo rústico */
+    background: rgba(245, 203, 92, 0.1);
     text-align: justify;
     /* text-transform: capitalize; */
 }
@@ -158,8 +159,8 @@ h1 {
 /* Títulos das magias */
 .magia h3 {
     font-size: 20px;
-    color: var(--text-gold);
-    text-shadow: 1px 1px 0 var(--RPG-Black);
+    color: var(--text-color);
+    text-shadow: .5px .5px 0 var(--background);
     margin-bottom: 10px;
 }
 
@@ -181,3 +182,4 @@ section.magia:hover {
     box-shadow: 0 0 10px var(--RPG-Gold);
 }
 
+/*#########################################################################*/

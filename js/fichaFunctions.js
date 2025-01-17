@@ -327,7 +327,7 @@ export function initializeSlider(SectionId, dadosImport, isVisible) {
 
         // Adiciona dinamicamente o ofício, se existir
         if (dados.personalidade) {
-            slideHtml += `<p><span>Personalidade:</span> ${dados.personalidade}</p>`;
+            slideHtml += `<p><span>Personalidade:</span> <br> ${dados.personalidade}</p>`;
         }
 
         // Fecha o template da legenda e o figure
