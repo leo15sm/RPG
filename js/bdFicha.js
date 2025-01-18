@@ -149,14 +149,14 @@ export const players = [
         "Uilian", "Aldritch", 
         new Bild(
             "Eros", 
-            getClasseByName("Atirador"), // Passando o objeto da classe "Atirador"
+            getClasseByName("Mago"), // Passando o objeto da classe "Atirador"
             ["Carisma"], 
             ["Ether", "Trevas"], 
-            ["Militar 5", "Arcanista 5"],
+            ["Militar 5", "Arcanista 10"],
             ["Espada 5"]
         ),
         new Atributos(22, 30, 20, 30, 21, 21),
-        new Progresso(4, 283, 3, 11, 45, 1000.00)
+        new Progresso(2, 283, 3, 11, 45, 1000.00)
     ),
     /*###########################################*/
   
