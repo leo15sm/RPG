@@ -155,7 +155,7 @@ export const players = [
             ["Militar 5", "Arcanista 5"],
             ["Espada 5"]
         ),
-        new Atributos(30, 30, 20, 20, 21, 21),
+        new Atributos(22, 30, 20, 30, 21, 21),
         new Progresso(4, 283, 3, 11, 45, 1000.00)
     ),
     /*###########################################*/
