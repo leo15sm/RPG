@@ -132,29 +132,3 @@ export const afrodite = [
         personalidade: "Estudiosa, Imparcial, Compreensiva",
     },   
 ];
-// Função para enviar os dados ao Firestore
-function sendDataToFirestore() {
-    afrodite.forEach((personagem) => {
-        db.collection('semideuses').add({
-            imagem: personagem.imagem,
-            nome: personagem.nome,
-            titulo: personagem.titulo,
-            ascendencia: personagem.ascendencia,
-            linhagem: personagem.linhagem,
-            dominio: personagem.dominio,
-            elemento: personagem.elemento,
-            classe: personagem.classe,
-            oficio: personagem.oficio,
-            personalidade: personagem.personalidade
-        })
-        .then(() => {
-            console.log("Documento adicionado com sucesso!");
-        })
-        .catch((error) => {
-            console.error("Erro ao adicionar documento: ", error);
-        });
-    });
-}
-
-// Chama a função para enviar os dados
-sendDataToFirestore();

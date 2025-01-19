@@ -1,3 +1,10 @@
+import { db } from "./firebaseConfig.js";
+import { 
+  collection, 
+  addDoc,
+  getDocs,
+} from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js'; 
+
 export function selectJogadores(List, SectionId) {
     const selectElement = document.getElementById(SectionId);
 
@@ -194,7 +201,7 @@ export function criarTabela(dados, idTabela) {
     });
 }
 
-export function selectMagias(escolas, listMagias, selectId) {
+export async function selectMagias(listMagias, selectId) {
     const selectElement = document.getElementById(selectId);
 
     // Verifica se o elemento select foi encontrado
@@ -203,11 +210,14 @@ export function selectMagias(escolas, listMagias, selectId) {
         return;
     }
 
+    // Busca as escolas do Firestore
+    const escolas = await buscarDadosFirestore("EscolasMagia");
+
     // Limpa as opções anteriores (se houver)
     selectElement.innerHTML = '';
 
     // Popula o select com as opções de escola
-    escolas.lista.forEach((escola, index) => {
+    escolas.forEach((escola, index) => {
         const option = document.createElement('option');
         option.value = escola;
         option.text = escola.charAt(0).toUpperCase() + escola.slice(1); // Capitaliza a primeira letra
@@ -221,7 +231,7 @@ export function selectMagias(escolas, listMagias, selectId) {
 
     // Função para atualizar as magias nas seções de ciclo conforme a escola selecionada
     function updateMagiasByEscola(escola) {
-        // Itera sobre todos os ciclos (de 0 a 5)
+        // Itera sobre todos os ciclos (de 0 a 7)
         for (let ciclo = 0; ciclo <= 7; ciclo++) {
             // Seleciona a seção correspondente ao ciclo atual
             const cicloSection = document.querySelector(`.ciclo${ciclo}`);
@@ -471,4 +481,12 @@ export function initializeSlider(SectionId, dadosImport, isVisible) {
     createRadioButtons(); // Cria os radio buttons dinamicamente
     window.addEventListener("load", Start);
     addRadioClickEvents();
+}
+
+// Função para buscar dados do Firestore
+async function buscarDadosFirestore(nomeColecao) {
+    const colecao = collection(db, nomeColecao);
+    const snapshot = await getDocs(colecao); // Obtém os documentos da coleção
+    const dados = snapshot.docs.map(doc => doc.data().nome); // Supondo que cada documento tenha a propriedade 'nome'
+    return dados;
 }

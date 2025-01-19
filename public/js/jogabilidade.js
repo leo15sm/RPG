@@ -1,8 +1,4 @@
-import { db } from './firebaseConfig.js'; // Importando a instância do Firestore
-import { 
-    collection, 
-    getDocs,
-} from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js'; 
+import { buscarDadosFirestore } from "./CRUD.js";
 
 document.addEventListener("DOMContentLoaded", async function() {
     // Aguarda a função buscarPersonalidades retornar os dados para personalidades
@@ -46,18 +42,4 @@ function sortear(dadosImport, SectionId, quantidadeSorteios) {
             resultado.appendChild(elemento); // Adiciona ao contêiner de resultados
         }
     });
-}
-
-// Função para buscar dados do Firebase de uma coleção genérica
-async function buscarDadosFirestore(nomeColecao) {
-    const colecao = collection(db, nomeColecao);
-    const querySnapshot = await getDocs(colecao);
-
-    const dadosCadastrados = [];
-    querySnapshot.forEach((doc) => {
-        dadosCadastrados.push(doc.data().nome);  // Supondo que os documentos tenham um campo 'nome'
-    });
-
-    console.log(`${nomeColecao} cadastrados:`, dadosCadastrados);
-    return dadosCadastrados; // Retorna a lista para uso posterior
 }

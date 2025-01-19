@@ -1,20 +1,22 @@
-import {apoio} from './bdNPC/divinizados.js';
-import {zeus} from './bdNPC/zeus.js';
-import {hades} from './bdNPC/hades.js';
-import {posseidon} from './bdNPC/posseidon.js';
-import {hera} from './bdNPC/hera.js';
-import {demeter} from './bdNPC/demeter.js';
-import {afrodite} from './bdNPC/afrodite.js';
-import {athena} from './bdNPC/athena.js';
-import {apolo} from './bdNPC/apolo.js';
-import {artemis} from './bdNPC/artemis.js';
-import {herfesto} from './bdNPC/herfesto.js';
-import {ares} from './bdNPC/ares.js';
-import {hermes} from './bdNPC/hermes.js';
-import {dionisio} from './bdNPC/dionisio.js';
+import { buscarDadosFirestore2 } from "./CRUD.js";
 import { initializeSlider } from './fichaFunctions.js';
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", async function() {
+    const apoio = await buscarDadosFirestore2("divinizados");
+    const zeus = await buscarDadosFirestore2("zeus");
+    const hades = await buscarDadosFirestore2("hades");
+    const posseidon = await buscarDadosFirestore2("posseidon");
+    const hera = await buscarDadosFirestore2("hera");
+    const demeter = await buscarDadosFirestore2("demeter");
+    const afrodite = await buscarDadosFirestore2("afrodite");
+    const athena = await buscarDadosFirestore2("athena");
+    const apolo = await buscarDadosFirestore2("apolo");
+    const artemis = await buscarDadosFirestore2("artemis");
+    const herfesto = await buscarDadosFirestore2("herfesto");
+    const ares = await buscarDadosFirestore2("ares");
+    const hermes = await buscarDadosFirestore2("hermes");
+    const dionisio = await buscarDadosFirestore2("dionisio");
+
     initializeSlider('apoio', apoio, 1);
     initializeSlider('zeus', zeus, 1);
     initializeSlider('hades', hades, 1);
@@ -30,3 +32,5 @@ document.addEventListener("DOMContentLoaded", function() {
     initializeSlider('hermes', hermes, 1);
     initializeSlider('dionisio', dionisio, 1);
 });
+
+
