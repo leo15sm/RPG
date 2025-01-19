@@ -1,7 +1,7 @@
 
 export const posseidon = [
     {
-        imagem: "../images/NPC/posseidon/Principe Posseidon.jpeg",
+        imagem: "./images/NPC/posseidon/Principe Posseidon.jpeg",
         nome: "Belerofonte",
         titulo: "Principe de Posseidon",
         ascendencia: "Posseidon",
@@ -13,7 +13,7 @@ export const posseidon = [
         personalidade: "Protetor, Impiedoso, Provocador",
     },   
     {
-        imagem: "../images/NPC/posseidon/Segundo Posseidon.jpeg",
+        imagem: "./images/NPC/posseidon/Segundo Posseidon.jpeg",
         nome: "Evadne", //Gêmea do Principe
         titulo: "Segundo de Posseidon",
         ascendencia: "Posseidon",
@@ -25,7 +25,7 @@ export const posseidon = [
         personalidade: "Provocador, Curiosa, Vaidosa",
     },   
     {
-        imagem: "../images/NPC/posseidon/Principe Tritao.jpeg",
+        imagem: "./images/NPC/posseidon/Principe Tritao.jpeg",
         nome: "Epopeu", //Primo do Príncipe
         titulo: "Principe de Tritão",
         ascendencia: "Tritão",
@@ -37,7 +37,7 @@ export const posseidon = [
         personalidade: "Simplista, Justiceiro, Mulherengo",
     },  
     {
-        imagem: "../images/NPC/posseidon/Segundo Tritao.jpeg",
+        imagem: "./images/NPC/posseidon/Segundo Tritao.jpeg",
         nome: "Cromos",
         titulo: "Segundo de Tritão",
         ascendencia: "Tritão",
@@ -49,7 +49,7 @@ export const posseidon = [
         personalidade: "Arrogante, Provocador, Disciplinado",
     },   
     {
-        imagem: "../images/NPC/posseidon/Terceiro Tritao.jpeg",
+        imagem: "./images/NPC/posseidon/Terceiro Tritao.jpeg",
         nome: "Náuplio",
         titulo: "Terceiro de Tritão",
         ascendencia: "Tritão",
@@ -61,7 +61,7 @@ export const posseidon = [
         personalidade: "Arrogante, Desobediente, Pavio Curto",
     },     
     {
-        imagem: "../images/NPC/posseidon/Princesa Nereu.jpeg",
+        imagem: "./images/NPC/posseidon/Princesa Nereu.jpeg",
         nome: "Caribdis",
         titulo: "Principe de Nereu",
         ascendencia: "Nereu",
@@ -73,7 +73,7 @@ export const posseidon = [
         personalidade: "Ninfomaníaca, Provocadora, Misteriosa",
     },  
     {
-        imagem: "../images/NPC/posseidon/Segundo Nereu.jpeg",
+        imagem: "./images/NPC/posseidon/Segundo Nereu.jpeg",
         nome: "Eumolpo",
         titulo: "Segundo de Nereu",
         ascendencia: "Nereu",
@@ -85,7 +85,7 @@ export const posseidon = [
         personalidade: "Desconfiado, Traiçoeiro, Misterioso",
     },   
     {
-        imagem: "../images/NPC/posseidon/Terceiro Nereu.jpeg",
+        imagem: "./images/NPC/posseidon/Terceiro Nereu.jpeg",
         nome: "Escila",
         titulo: "Terceiro de Nereu",
         ascendencia: "Nereu",
@@ -97,7 +97,7 @@ export const posseidon = [
         personalidade: "Psicopata, Sem Noção, Obediente",
     },   
     {
-        imagem: "../images/NPC/posseidon/Princesa Aqueloo.jpeg",
+        imagem: "./images/NPC/posseidon/Princesa Aqueloo.jpeg",
         nome: "Andrômeda",
         titulo: "Principe de Aqueloo",
         ascendencia: "Aqueloo",
@@ -109,7 +109,7 @@ export const posseidon = [
         personalidade: "Independente, Estudiosa, Honrada",
     },  
     {
-        imagem: "../images/NPC/posseidon/Segundo Aqueloo.jpeg",
+        imagem: "./images/NPC/posseidon/Segundo Aqueloo.jpeg",
         nome: "Halimede",
         titulo: "Segundo de Aqueloo",
         ascendencia: "Aqueloo",
@@ -121,7 +121,7 @@ export const posseidon = [
         personalidade: "Inocente, Obediente, Apaixonada",
     },   
     {
-        imagem: "../images/NPC/posseidon/Terceiro Aqueloo.jpeg",
+        imagem: "./images/NPC/posseidon/Terceiro Aqueloo.jpeg",
         nome: "Quione",
         titulo: "Terceiro de Aqueloo",
         ascendencia: "Aqueloo",

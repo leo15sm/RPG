@@ -1,6 +1,6 @@
 export const hermes = [
     {
-        imagem: "../images/NPC/hermes/Principe Hermes.jpeg",
+        imagem: "./images/NPC/hermes/Principe Hermes.jpeg",
         nome: "Celestrion",
         titulo: "Principe de Hermes",
         ascendencia: "Hermes",
@@ -12,7 +12,7 @@ export const hermes = [
         personalidade: "Paquerador, Orgulhoso, Companheiro",
     },   
     {
-        imagem: "../images/NPC/hermes/Segundo Hermes.jpeg",
+        imagem: "./images/NPC/hermes/Segundo Hermes.jpeg",
         nome: "Electraeus ",
         titulo: "Segundo de Hermes",
         ascendencia: "Hermes",
@@ -24,7 +24,7 @@ export const hermes = [
         personalidade: "Corajoso, Esportista, Amável",
     },   
     {
-        imagem: "../images/NPC/hermes/Principe Hermafrodito.jpeg",
+        imagem: "./images/NPC/hermes/Principe Hermafrodito.jpeg",
         nome: "Aiolos",
         titulo: "Principe de Hermafrodito",
         ascendencia: "Hermafrodito",
@@ -36,7 +36,7 @@ export const hermes = [
         personalidade: "Franqueza, Leal, Falador",
     },  
     {
-        imagem: "../images/NPC/hermes/Segundo Hermafrodito.jpeg",
+        imagem: "./images/NPC/hermes/Segundo Hermafrodito.jpeg",
         nome: "Adonis",
         titulo: "Segundo de Hermafrodito",
         ascendencia: "Hermafrodito",
@@ -48,7 +48,7 @@ export const hermes = [
         personalidade: "Servo, Malicioso, Cruel",
     },   
     {
-        imagem: "../images/NPC/hermes/Terceiro Hermafrodito.jpeg",
+        imagem: "./images/NPC/hermes/Terceiro Hermafrodito.jpeg",
         nome: "Hermafroditoria",
         titulo: "Terceiro de Hermafrodito",
         ascendencia: "Hermafrodito",
@@ -60,7 +60,7 @@ export const hermes = [
         personalidade: "Diligente, Compreensiva, Gentil",
     },   
     {
-        imagem: "../images/NPC/hermes/Principe Maia.jpeg",
+        imagem: "./images/NPC/hermes/Principe Maia.jpeg",
         nome: "Zopyros",
         titulo: "Principe de Maia",
         ascendencia: "Maia",
@@ -72,7 +72,7 @@ export const hermes = [
         personalidade: "Herói, Altruista, Atrapalhado",
     },  
     {
-        imagem: "../images/NPC/hermes/Segundo Maia.jpeg",
+        imagem: "./images/NPC/hermes/Segundo Maia.jpeg",
         nome: "Menelaos",
         titulo: "Segundo de Maia",
         ascendencia: "Maia",
@@ -84,7 +84,7 @@ export const hermes = [
         personalidade: "Ingrato, Sério, Anti-social",
     },   
     {
-        imagem: "../images/NPC/hermes/Terceiro Maia.jpeg",
+        imagem: "./images/NPC/hermes/Terceiro Maia.jpeg",
         nome: "Jason",
         titulo: "Terceiro de Maia",
         ascendencia: "Maia",
@@ -96,7 +96,7 @@ export const hermes = [
         personalidade: "Companheiro, Leal, Servo",
     },   
     {
-        imagem: "../images/NPC/hermes/Principe Tique.jpeg",
+        imagem: "./images/NPC/hermes/Principe Tique.jpeg",
         nome: "Cadmus",
         titulo: "Principe de Tique",
         ascendencia: "Tique",
@@ -108,7 +108,7 @@ export const hermes = [
         personalidade: "Sério, Orgulhoso, Ignorante",
     },  
     {
-        imagem: "../images/NPC/hermes/Segundo Tique.jpeg",
+        imagem: "./images/NPC/hermes/Segundo Tique.jpeg",
         nome: "Charon",
         titulo: "Segundo de Tique",
         ascendencia: "Tique",
@@ -120,7 +120,7 @@ export const hermes = [
         personalidade: "Antipático, Orgulhoso, Protetor",
     },   
     {
-        imagem: "../images/NPC/hermes/Terceiro Tique.jpeg",
+        imagem: "./images/NPC/hermes/Terceiro Tique.jpeg",
         nome: "Atalanta",
         titulo: "Terceiro de Tique",
         ascendencia: "Tique",

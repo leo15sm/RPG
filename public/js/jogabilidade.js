@@ -1,21 +1,14 @@
-import { ascendentes } from './bdDeuses.js';
+import { db } from './firebaseConfig.js'; // Importando a instância do Firestore
+import { 
+    collection, 
+    getDocs,
+} from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js'; 
 
-export const personalidades = [
-    "Inabalável", "Trapaceiro", "Introvertido", "Carismático", "Servo", "Indeciso", "Procrastinador", "Imparcial", 
-    "Modesto", "Corajoso", "Valente", "Tímido", "Gentil", "Atencioso", "Irritadiço", "Patriota", "Indiferente", 
-    "Sonolento", "Apostador", "Esportista", "Sociopata", "Estranho", "Espalhafatoso", "Idol", "Simplista", "Sério", 
-    "Diligente", "Calmo", "Justiça", "Franqueza", "Amizade", "Companheirismo", "Questionador", "Criativo", 
-    "Protetor", "Atrapalhado", "Aproveitador", "Fofoqueiro", "Anti-social", "Apaixonado", "Calado", "Traíra", 
-    "Narcisista", "Competidor", "Pacifista", "Compreensivo", "Gosto caro", "Briguento", "Preguiçoso", "Força da natureza", 
-    "Precipitado", "Inocente", "Altruísta", "Herói", "Alegre", "Humilde", "Castrado", "Honesto", "Dedicado", "Derrotista", 
-    "Falador", "Paquerador", "Palhaço", "Provocador", "Líder", "Amável", "Honrado", "Precavido", "Audacioso", "Respeitoso", 
-    "Teimoso", "Distraído", "Inquieto", "Antipático", "Crente", "Mentiroso", "Invejoso", "Ganancioso", "Orgulhoso", 
-    "Malicioso", "Fervoroso", "Guloso", "Ingrato", "Hipócrita", "Exibicionista", "Exigente", "Estudioso", "Hospitaleiro", 
-    "Mal educado", "Paladar exótico", "Companheiro", "Complexo de inferioridade", "Infantil", "Amante da natureza", 
-    "Inseguro", "poucas palavras"
-];
+document.addEventListener("DOMContentLoaded", async function() {
+    // Aguarda a função buscarPersonalidades retornar os dados para personalidades
+    const personalidades = await buscarDadosFirestore("personalidades"); 
+    const ascendentes = await buscarDadosFirestore("ascendentes");
 
-document.addEventListener("DOMContentLoaded", function() {
     sortear(personalidades, 'personalidade', 3);
     sortear(ascendentes, 'ascendente', 2);
 });
@@ -55,3 +48,16 @@ function sortear(dadosImport, SectionId, quantidadeSorteios) {
     });
 }
 
+// Função para buscar dados do Firebase de uma coleção genérica
+async function buscarDadosFirestore(nomeColecao) {
+    const colecao = collection(db, nomeColecao);
+    const querySnapshot = await getDocs(colecao);
+
+    const dadosCadastrados = [];
+    querySnapshot.forEach((doc) => {
+        dadosCadastrados.push(doc.data().nome);  // Supondo que os documentos tenham um campo 'nome'
+    });
+
+    console.log(`${nomeColecao} cadastrados:`, dadosCadastrados);
+    return dadosCadastrados; // Retorna a lista para uso posterior
+}

@@ -1,6 +1,6 @@
 export const afrodite = [
     {
-        imagem: "../images/NPC/afrodite/Principe Afrodite.jpeg",
+        imagem: "./images/NPC/afrodite/Principe Afrodite.jpeg",
         nome: "Celestrion",
         titulo: "Segundo de Afrodite",
         ascendencia: "Afrodite",
@@ -12,7 +12,7 @@ export const afrodite = [
         personalidade: "Paquerador, Orgulhoso, Companheiro",
     },   
     {
-        imagem: "../images/NPC/afrodite/Segundo Afrodite.jpeg",
+        imagem: "./images/NPC/afrodite/Segundo Afrodite.jpeg",
         nome: "Electraeus ",
         titulo: "Principe de Afrodite",
         ascendencia: "Afrodite",
@@ -24,7 +24,7 @@ export const afrodite = [
         personalidade: "Corajoso, Esportista, Amável",
     },   
     {
-        imagem: "../images/NPC/afrodite/Principe Eros.jpeg",
+        imagem: "./images/NPC/afrodite/Principe Eros.jpeg",
         nome: "Aiolos",
         titulo: "Principe de Eros",
         ascendencia: "Eros",
@@ -36,7 +36,7 @@ export const afrodite = [
         personalidade: "Franqueza, Leal, Falador",
     },  
     {
-        imagem: "../images/NPC/afrodite/Segundo Eros.jpeg",
+        imagem: "./images/NPC/afrodite/Segundo Eros.jpeg",
         nome: "Adonis",
         titulo: "Segundo de Eros",
         ascendencia: "Eros",
@@ -48,7 +48,7 @@ export const afrodite = [
         personalidade: "Servo, Malicioso, Cruel",
     },   
     {
-        imagem: "../images/NPC/afrodite/Terceiro Eros.jpeg",
+        imagem: "./images/NPC/afrodite/Terceiro Eros.jpeg",
         nome: "Carina",
         titulo: "Terceira Eros",
         ascendencia: "Eros",
@@ -60,7 +60,7 @@ export const afrodite = [
         personalidade: "Compreensiva, Sociopata, Palahaça",
     },   
     {
-        imagem: "../images/NPC/afrodite/Principe Himeros.jpeg",
+        imagem: "./images/NPC/afrodite/Principe Himeros.jpeg",
         nome: "Zopyros",
         titulo: "Principe de Himeros",
         ascendencia: "Himeros",
@@ -72,7 +72,7 @@ export const afrodite = [
         personalidade: "Herói, Altruista, Atrapalhado",
     },  
     {
-        imagem: "../images/NPC/afrodite/Segundo Himeros.jpeg",
+        imagem: "./images/NPC/afrodite/Segundo Himeros.jpeg",
         nome: "Menelaos",
         titulo: "Segundo de Himeros",
         ascendencia: "Himeros",
@@ -84,7 +84,7 @@ export const afrodite = [
         personalidade: "Ingrato, Sério, Anti-social",
     },   
     {
-        imagem: "../images/NPC/afrodite/Terceiro Himeros.jpeg",
+        imagem: "./images/NPC/afrodite/Terceiro Himeros.jpeg",
         nome: "Jason",
         titulo: "Terceiro de Himeros",
         ascendencia: "Himeros",
@@ -96,7 +96,7 @@ export const afrodite = [
         personalidade: "Companheiro, Leal, Servo",
     },   
     {
-        imagem: "../images/NPC/afrodite/Principe Thalia.jpeg",
+        imagem: "./images/NPC/afrodite/Principe Thalia.jpeg",
         nome: "Cadmus",
         titulo: "Principe de Thalia",
         ascendencia: "Thalia",
@@ -108,7 +108,7 @@ export const afrodite = [
         personalidade: "Sério, Orgulhoso, Ignorante",
     },  
     {
-        imagem: "../images/NPC/afrodite/Segundo Thalia.jpeg",
+        imagem: "./images/NPC/afrodite/Segundo Thalia.jpeg",
         nome: "Charon",
         titulo: "Segundo de Thalia",
         ascendencia: "Thalia",
@@ -120,7 +120,7 @@ export const afrodite = [
         personalidade: "Antipático, Orgulhoso, Protetor",
     },   
     {
-        imagem: "../images/NPC/afrodite/Terceiro Thalia.jpeg",
+        imagem: "./images/NPC/afrodite/Terceiro Thalia.jpeg",
         nome: "Mirana",
         titulo: "Terceira Thalia",
         ascendencia: "Thalia",
@@ -132,3 +132,29 @@ export const afrodite = [
         personalidade: "Estudiosa, Imparcial, Compreensiva",
     },   
 ];
+// Função para enviar os dados ao Firestore
+function sendDataToFirestore() {
+    afrodite.forEach((personagem) => {
+        db.collection('semideuses').add({
+            imagem: personagem.imagem,
+            nome: personagem.nome,
+            titulo: personagem.titulo,
+            ascendencia: personagem.ascendencia,
+            linhagem: personagem.linhagem,
+            dominio: personagem.dominio,
+            elemento: personagem.elemento,
+            classe: personagem.classe,
+            oficio: personagem.oficio,
+            personalidade: personagem.personalidade
+        })
+        .then(() => {
+            console.log("Documento adicionado com sucesso!");
+        })
+        .catch((error) => {
+            console.error("Erro ao adicionar documento: ", error);
+        });
+    });
+}
+
+// Chama a função para enviar os dados
+sendDataToFirestore();

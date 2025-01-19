@@ -1,6 +1,6 @@
 export const hades = [
     {
-        imagem: "../images/NPC/hades/Principe Hades.jpeg",
+        imagem: "./images/NPC/hades/Principe Hades.jpeg",
         nome: "Terminus",
         titulo: "Principe de Hades",
         ascendencia: "Hades",
@@ -12,7 +12,7 @@ export const hades = [
         personalidade: "Depressivo, Emo, Antisocial",
     },  
     {
-        imagem: "../images/NPC/hades/Segundo Hades.jpeg",
+        imagem: "./images/NPC/hades/Segundo Hades.jpeg",
         nome: "Lupina",
         titulo: "Segundo de Hades",
         ascendencia: "Hades",
@@ -24,7 +24,7 @@ export const hades = [
         personalidade: "Patriota, Estudiosa, Misteriosa",
     },     
     {
-        imagem: "../images/NPC/hades/Princesa Hécate.jpeg",
+        imagem: "./images/NPC/hades/Princesa Hécate.jpeg",
         nome: "Corvina",
         titulo: "Princesa de Hecate",
         ascendencia: "Hecate",
@@ -36,7 +36,7 @@ export const hades = [
         personalidade: "Diligente, Séria, Antipática",
     },  
     {
-        imagem: "../images/NPC/hades/Principe Thanatos.jpeg",
+        imagem: "./images/NPC/hades/Principe Thanatos.jpeg",
         nome: "Zero",
         titulo: "Principe de Thanatos",
         ascendencia: "Thanatos",
@@ -48,7 +48,7 @@ export const hades = [
         personalidade: "Dedicado, Teimoso, Crente",
     },  
     {
-        imagem: "../images/NPC/hades/Segundo Thanatos.jpeg",
+        imagem: "./images/NPC/hades/Segundo Thanatos.jpeg",
         nome: "Damocles",
         titulo: "Segundo de Thanatos",
         ascendencia: "Thanatos",
@@ -60,7 +60,7 @@ export const hades = [
         personalidade: "Amigável, Estudioso, Inabalável",
     },   
     {
-        imagem: "../images/NPC/hades/Terceiro Thanatos.jpeg",
+        imagem: "./images/NPC/hades/Terceiro Thanatos.jpeg",
         nome: "Circe",
         titulo: "Terceiro de Thanatos",
         ascendencia: "Thanatos",
@@ -72,7 +72,7 @@ export const hades = [
         personalidade: "Sociopata, Audaciosa, Misteriosa",
     }, 
     {
-        imagem: "../images/NPC/hades/Principe Hipnos.jpeg",
+        imagem: "./images/NPC/hades/Principe Hipnos.jpeg",
         nome: "Priam",
         titulo: "Principe de Hipnos",
         ascendencia: "Hipnos",
@@ -84,7 +84,7 @@ export const hades = [
         personalidade: "Preguisoso, Entediado, Antipático",
     },  
     {
-        imagem: "../images/NPC/hades/Segundo Hipnos.jpeg",
+        imagem: "./images/NPC/hades/Segundo Hipnos.jpeg",
         nome: "Plato",
         titulo: "Segundo de Hipnos",
         ascendencia: "Hipnos",
@@ -96,7 +96,7 @@ export const hades = [
         personalidade: "Preguisoso, Amável, Antisocial",
     },   
     {
-        imagem: "../images/NPC/hades/Terceiro Hipnos.jpeg",
+        imagem: "./images/NPC/hades/Terceiro Hipnos.jpeg",
         nome: "Helen",
         titulo: "Terceiro de Hipnos",
         ascendencia: "Hipnos",

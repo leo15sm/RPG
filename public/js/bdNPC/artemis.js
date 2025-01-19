@@ -1,6 +1,6 @@
 export const artemis = [
     {
-        imagem: "../images/NPC/artemis/Princesa Artemis.jpeg",
+        imagem: "./images/NPC/artemis/Princesa Artemis.jpeg",
         nome: "Celestrion",
         titulo: "Princesa de Artemis",
         ascendencia: "Artemis",
@@ -12,7 +12,7 @@ export const artemis = [
         personalidade: "Paquerador, Orgulhoso, Companheiro",
     },   
     {
-        imagem: "../images/NPC/artemis/Segunda Artemis.jpeg",
+        imagem: "./images/NPC/artemis/Segunda Artemis.jpeg",
         nome: "Electraeus ",
         titulo: "Segunda de Artemis",
         ascendencia: "Artemis",
@@ -24,7 +24,7 @@ export const artemis = [
         personalidade: "Corajoso, Esportista, Amável",
     },   
     {
-        imagem: "../images/NPC/artemis/Princesa Helio.jpeg",
+        imagem: "./images/NPC/artemis/Princesa Helio.jpeg",
         nome: "Aiolos",
         titulo: "Princesa de Helio",
         ascendencia: "Helio",
@@ -36,7 +36,7 @@ export const artemis = [
         personalidade: "Franqueza, Leal, Falador",
     },  
     {
-        imagem: "../images/NPC/artemis/Segunda Helio.jpeg",
+        imagem: "./images/NPC/artemis/Segunda Helio.jpeg",
         nome: "Adonis",
         titulo: "Segunda de Helio",
         ascendencia: "Helio",
@@ -48,7 +48,7 @@ export const artemis = [
         personalidade: "Servo, Malicioso, Cruel",
     },   
     {
-        imagem: "../images/NPC/artemis/Terceira Helio.jpeg",
+        imagem: "./images/NPC/artemis/Terceira Helio.jpeg",
         nome: "Heberia",
         titulo: "Terceira de Helio",
         ascendencia: "Helio",
@@ -60,7 +60,7 @@ export const artemis = [
         personalidade: "Diligente, Compreensiva, Gentil",
     },   
     {
-        imagem: "../images/NPC/artemis/Princesa Selene.jpeg",
+        imagem: "./images/NPC/artemis/Princesa Selene.jpeg",
         nome: "Zopyros",
         titulo: "Princesa de Selene",
         ascendencia: "Selene",
@@ -72,7 +72,7 @@ export const artemis = [
         personalidade: "Herói, Altruista, Atrapalhado",
     },  
     {
-        imagem: "../images/NPC/artemis/Segunda Selene.jpeg",
+        imagem: "./images/NPC/artemis/Segunda Selene.jpeg",
         nome: "Menelaos",
         titulo: "Segunda de Selene",
         ascendencia: "Selene",
@@ -84,7 +84,7 @@ export const artemis = [
         personalidade: "Ingrato, Sério, Anti-social",
     },   
     {
-        imagem: "../images/NPC/artemis/Terceira Selene.jpeg",
+        imagem: "./images/NPC/artemis/Terceira Selene.jpeg",
         nome: "Jason",
         titulo: "Terceira de Selene",
         ascendencia: "Selene",
@@ -96,7 +96,7 @@ export const artemis = [
         personalidade: "Companheiro, Leal, Servo",
     },   
     {
-        imagem: "../images/NPC/artemis/Princesa Oreades.jpeg",
+        imagem: "./images/NPC/artemis/Princesa Oreades.jpeg",
         nome: "Cadmus",
         titulo: "Princesa de Oreades",
         ascendencia: "Oreades",
@@ -108,7 +108,7 @@ export const artemis = [
         personalidade: "Sério, Orgulhoso, Ignorante",
     },  
     {
-        imagem: "../images/NPC/artemis/Segunda Oreades.jpeg",
+        imagem: "./images/NPC/artemis/Segunda Oreades.jpeg",
         nome: "Charon",
         titulo: "Segunda de Oreades",
         ascendencia: "Oreades",
@@ -120,7 +120,7 @@ export const artemis = [
         personalidade: "Antipático, Orgulhoso, Protetor",
     },   
     {
-        imagem: "../images/NPC/artemis/Terceira Oreades.jpeg",
+        imagem: "./images/NPC/artemis/Terceira Oreades.jpeg",
         nome: "Atalanta",
         titulo: "Terceira de Oreades",
         ascendencia: "Oreades",

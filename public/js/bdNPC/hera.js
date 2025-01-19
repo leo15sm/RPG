@@ -1,7 +1,7 @@
 
 export const hera = [  
     {
-        imagem: "../images/NPC/hera/Segunda Hera.jpeg",
+        imagem: "./images/NPC/hera/Segunda Hera.jpeg",
         nome: "Otrera",
         titulo: "Segunda Princesa",
         ascendencia: "Hera",
@@ -13,7 +13,7 @@ export const hera = [
         personalidade: "Apaixonada, Leal, Obediente",
     },   
     {
-        imagem: "../images/NPC/hera/Princesa Iris.jpeg",
+        imagem: "./images/NPC/hera/Princesa Iris.jpeg",
         nome: "Melanipe",
         titulo: "Principe de Iris",
         ascendencia: "Iris",
@@ -25,7 +25,7 @@ export const hera = [
         personalidade: "Amigável, Comunicativa, Gentil",
     },  
     {
-        imagem: "../images/NPC/hera/Segunda Iris.jpeg",
+        imagem: "./images/NPC/hera/Segunda Iris.jpeg",
         nome: "Hipólita",
         titulo: "Segundo de Iris",
         ascendencia: "Iris",
@@ -37,7 +37,7 @@ export const hera = [
         personalidade: "Séria, Intolerante, Metódica",
     },   
     {
-        imagem: "../images/NPC/hera/Terceira Iris.jpeg",
+        imagem: "./images/NPC/hera/Terceira Iris.jpeg",
         nome: "Pentesileia",
         titulo: "Terceiro de Iris",
         ascendencia: "Iris",
@@ -49,7 +49,7 @@ export const hera = [
         personalidade: "Orgulhosa, Honrada, Autoritária ",
     },   
     {
-        imagem: "../images/NPC/hera/Princesa Héspera.jpeg",
+        imagem: "./images/NPC/hera/Princesa Héspera.jpeg",
         nome: "Antíope",
         titulo: "Principe de Héspera",
         ascendencia: "Héspera",
@@ -61,7 +61,7 @@ export const hera = [
         personalidade: "Adorável, Implacável, Vaidosa",
     },  
     {
-        imagem: "../images/NPC/hera/Segunda Héspera.jpeg",
+        imagem: "./images/NPC/hera/Segunda Héspera.jpeg",
         nome: "Clônia",
         titulo: "Segundo de Héspera",
         ascendencia: "Héspera",
@@ -73,7 +73,7 @@ export const hera = [
         personalidade: "Corajosa, Leal, Companheira",
     },   
     {
-        imagem: "../images/NPC/hera/Terceira Héspera.jpeg",
+        imagem: "./images/NPC/hera/Terceira Héspera.jpeg",
         nome: "Darkness",
         titulo: "Terceiro de Héspera",
         ascendencia: "Héspera",
@@ -85,7 +85,7 @@ export const hera = [
         personalidade: "Narcisista, Possessiva, Misteriosa",
     },   
     {
-        imagem: "../images/NPC/hera/Princesa Argos.jpeg",
+        imagem: "./images/NPC/hera/Princesa Argos.jpeg",
         nome: "Andrômaca",
         titulo: "Principe de Argos",
         ascendencia: "Argos",
@@ -97,7 +97,7 @@ export const hera = [
         personalidade: "Provocador, Dissimulado, Sociopata",
     },  
     {
-        imagem: "../images/NPC/hera/Segunda Argos.jpeg",
+        imagem: "./images/NPC/hera/Segunda Argos.jpeg",
         nome: "Marpessa",
         titulo: "Segundo de Argos",
         ascendencia: "Argos",
@@ -109,7 +109,7 @@ export const hera = [
         personalidade: "Séria, Disciplinada, Aventureira",
     },   
     {
-        imagem: "../images/NPC/hera/Terceiro Argos.jpeg",
+        imagem: "./images/NPC/hera/Terceiro Argos.jpeg",
         nome: "Vigilio",
         titulo: "Terceiro de Argos",
         ascendencia: "Argos",

@@ -1,6 +1,6 @@
 export const apoio = [
     {
-        imagem: "../images/NPC/Cristal.jpeg",
+        imagem: "./images/NPC/Cristal.jpeg",
         nome: "Cristal",
         titulo: "Madame Cristal",
         ascendencia: "Delfos",
@@ -12,7 +12,7 @@ export const apoio = [
         personalidade: "Imparcial, Trapaceira, Curiosa",
     },  
     {
-        imagem: "../images/NPC/Ludy.jpeg",
+        imagem: "./images/NPC/Ludy.jpeg",
         nome: "Ludy",
         titulo: "Cartógrafo Explorador",
         ascendencia: "Hebe",
@@ -24,7 +24,7 @@ export const apoio = [
         personalidade: "Mentiroso, Trapaceiro, Oportunista",
     },  
     {
-        imagem: "../images/NPC/Mordomo Hades.jpeg",
+        imagem: "./images/NPC/Mordomo Hades.jpeg",
         nome: "Koraki",
         titulo: "Mordomo da Casa de Hades",
         ascendencia: "Hécate",
@@ -36,7 +36,7 @@ export const apoio = [
         personalidade: "Servo, Diligente, Poucas Palavras",
     },    
     {
-        imagem: "../images/NPC/Lucio.jpeg",
+        imagem: "./images/NPC/Lucio.jpeg",
         nome: "Lucio",
         titulo: "Carroceiro das Corujas",
         ascendencia: "Maia e Athena",
@@ -48,7 +48,7 @@ export const apoio = [
         personalidade: "Mentiroso, Folgado, Criativo",
     },  
     {
-        imagem: "../images/NPC/Scarlat.jpeg",
+        imagem: "./images/NPC/Scarlat.jpeg",
         nome: "Scarlat",
         titulo: "Joia de Fogo",
         ascendencia: "Héstia",
@@ -60,7 +60,7 @@ export const apoio = [
         personalidade: "Estudiosa, Leal, Amável",
     }, 
     {
-        imagem: "../images/NPC/Marine.jpeg",
+        imagem: "./images/NPC/Marine.jpeg",
         nome: "Marine",
         titulo: "Joia de Água",
         ascendencia: "Nereu e Hécate",
@@ -72,7 +72,7 @@ export const apoio = [
         personalidade: "Questionadora, Intrivertida e Calada",
     }, 
     {
-        imagem: "../images/NPC/Esmer.jpeg",
+        imagem: "./images/NPC/Esmer.jpeg",
         nome: "Esmer",
         titulo: "Joia de Vento",
         ascendencia: "Boreas",
@@ -84,7 +84,7 @@ export const apoio = [
         personalidade: "Fofoqueira, Gananciosa e Calada",
     }, 
     {
-        imagem: "../images/NPC/Onyx.jpeg",
+        imagem: "./images/NPC/Onyx.jpeg",
         nome: "Onyx",
         titulo: "Joia da Terra",
         ascendencia: "Hades",
@@ -96,7 +96,7 @@ export const apoio = [
         personalidade: "Fofoqueira, Gananciosa e Calada",
     }, 
     {
-        imagem: "../images/NPC/Magnus.jpeg",
+        imagem: "./images/NPC/Magnus.jpeg",
         nome: "Magnus",
         titulo: "Porteiro da Biblioteca",
         ascendencia: "Hécate",
@@ -108,7 +108,7 @@ export const apoio = [
         personalidade: "Preguisoço, Dedicado, Traira",
     }, 
     {
-        imagem: "../images/NPC/Limenor.jpeg",
+        imagem: "./images/NPC/Limenor.jpeg",
         nome: "Limenor",
         titulo: "Segurança da Princesa Monstro",
         ascendencia: "Nike",
@@ -120,7 +120,7 @@ export const apoio = [
         personalidade: "Diligente, Implacável, Inabalável",
     }, 
     {
-        imagem: "../images/NPC/Tarvim.jpeg",
+        imagem: "./images/NPC/Tarvim.jpeg",
         nome: "Tarvim",
         titulo: "Agraciado de Hera",
         ascendencia: "Artémis, Hera",
@@ -132,7 +132,7 @@ export const apoio = [
         personalidade: "Implacável, Companheiro, Corajoso",
     }, 
     {
-        imagem: "../images/NPC/Teseu.jpeg",
+        imagem: "./images/NPC/Teseu.jpeg",
         nome: "Teseu",
         titulo: "Ninfa Macho",
         ascendencia: "Ígena",
@@ -144,7 +144,7 @@ export const apoio = [
         personalidade: "Companheiro, Aproveitador, Criativo",
     }, 
     {
-        imagem: "../images/NPC/Thales.jpeg",
+        imagem: "./images/NPC/Thales.jpeg",
         nome: "Thales",
         titulo: "Canção do Mar",
         ascendencia: "Pã",
@@ -156,7 +156,7 @@ export const apoio = [
         personalidade: "Servo, Patriota, Sonolento",
     }, 
     {
-        imagem: "../images/NPC/Briael.jpeg",
+        imagem: "./images/NPC/Briael.jpeg",
         nome: "Briael",
         titulo: "Profeta das Harpias",
         ascendencia: "Ícaro e Delfos",
@@ -168,7 +168,7 @@ export const apoio = [
         personalidade: "Simplista, Corajoso, Companheiro",
     }, 
     {
-        imagem: "../images/NPC/Rim.jpeg",
+        imagem: "./images/NPC/Rim.jpeg",
         nome: "Rim",
         titulo: "Ninfa Tritão",
         ascendencia: "---",
@@ -180,7 +180,7 @@ export const apoio = [
         personalidade: "Provocadora, Lider, Simplista",
     }, 
     {
-        imagem: "../images/NPC/Aqua.jpeg",
+        imagem: "./images/NPC/Aqua.jpeg",
         nome: "Aqua",
         titulo: "A mais bela do lago",
         ascendencia: "---",
@@ -192,7 +192,7 @@ export const apoio = [
         personalidade: "Paqueradora, Sonhadora, Gentil",
     }, 
     {
-        imagem: "../images/NPC/Mayah.jpeg",
+        imagem: "./images/NPC/Mayah.jpeg",
         nome: "Maya",
         titulo: "Fantasma de Hera",
         ascendencia: "Hera",
@@ -204,7 +204,7 @@ export const apoio = [
         personalidade: "Curiosa, Vaidosa, Invejosa",
     },
     {
-        imagem: "../images/NPC/Evelyn.jpeg",
+        imagem: "./images/NPC/Evelyn.jpeg",
         nome: "Evelyn",
         titulo: "Princesa de Tempesta",
         ascendencia: "Tempesta",
@@ -216,7 +216,7 @@ export const apoio = [
         personalidade: "Exigente, Vaidosa, Crente",
     },
     {
-        imagem: "../images/NPC/Rose.jpeg",
+        imagem: "./images/NPC/Rose.jpeg",
         nome: "Rose",
         titulo: "Rosa do Caos",
         ascendencia: "Tália",

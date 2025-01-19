@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Carregar o header e inicializar scripts
-    carregarConteudo("../html/nav.html", "out-nav", initializeNav);
+    carregarConteudo("./nav.html", "out-nav", initializeNav);
 
     // Carregar o footer
     // carregarConteudo("../Pages/footer.html", "out-footer");

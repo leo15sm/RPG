@@ -1,18 +1,18 @@
 export const athena = [
     {
-        imagem: "../images/NPC/athena/Principe Athena.jpeg",
+        imagem: "./images/NPC/athena/Principe Athena.jpeg",
         nome: "Palas",
         titulo: "Princesa de Athena",
         ascendencia: "Athena",
         linhagem: "---",
-        dominio: "Inteligência e Vento",
-        elemento: "Raio",
-        classe: "Mago Lv0",
-        oficio: "Arcanista Lv 10",
+        dominio: "Inteligência e Raio",
+        elemento: "Chama Eletrificada",
+        classe: "Mago Lv6",
+        oficio: "Arquimago Lv3",
         personalidade: "Disciplinada, Metodica, Calculista",
     },  
     {
-        imagem: "../images/NPC/athena/Segundo Athena.jpeg",
+        imagem: "./images/NPC/athena/Segundo Athena.jpeg",
         nome: "Jonas",
         titulo: "Segundo de Athena",
         ascendencia: "Athena",
@@ -24,7 +24,7 @@ export const athena = [
         personalidade: "Malicioso, Oportunista, Crente",
     },   
     {
-        imagem: "../images/NPC/athena/Naguine.jpeg",
+        imagem: "./images/NPC/athena/Naguine.jpeg",
         nome: "Naguine",
         titulo: "Princesa Monstro",
         ascendencia: "Medusa",
@@ -36,7 +36,7 @@ export const athena = [
         personalidade: "---, ---, ---",
     },    
     {
-        imagem: "../images/NPC/athena/Principe Nike.jpeg",
+        imagem: "./images/NPC/athena/Principe Nike.jpeg",
         nome: "Vitoria",
         titulo: "Princesa de Nike",
         ascendencia: "Nike",
@@ -48,7 +48,7 @@ export const athena = [
         personalidade: "Esportista, Leal, Séria",
     },  
     {
-        imagem: "../images/NPC/athena/Segundo Nike.jpeg",
+        imagem: "./images/NPC/athena/Segundo Nike.jpeg",
         nome: "Dafne",
         titulo: "Segunda de Nike",
         ascendencia: "Nike",
@@ -60,7 +60,7 @@ export const athena = [
         personalidade: "Diligente, Precavida, Serva",
     },   
     {
-        imagem: "../images/NPC/athena/Terceiro Nike.jpeg",
+        imagem: "./images/NPC/athena/Terceiro Nike.jpeg",
         nome: "Medeia",
         titulo: "Terceira de Nike",
         ascendencia: "Nike",
@@ -72,7 +72,7 @@ export const athena = [
         personalidade: "Carismática, Inquieta, Maliciosa",
     },  
     {
-        imagem: "../images/NPC/athena/Principe Medusa.jpeg",
+        imagem: "./images/NPC/athena/Principe Medusa.jpeg",
         nome: "Caroline",
         titulo: "Princesa de Medusa",
         ascendencia: "Medusa",
@@ -84,7 +84,7 @@ export const athena = [
         personalidade: "Ninfomaníaca, Gananciosa, Audaciosa",
     },  
     {
-        imagem: "../images/NPC/athena/Segundo Medusa.jpeg",
+        imagem: "./images/NPC/athena/Segundo Medusa.jpeg",
         nome: "Areteia",
         titulo: "Segunda de Medusa",
         ascendencia: "Medusa",
@@ -96,7 +96,7 @@ export const athena = [
         personalidade: "Calada, Patriota, Companheira",
     },   
     {
-        imagem: "../images/NPC/athena/Terceiro Medusa.jpeg",
+        imagem: "./images/NPC/athena/Terceiro Medusa.jpeg",
         nome: "Lísistrata",
         titulo: "Terceira de Medusa",
         ascendencia: "Medusa",
@@ -108,7 +108,7 @@ export const athena = [
         personalidade: "Diligente, Cruel, Imparcial",
     },  
     {
-        imagem: "../images/NPC/athena/Principe Aracne.jpeg",
+        imagem: "./images/NPC/athena/Principe Aracne.jpeg",
         nome: "Tarântula",
         titulo: "Princesa de Aracne",
         ascendencia: "Aracne",
@@ -120,7 +120,7 @@ export const athena = [
         personalidade: "Dedicada, Gentil, Diligente",
     },  
     {
-        imagem: "../images/NPC/athena/Segundo Aracne.jpeg",
+        imagem: "./images/NPC/athena/Segundo Aracne.jpeg",
         nome: "Sophia",
         titulo: "Segunda de Aracne",
         ascendencia: "Aracne",
@@ -132,7 +132,7 @@ export const athena = [
         personalidade: "Estudiosa, Diligente, Atenciosa",
     },   
     {
-        imagem: "../images/NPC/Domia.jpeg",
+        imagem: "./images/NPC/Domia.jpeg",
         nome: "Domia",
         titulo: "Guardiã do Bosque",
         ascendencia: "Aracne",
