@@ -34,13 +34,13 @@ export const players = [
         new Bild(
             "Delfos", 
             getClasseByName("Feiticeiro"), 
-            ["Oráculo", "Vigor"], 
+            ["Vigor"], 
             ["Chama Dourada"], 
-            ["Sacerdote 10", "Acadêmico 10", "Atleta 5"],
-            ["Arco 5"]
+            ["Elite 1", "Sacerdote 10", "Acadêmico 10", "Atleta 5", "Astrologo 5"],
+            ["Arco 10", "Escudo 10", "Armadura 10"]
         ),
         new Atributos(20, 22, 30, 30, 22, 20),
-        new Progresso(9, 201, 3, 16, 154, 1113.00)
+        new Progresso(9, 201, 9, 0, 154, 1113.00)
     ),
     /*###########################################*/
     new Personagem(
@@ -50,11 +50,11 @@ export const players = [
             getClasseByName("Mago"), 
             ["Morte"], 
             ["Chama Sombria"], 
-            ["Arcanista 10", "Acadêmico 10"],
+            ["Arquimago 4"],
             ["Foice 5"]
         ),
         new Atributos(18, 22, 18, 22, 18, 18),
-        new Progresso(6, 780, 2, 12, 92, 1105.48)
+        new Progresso(6, 780, 2, 1, 92, 1105.48)
     ),
     /*###########################################*/
     new Personagem(
@@ -63,8 +63,8 @@ export const players = [
             "Tritão", 
             getClasseByName("Druida"), 
             ["Tritão Lagosta"], 
-            ["Vapor e Fluidos"], 
-            ["Atleta 10", "Arcanista 7", "Domador de Criaturas 1"],
+            ["Aqua"], 
+            ["Atleta 10", "Arcanista 10", "Domador de Criaturas 1"],
             ["Combate 10"]
         ), 
         new Atributos(18, 18, 18, 22, 22, 18),
