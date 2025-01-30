@@ -9,8 +9,8 @@
 body {
     box-sizing: border-box;
     font-family: 'Uncial Antiqua', cursive;
-    /* background: url('../images/background-rpg.jpeg') no-repeat center center fixed;
-    background-size: cover; */
+    background: url('../images/background-rpg.jpeg') no-repeat center center fixed;
+    background-size: cover;
     background-color: var(--background);
 }
 /*###############################################################*/

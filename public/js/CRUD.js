@@ -32,16 +32,16 @@ export async function cadastrarDados(nomeColecao, dados) {
 
 // Função para buscar dados do Firebase de uma coleção genérica
 export async function buscarDadosFirestore(nomeColecao) {
-  const colecao = collection(db, nomeColecao);
-  const querySnapshot = await getDocs(colecao);
+    const colecao = collection(db, nomeColecao);
+    const querySnapshot = await getDocs(colecao);
 
-  const dadosCadastrados = [];
-  querySnapshot.forEach((doc) => {
-      dadosCadastrados.push(doc.data().nome);  // Supondo que os documentos tenham um campo 'nome'
-  });
+    const dadosCadastrados = [];
+    querySnapshot.forEach((doc) => {
+        dadosCadastrados.push(doc.data().nome);  // Supondo que os documentos tenham um campo 'nome'
+    });
 
-  console.log(`${nomeColecao} cadastrados:`, dadosCadastrados);
-  return dadosCadastrados; // Retorna a lista para uso posterior
+    console.log(`${nomeColecao} cadastrados:`, dadosCadastrados);
+    return dadosCadastrados; // Retorna a lista para uso posterior
 }
 
 export async function buscarDadosFirestore2(nomeColecao) {
@@ -49,7 +49,7 @@ export async function buscarDadosFirestore2(nomeColecao) {
     const querySnapshot = await getDocs(colecaoRef);  // Pega todos os documentos
     const dados = querySnapshot.docs.map(doc => doc.data());  // Mapeia os dados
     return dados;
-  }
+}
 
 export async function cadastrarSemideus(nomeColecao, dados) {
     const colecao = collection(db, nomeColecao);

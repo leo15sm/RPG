@@ -490,3 +490,49 @@ async function buscarDadosFirestore(nomeColecao) {
     const dados = snapshot.docs.map(doc => doc.data().nome); // Supondo que cada documento tenha a propriedade 'nome'
     return dados;
 }
+
+export function criarSlider(selector){
+    const main = document.getElementById(selector);
+
+    const divindades = [
+        { id: "divinizados", titulo: "Divinizados Famosos" },
+        { id: "zeus", titulo: "Filhos de Zeus" },
+        { id: "hades", titulo: "Filhos de Hades" },
+        { id: "posseidon", titulo: "Filhos de Posseidon" },
+        { id: "hera", titulo: "Filhos de Hera" },
+        { id: "demeter", titulo: "Filhos de Demeter" },
+        { id: "afrodite", titulo: "Filhos de Afrodite" },
+        { id: "athena", titulo: "Filhos de Athena" },
+        { id: "apolo", titulo: "Filhos de Apolo" },
+        { id: "artemis", titulo: "Filhos de Artemis" },
+        { id: "herfesto", titulo: "Filhos de Herfesto" },
+        { id: "ares", titulo: "Filhos de Ares" },
+        { id: "hermes", titulo: "Filhos de Hermes" },
+        { id: "dionisio", titulo: "Filhos de Dionisio" }
+    ];
+
+    divindades.forEach(({ id, titulo }) => {
+        const section = document.createElement("section");
+        section.id = id;
+        section.classList.add("slider");
+
+        section.innerHTML = `
+            <article class="slider-txt">
+                <h2>${titulo}</h2>
+            </article>
+            <section class="slider-container">
+                <button class="prev-btn">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <img class="prev-img" alt="Imagem anterior">
+                <section class="slider-images"></section>
+                <img class="next-img" alt="Imagem próxima">
+                <button class="next-btn">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </section>
+        `;
+
+        main.appendChild(section);
+    });
+}
