@@ -146,19 +146,34 @@ export const players = [
     ),
     /*###########################################*/
     new Personagem(
-        "Uilian", "Aldritch", 
+        "Uilian", "Guilbert", 
         new Bild(
             "Eros", 
-            getClasseByName("Mago"), // Passando o objeto da classe "Atirador"
-            ["Carisma"], 
-            ["Ether", "Trevas"], 
-            ["Militar 5", "Arcanista 10"],
-            ["Espada 5"]
+            getClasseByName("Feiticeiro"),
+            ["Ninfa Raio"], 
+            ["Raio", "Cosmo"], 
+            ["Faz tudo 1"],
+            ["Alguma coisa 1"]
         ),
         new Atributos(22, 30, 20, 30, 21, 21),
-        new Progresso(2, 283, 3, 11, 45, 1000.00)
+        new Progresso(1, 0, 0, 0, 0, 1000.00)
     ),
     /*###########################################*/
+       /*###########################################*/
+       new Personagem(
+        "Mayah", "Mayah", 
+        new Bild(
+            "Hera", 
+            getClasseByName("Feiticeiro"),
+            ["Mulheres", "Castidade"], 
+            ["Flama", "Plasma", "Fogo"], 
+            ["Alto Feiticeiro 5", "Atleta Olympico 1", "Faz tudo 10"],
+            //elite [3], arquimago [2], feiticeiro [1], atleta olympico [3], explorador [2], 
+            ["Todas as Armas 10", "Todas Armaduras 10", "Todos Combate 10"]
+        ),
+        new Atributos(20, 20, 20, 20, 20, 20),
+        new Progresso(11, 0, 0, 0, 100, 1000.00)
+    ),
     /*###########################################*/
     new Personagem(
         "Dômia", "Dômia", 
@@ -167,11 +182,12 @@ export const players = [
             getClasseByName("Mago"),
             ["Vitória", "Ether"], 
             ["Ether", "Fios"], 
-            ["Militar 5", "Arcanista 10"],
-            ["Espada 5"]
+            ["Arquimago 5", "Elite 5", "Atleta Olympico 1", "Faz tudo 10"],
+            //elite [3], arquimago [2], feiticeiro [1], atleta olympico [3], explorador [2], 
+            ["Bastão 10", "Fios 10", "Armadura 10"]
         ),
         new Atributos(18, 19, 23, 30, 30, 18),
-        new Progresso(11, 1000, 0, 0, 185, 1000.00)
+        new Progresso(11, 1000, 0, 0, 185, 1100.00)
     ),
     /*###########################################*/
   
