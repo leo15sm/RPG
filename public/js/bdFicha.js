@@ -182,7 +182,7 @@ export const players = [
             getClasseByName("Mago"),
             ["Vitória", "Ether"], 
             ["Ether", "Fios"], 
-            ["Arquimago 5", "Elite 5", "Atleta Olympico 1", "Faz tudo 10"],
+            ["Arquimago 5", "Elite 5", "Atleta Olympico 1", "Explorador 1"],
             //elite [3], arquimago [2], feiticeiro [1], atleta olympico [3], explorador [2], 
             ["Bastão 10", "Fios 10", "Armadura 10"]
         ),
