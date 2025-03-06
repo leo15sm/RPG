@@ -32,7 +32,7 @@ async function filtrarPorCasa() {
 
     // Limpa a tabela, exceto o cabeçalho
     tabelaNPCs.innerHTML = `<tr>
-        <th>Imagem</th><th>Nome</th><th>Título</th><th>Ascendência</th><th>Domínio</th><th>Elemento</th><th>Classe</th><th>Ofício</th><th>Ações</th>
+        <th>Imagem</th><th>Nome</th><th>Título</th><th>Ascendência</th><th>Linhagem</th><th>Domínio</th><th>Elemento</th><th>Classe</th><th>Ofício</th><th>Ações</th>
     </tr>`;
 
     querySnapshot.forEach((doc) => {
@@ -52,6 +52,7 @@ function criarLinhaNPC(id, npc) {
             <td contenteditable="true" onBlur="atualizarNPC('${id}', 'nome', this.innerText)">${npc.nome}</td>
             <td contenteditable="true" onBlur="atualizarNPC('${id}', 'titulo', this.innerText)">${npc.titulo}</td>
             <td contenteditable="true" onBlur="atualizarNPC('${id}', 'ascendencia', this.innerText)">${npc.ascendencia}</td>
+            <td contenteditable="true" onBlur="atualizarNPC('${id}', 'linhagem', this.innerText)">${npc.linhagem}</td>
             <td contenteditable="true" onBlur="atualizarNPC('${id}', 'dominio', this.innerText)">${npc.dominio}</td>
             <td contenteditable="true" onBlur="atualizarNPC('${id}', 'elemento', this.innerText)">${npc.elemento}</td>
             <td contenteditable="true" onBlur="atualizarNPC('${id}', 'classe', this.innerText)">${npc.classe}</td>
@@ -89,6 +90,7 @@ function fecharModal() {
 
 async function salvarNPC() {
     const novoNPC = {
+        casa: document.getElementById("modal-casa").value,
         imagem: document.getElementById("modal-imagem").value,
         nome: document.getElementById("modal-nome").value,
         titulo: document.getElementById("modal-titulo").value,
@@ -99,7 +101,6 @@ async function salvarNPC() {
         classe: document.getElementById("modal-classe").value,
         oficio: document.getElementById("modal-oficio").value,
         personalidade: document.getElementById("modal-personalidade").value,
-        casa: document.getElementById("modal-casa").value,
     };
 
     try {
