@@ -1,4 +1,4 @@
-import { Magias } from '../classAtributos.js';
+import { Magias } from '../classRPG.js';
 
 export const magiasArcana  = [
     // Ciclo 0

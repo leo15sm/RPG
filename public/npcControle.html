@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/d20.jpeg" type="image/jpg">
+    <title>Controle</title>
+
+    <!-- iCONS DO GOOGLE -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FOLHAS DE ESTILO -->
+    <link rel="stylesheet" href="./css/style-nav-footer.css">
+    <link rel="stylesheet" href="./css/style-ficha.css">
+    <link rel="stylesheet" href="./css/style-controle.css">
+
+    <!-- SCRIPTS JS -->
+    <script defer src="./js/script.js"></script>
+    <script type="module" src="./js/NPC_CRUD.js"></script>
+    
+</head>
+<body>
+    <nav id="out-nav"></nav>
+    <header>
+        <h1>Lista de NPCs</h1>    
+    </header>
+
+    <main class="ficha-container">
+        <section class="controle">
+            <select id="filtro-casa" onchange="filtrarPorCasa()">
+                <option value="todas">Todas as Casas</option>
+                <option value="afrodite">Afrodite</option>
+                <option value="zeus">Zeus</option>
+                <option value="hades">Hades</option>
+                <option value="posseidon">Posseidon</option>
+                <option value="hera">Hera</option>
+                <option value="demeter">Deméter</option>
+                <option value="athena">Athena</option>
+                <option value="apolo">Apolo</option>
+                <option value="artemis">Artemis</option>
+                <option value="herfesto">Hefesto</option>
+                <option value="ares">Ares</option>
+                <option value="hermes">Hermes</option>
+                <option value="dionisio">Dionísio</option>
+            </select>
+
+            <!-- Botão para abrir o modal -->
+            <button onclick="abrirModal()">Adicionar NPC</button>
+        </section>
+        <!-- Modal -->
+        <section id="modalNPC" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar" onclick="fecharModal()">&times;</span>
+
+                <h2>Cadastrar Novo NPC</h2>
+                <div class="formulario">
+                    <input type="text" id="modal-casa" placeholder="Casa" />
+                    <input type="text" id="modal-imagem" placeholder="pasta/nome.jpeg" />
+                    <input type="text" id="modal-nome" placeholder="Nome" />
+                    <input type="text" id="modal-titulo" placeholder="Título" />
+                    <input type="text" id="modal-ascendencia" placeholder="Ascendência" />
+                    <input type="text" id="modal-linhagem" placeholder="Linhagem" />
+                    <input type="text" id="modal-dominio" placeholder="Domínio" />
+                    <input type="text" id="modal-elemento" placeholder="Elemento" />
+                    <input type="text" id="modal-classe" placeholder="Classe" />
+                    <input type="text" id="modal-oficio" placeholder="Ofício" />
+                    <input type="text" id="modal-personalidade" placeholder="personalidade, personalidade2, personalidade3" />
+                    <div class="botoes">
+                        <button onclick="salvarNPC()">Salvar</button>
+                        <button onclick="fecharModal()">Descartar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <table id="npc-table"></table>   
+    </main>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-import { ClasseRPG } from './classAtributos.js';
+import { ClasseRPG } from './classRPG.js';
 
 export const classeList = [
     //nome, hp, mana, estamina, redutor, atrF, atrM

@@ -21,13 +21,12 @@ header{
     color: var(--text-color);
     font-family: 'Cinzel', serif;
     margin: 0 auto;
-    padding: 1.25rem; /* 20px */
+    padding: 1.25rem;
     width: 70%;
     background-color: var(--container-bg);
-    border: 0.125rem solid var(--border-color); /* 2px */
-    border-radius: 0.625rem; /* 10px */
-    box-shadow: 0 0 0.9375rem var(--box-shadow-color); /* 15px */
-
+    border: 0.125rem solid var(--border-color);
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.9375rem var(--box-shadow-color); 
 }
 
 .ficha-row {
@@ -43,12 +42,11 @@ h1 {
     text-align: center;
     color: var(--border-color);
     text-shadow: .1 .1 1rem var(--box-shadow-color);
-    font-size: 1.8rem; /* 1.8em */
-    margin: 1.25rem; /* 20px */
+    font-size: 1.8rem; 
+    margin: 1.25rem; 
 }
 
 .rpg-table {
-    /* width: 100%; */
     margin: 0 auto;
     text-align: center;
     border-collapse: collapse;
@@ -57,27 +55,28 @@ h1 {
 }
 
 .rpg-table th, .rpg-table td {
-    padding: 0.625rem; /* 10px */
-    border: 0.0625rem solid var(--border-color); /* 1px */
+    padding: 0.625rem; 
+    border: 0.0625rem solid var(--border-color);
 }
 
 .rpg-table input[type="text"],
 .rpg-table input[type="number"],
 .rpg-table select {
-    padding: 0.3125rem; /* 5px */
+    padding: 0.3125rem; 
     color: var(--text-color);
-    text-align: right;
+    text-align: center;
     background-color: var(--input-bg);
-    border: 0.0625rem solid var(--border-color); /* 1px */
-    border-radius: 0.3125rem; /* 5px */
+    border: 1px solid var(--border-color);
+    border-radius: 0.4rem; 
 }
 
 .rpg-table input[type="text"]{
-    width: 6rem;
+    width: 7rem;
 }
 
 .rpg-table input[type="number"]{
     width: 3.5rem;
+    text-align: left;
 }
 
 .rpg-table tr:nth-child(even) {
@@ -92,7 +91,7 @@ h1 {
 }
 
 .rpg-table .dados-column {
-    width: 7rem; 
+    width: 9rem; 
 }
 
 .rpg-table select{

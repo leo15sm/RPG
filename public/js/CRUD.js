@@ -1,10 +1,13 @@
 import { db } from "./firebaseConfig.js";
 import { 
-  collection, 
-  addDoc,
-  getDocs,
-  query, 
-  where,
+    collection, 
+    addDoc,
+    getDocs,
+    updateDoc, 
+    deleteDoc, 
+    doc,
+    query, 
+    where,
 } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js'; 
 
 export async function cadastrarDados(nomeColecao, dados) {
@@ -37,18 +40,31 @@ export async function buscarDadosFirestore(nomeColecao) {
 
     const dadosCadastrados = [];
     querySnapshot.forEach((doc) => {
-        dadosCadastrados.push(doc.data().nome);  // Supondo que os documentos tenham um campo 'nome'
+        dadosCadastrados.push(doc.data().nome); 
     });
 
     console.log(`${nomeColecao} cadastrados:`, dadosCadastrados);
     return dadosCadastrados; // Retorna a lista para uso posterior
 }
 
-export async function buscarDadosFirestore2(nomeColecao) {
-    const colecaoRef = collection(db, nomeColecao);  // Referência à coleção
-    const querySnapshot = await getDocs(colecaoRef);  // Pega todos os documentos
-    const dados = querySnapshot.docs.map(doc => doc.data());  // Mapeia os dados
-    return dados;
+// Função para buscar dados do Firestore com base na nova hierarquia
+export async function buscarPersonagens(nomeColecao, subColecao = null) {
+    const colecaoRef = collection(db, nomeColecao); // Referência à coleção NPC
+    const querySnapshot = await getDocs(colecaoRef); // Pega todos os documentos
+    const dados = {};
+
+    querySnapshot.forEach((doc) => {
+        const npcData = doc.data();
+        const casa = npcData.casa; // Supondo que o campo que indica a casa seja "casa"
+
+        if (!dados[casa]) {
+            dados[casa] = []; // Cria um array para a casa se não existir
+        }
+
+        dados[casa].push(npcData); // Adiciona o NPC ao array da casa correspondente
+    });
+
+    return dados; // Retorna um objeto onde a chave é a casa e o valor é um array de NPCs
 }
 
 export async function cadastrarSemideus(nomeColecao, dados) {

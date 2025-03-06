@@ -1,4 +1,4 @@
-import { Atributos, Bild, Progresso, Personagem } from './classAtributos.js';
+import { Atributos, Bild, Progresso, Personagem } from './classRPG.js';
 import { classeList } from './bdClasse.js';
 
 export const atributos = [

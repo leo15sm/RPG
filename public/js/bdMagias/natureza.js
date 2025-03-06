@@ -1,4 +1,4 @@
-import { Magias } from '../classAtributos.js';
+import { Magias } from '../classRPG.js';
 
 export const magiasNatureza  = [
     new Magias("natureza", "0", "Flora Skim", "súbita", "Nenhum", 

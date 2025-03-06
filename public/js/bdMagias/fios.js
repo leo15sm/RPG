@@ -1,4 +1,4 @@
-import { Magias } from '../classAtributos.js';
+import { Magias } from '../classRPG.js';
 
 export const magiasFios  = [
     new Magias("fios", 0, "Wires Skim", "Passivo", "", "Manifestação da essência dos fios na forma de uma áurea que recobre o corpo do usuário permitindo aumentar a durabilidade dos tecidos que esteja usando, ganhando +5 de redutor."),
