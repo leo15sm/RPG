@@ -14,7 +14,7 @@ async function carregarNPCs() {
     const querySnapshot = await getDocs(npcCollection);
     const tabelaNPCs = document.getElementById("npc-table");
     tabelaNPCs.innerHTML = `<tr>
-        <th>Imagem</th><th>casa</th><th>Nome</th><th>Título</th><th>Ascendência</th><th>Domínio</th><th>Elemento</th><th>Classe</th><th>Ofício</th><th>personaliade</th><th>Ações</th>
+        <th>Imagem</th><th>Nome</th><th>Título</th><th>Ascendência</th><th>Domínio</th><th>Elemento</th><th>Classe</th><th>Ofício</th><th>personaliade</th><th>Ações</th>
     </tr>`;
     
     querySnapshot.forEach((doc) => {
@@ -32,7 +32,7 @@ async function filtrarPorCasa() {
 
     // Limpa a tabela, exceto o cabeçalho
     tabelaNPCs.innerHTML = `<tr>
-        <th>Imagem</th><th>casa</th><th>Nome</th><th>Título</th><th>Ascendência</th><th>Domínio</th><th>Elemento</th><th>Classe</th><th>Ofício</th><th>Ações</th>
+        <th>Imagem</th><th>Nome</th><th>Título</th><th>Ascendência</th><th>Domínio</th><th>Elemento</th><th>Classe</th><th>Ofício</th><th>Ações</th>
     </tr>`;
 
     querySnapshot.forEach((doc) => {
@@ -49,7 +49,6 @@ function criarLinhaNPC(id, npc) {
     return `
         <tr>
             <td><img src="${npc.imagem}" width="50" height="75" /></td>
-            <td contenteditable="true" onBlur="atualizarNPC('${id}', 'casa', this.innerText)">${npc.casa}</td>
             <td contenteditable="true" onBlur="atualizarNPC('${id}', 'nome', this.innerText)">${npc.nome}</td>
             <td contenteditable="true" onBlur="atualizarNPC('${id}', 'titulo', this.innerText)">${npc.titulo}</td>
             <td contenteditable="true" onBlur="atualizarNPC('${id}', 'ascendencia', this.innerText)">${npc.ascendencia}</td>
