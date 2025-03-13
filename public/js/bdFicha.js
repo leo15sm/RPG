@@ -35,12 +35,12 @@ export const players = [
             "Delfos", 
             getClasseByName("Feiticeiro"), 
             ["Vigor"], 
-            ["Chama Dourada", "Arcano do Físico"], 
-            ["Elite 1", "Sacerdote 10", "Acadêmico 10", "Atleta 5", "Astrologo 5"],
+            ["Chama Dourada", "Vigor lv2"], 
+            ["Elite 1", "Sacerdote 10", "Acadêmico 10", "Faz Tudo 5", "Atleta 10", "Astrologo 10"],
             ["Arco 10", "Escudo 10", "Armadura 10"]
         ),
         new Atributos(18, 30, 29, 30, 30, 21),
-        new Progresso(10, 201, 9, 0, 154, 1113.00)
+        new Progresso(11, 1021, 6, 1, 195, 2500.00)
     ),
     /*###########################################*/
     new Personagem(
@@ -54,7 +54,7 @@ export const players = [
             ["Foice 5", "Arco 1"]
         ),
         new Atributos(18, 22, 18, 22, 18, 18),
-        new Progresso(7, 780, 2, 1, 92, 1105.48)
+        new Progresso(8, 520, 2, 12, 132, 1105.48)
     ),
     /*###########################################*/
     new Personagem(
@@ -68,7 +68,7 @@ export const players = [
             ["Combate 10"]
         ), 
         new Atributos(18, 22, 22, 30, 30, 18),
-        new Progresso(7, 644, 8, 11, 84, 10.00)
+        new Progresso(7, 699, 8, 5, 84, 1200.00)
     ),
     /*###########################################*/
     //nivel, xp, skill, upgrade, missao, gold
@@ -84,7 +84,7 @@ export const players = [
             ["Chicote 5"]
         ),
         new Atributos(18, 18, 18, 22, 22, 18),
-        new Progresso(7, 720, 3, 22, 48, 230.00)
+        new Progresso(8, 540, 3, 33, 128, 1000.00)
     ),
     /*###########################################*/
     new Personagem(
@@ -107,12 +107,12 @@ export const players = [
             "Delfos", 
             getClasseByName("Arqueiro"), 
             ["Oráculo"], 
-            ["Cor Vermelha", "Cor Laranja", "Cor Amarela", "Chama Prateada"], 
+            ["Cor Vermelha", "Cor Laranja", "Cor Verde", "Chama Prateada"], 
             ["Caçador 10", "Domador 10", "Faz Tudo 10", "Atleta 10", "Arcanista 1"],
             ["Arco 10"]
         ),
         new Atributos(18, 18, 22, 18, 22, 18),
-        new Progresso(7, 877, 7, 2, 86, 1000.00)
+        new Progresso(8, 697, 7, 13, 126, 1000.00)
     ),
     /*###########################################*/
     new Personagem(
@@ -126,7 +126,7 @@ export const players = [
             ["fraco 100"]
         ),
         new Atributos(18, 19, 23, 30, 30, 18),
-        new Progresso(11, 900, 0, 16, 165, 1080.00)
+        new Progresso(11, 1720, 0, 42, 205, 1000.00)
     ),
     /*###########################################*/
     //nivel, xp, skill, upgrade, missao, gold
@@ -138,11 +138,11 @@ export const players = [
             getClasseByName("Lanceiro"), 
             ["Ninfa do Fogo"], 
             ["Flama", "Plasma", "Fogo"], 
-            ["Elite 3", "Atleta 10", "Faz Tudo 10"],
+            ["Elite 5", "Desafiante 5", "Atleta Olympico 5"],
             ["Lança 10", "Armadura 10", "Pistola 10"]
         ),
         new Atributos(18, 18, 30, 30, 22, 23),
-        new Progresso(7, 651, 0, 17, 113, 1150.00)
+        new Progresso(8, 571, 6, 0, 153, 1150.00)
     ),
     /*###########################################*/
     new Personagem(
@@ -151,12 +151,12 @@ export const players = [
             "Eros", 
             getClasseByName("Feiticeiro"),
             ["Ninfa Raio"], 
-            ["Raio", "Cosmo"], 
-            ["Faz tudo 1"],
+            ["Raio Cosmico"], 
+            ["Faz tudo 1", "Elite 5"],
             ["Alguma coisa 1"]
         ),
         new Atributos(22, 30, 20, 30, 21, 21),
-        new Progresso(1, 0, 0, 0, 0, 1000.00)
+        new Progresso(1, 234, 8, 1, 15, 1000.00)
     ),
     /*###########################################*/
        /*###########################################*/
@@ -182,17 +182,17 @@ export const players = [
             getClasseByName("Mago"),
             ["Vitória", "Ether"], 
             ["Ether", "Fios"], 
-            ["Arquimago 5", "Elite 5", "Atleta Olympico 1", "Explorador 1"],
-            //elite [3], arquimago [2], feiticeiro [1], atleta olympico [3], explorador [2], 
+            ["Arquimago 5", "Elite 5", "Atleta Olympico 5", "Explorador 5", "Desafiante 5"],
+            //elite [5], arquimago [5], feiticeiro [5], atleta olympico [9], explorador [9], desafiante [8],  
             ["Bastão 10", "Fios 10", "Armadura 10"]
         ),
         new Atributos(18, 19, 23, 30, 30, 18),
-        new Progresso(11, 1000, 0, 0, 185, 1100.00)
+        new Progresso(11, 1820, 7, 1, 225, 1100.00)
     ),
     /*###########################################*/
   
 ];
-//dia 180
+//dia 180 + 30
 //player, nome, bild, atributos, progresso
 //forc, vit, des, int, sab, car
 //ascendente, classe, dominio, elemento, oficio, maestria
